@@ -1,0 +1,30 @@
+header{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 20px;
+    .head-wrap{
+        background: #FFFFFF08;
+        padding: 14px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid;
+        border-image: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+        border-radius: 34px;
+        a{
+            display: flex;
+        }
+        .header-actions{
+            display: flex;
+            align-items: center;
+            gap:20px;
+            justify-content: flex-end;
+            .main-button{
+                width: 90px;
+                height: 25px;
+                font-size: 12px;
+            }
+        }
+    }
+}
