@@ -6,7 +6,7 @@ function HomeHero() {
     <section className="home-hero">
       <iframe
         src="https://my.spline.design/YbsmvAJ4EDVCvhZ4vURpYjaR/"
-        frameborder="0"
+        frameBorder="0"
         width="100%"
         height="100%"
       ></iframe>
