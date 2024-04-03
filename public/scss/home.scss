@@ -164,3 +164,41 @@
         }
     }
 }
+
+.home-percents{
+    margin: 120px 0;
+    h2{
+        color: #fff;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 46.87px;
+        text-align: center;
+        margin: 0 0 60px 0;
+        text-align: center;
+        @media (max-width:992px){
+            font-size: 32px;
+            margin: 0 0 40px 0;
+        }
+    }
+    &__body{
+        display: flex;
+        gap:44px;
+        >div{
+            flex-grow: 1;
+            width: 190px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap:30px;
+            p{
+                color: #FFFFFF99;
+                margin: 0;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 18.23px;
+                text-align: center;                
+            }
+        }
+    }
+}
