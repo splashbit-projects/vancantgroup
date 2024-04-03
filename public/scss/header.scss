@@ -5,13 +5,27 @@ header{
     top: 20px;
     .head-wrap{
         background: #FFFFFF08;
+        position: relative;
+        border-radius: 34px;
+        overflow: hidden;
         padding: 14px 30px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        border: 1px solid;
-        border-image: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
-        border-radius: 34px;
+        &:before{
+            content: '';
+            position: absolute;
+            top: 0; right: 0; bottom: 0; left: 0;
+            border-radius: 34px; 
+            padding: 1px; 
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+            -webkit-mask: 
+                linear-gradient(#fff 0 0) content-box, 
+                linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+                    mask-composite: exclude; /* Exclude the inner part, leaving only the border */
+            z-index: 0;
+        }
         a{
             display: flex;
         }
