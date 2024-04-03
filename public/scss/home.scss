@@ -1,3 +1,6 @@
+@import 'mixin';
+
+
 .home-hero{
     padding-top: 175px;
     margin-bottom: 100px;
@@ -204,5 +207,60 @@
                 text-align: center;                
             }
         }
+    }
+}
+
+.home-need { 
+    @include adaptiv-value('padding-bottom', 150, 100, 1);
+    &__container { 
+
+    }
+
+    &__body { 
+        padding: 1px;
+        border-radius: 34px;
+        background: linear-gradient(180deg, rgba(71,71,71,1) 30%, rgba(15,15,15,1) 100%);
+    }
+
+    &__content { 
+        background-image: url('../images/vancant-home-need.png');
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: contain;
+        padding: 60px 16px;
+        border-radius: 34px;
+        background-color: #0f0f0f;
+
+        @media(max-width: 767px) { 
+            background-image: url('../images/vancant-home-need-02.png');
+        }
+    }
+
+    &__title { 
+        @include adaptiv-value('font-size', 36, 30, 1);
+        color: #fff;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    &__text { 
+        max-width: 413px;
+        margin: 20px auto 0 auto;
+        text-align: center;
+        color: #fff;
+    }
+
+    &__link { 
+        background-color: #e74848;
+        border: 1px solid #e74848;
+        border-radius: 100px;
+        padding: 15px 24px;
+        max-width: 160px;
+        color: #fff;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 30px auto 0 auto;
     }
 }
