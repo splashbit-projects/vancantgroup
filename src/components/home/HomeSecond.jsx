@@ -15,11 +15,11 @@ function HomeSecond() {
 
         if (sectionRect.top >= 0) {
           setblockClass("");
-        } else if (sectionRect.bottom <= window.innerHeight) {
+        } else if (sectionRect.bottom <= (window.innerHeight - 300)) {
           setblockClass("is-absolute");
         } else if (
           sectionRect.top < 0 &&
-          sectionRect.bottom > window.innerHeight
+          sectionRect.bottom > (window.innerHeight - 300)
         ) {
           setblockClass("is-fixed");
         }
