@@ -11,6 +11,7 @@ export default function Home() {
     <>
     <HomeHero/>
     <HomeSecond/>
+    <HomeWhy/>
     <HomePercents/>
     <HomeNeed/>
     </>
