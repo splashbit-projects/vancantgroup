@@ -6,6 +6,21 @@ function HomeSecond() {
   const sectionRef = useRef(null);
   const blockRef = useRef(null);
   const [blockClass, setblockClass] = useState("");
+  const iframeRef = useRef(null);
+
+  useEffect(() => {
+    if (!iframeRef.current) {
+      const iframe = document.createElement("iframe");
+      iframe.src = "https://my.spline.design/bXZ-Tpi3MJk9fpJQofWDC5Ve/";
+      iframe.frameBorder = "0";
+      iframe.width = "444";
+      iframe.height = "444";
+      document.querySelector(".fixed-block").appendChild(iframe);
+
+      iframeRef.current = iframe;
+    }
+  }, []);
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,12 +58,6 @@ function HomeSecond() {
         <div className="home-second__body">
           <div className="home-second__col-01">
             <div className={`fixed-block ${blockClass}`} ref={blockRef}>
-              <iframe
-                src="https://my.spline.design/bXZ-Tpi3MJk9fpJQofWDC5Ve/"
-                frameBorder="0"
-                width="444"
-                height="444"
-              ></iframe>
             </div>
           </div>
           <div className="home-second__col-02">

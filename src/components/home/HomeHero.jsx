@@ -1,15 +1,26 @@
+"use client";
 import Link from "next/link";
 import React from "react";
+import { useEffect, useRef } from "react";
 
 function HomeHero() {
+  const iframeRef = useRef(null);
+
+  useEffect(() => {
+    if (!iframeRef.current) {
+      const iframe = document.createElement("iframe");
+      iframe.src = "https://my.spline.design/YbsmvAJ4EDVCvhZ4vURpYjaR/";
+      iframe.frameBorder = "0";
+      iframe.width = "100%";
+      iframe.height = "100%";
+      document.querySelector(".home-hero").appendChild(iframe);
+
+      iframeRef.current = iframe;
+    }
+  }, []);
+
   return (
     <section className="home-hero">
-      <iframe
-        src="https://my.spline.design/YbsmvAJ4EDVCvhZ4vURpYjaR/"
-        frameBorder="0"
-        width="100%"
-        height="100%"
-      ></iframe>
       <div className="_container">
         <div className="home-hero__body">
           <h1>
