@@ -21,7 +21,6 @@ function HomeSecond() {
     }
   }, []);
 
-
   useEffect(() => {
     const handleScroll = () => {
       if (sectionRef.current && blockRef.current) {
@@ -30,11 +29,11 @@ function HomeSecond() {
 
         if (sectionRect.top >= 0) {
           setblockClass("");
-        } else if (sectionRect.bottom <= (window.innerHeight - 300)) {
+        } else if (sectionRect.bottom <= window.innerHeight - 300) {
           setblockClass("is-absolute");
         } else if (
           sectionRect.top < 0 &&
-          sectionRect.bottom > (window.innerHeight - 300)
+          sectionRect.bottom > window.innerHeight - 300
         ) {
           setblockClass("is-fixed");
         }
@@ -46,53 +45,64 @@ function HomeSecond() {
   }, []);
 
   return (
-    <section className="home-second"  ref={sectionRef}>
+    <section className="home-second" ref={sectionRef}>
       <div className="_container">
         <h3>
           Crypto marketing is all about real-time data for informed decisions.
-          <br />
-          Say goodbye to guesswork and hello to data-driven strategies with our
-          platform.
+          Say goodbye <br />
+          to guesswork and hello to a data-driven approach for unprecedented
+          success.
         </h3>
-        <h2>What is the Vacant Group marketing solution?</h2>
+        <h2>What is the Vacant Group?</h2>
         <div className="home-second__body">
           <div className="home-second__col-01">
-            <div className={`fixed-block ${blockClass}`} ref={blockRef}>
-            </div>
+            <div className={`fixed-block ${blockClass}`} ref={blockRef}></div>
           </div>
           <div className="home-second__col-02">
             <div className="column">
               <RevealWrapper origin="bottom" delay={500}>
-                <p>
-                  Experience the power of simplicity with our all-in-one crypto
-                  marketing solution. Our intuitive interface allows you to
-                  seamlessly connect all your marketing tools and analyse
-                  cross-platform campaign performance in one place. By
-                  consolidating data into a single interface, you gain deeper
-                  insights and make more informed decisions for your marketing
-                  strategies.
-                </p>
-                <div>1</div>
+                <h3>Strategic Data-Driven Marketing</h3>
+                <div>
+                  <p>
+                    Vancant Group's approach is rooted in strategic analysis of
+                    crypto market dynamics, audience behaviours, and competitor
+                    strategies. By harnessing the power of data-driven insights,
+                    we craft customised marketing strategies that resonate with
+                    the crypto community, driving engagement and adoption of
+                    your project.
+                  </p>
+                  <div>1</div>
+                </div>
               </RevealWrapper>
               <RevealWrapper origin="bottom" delay={500}>
-                <p>
-                  Team of experts dedicated to continuously refining and
-                  enhancing our platform. We are committed to seamless
-                  integration with all marketing tools and leveraging the latest
-                  technologies to maximise the effectiveness of your crypto
-                  project's marketing efforts.
-                </p>
-                <div>2</div>
+                <h3>End-to-End Crypto Marketing Solutions</h3>
+                <div>
+                  <p>
+                    Vancant Group offers comprehensive marketing solutions
+                    specifically designed for crypto projects. From community
+                    building and enhancing search visibility to establishing
+                    credibility and refining brand identity within the crypto
+                    ecosystem, our services cover all facets of promoting crypto
+                    projects, ensuring comprehensive support for your project's
+                    success.
+                  </p>
+                  <div>2</div>
+                </div>
               </RevealWrapper>
               <RevealWrapper origin="bottom" delay={500}>
-                <p>
-                  The Vacant Group solution is all about flexibility tailored to
-                  your needs. Choose the modules that fit your project
-                  requirements, and pay only for what you use. Say goodbye to
-                  unnecessary expenses and optimise your budget with our
-                  customizable options.
-                </p>
-                <div>3</div>
+                <h3>Expertise in Crypto Marketing Innovation</h3>
+                <div>
+                  <p>
+                    With a team of professionals deeply immersed in crypto,
+                    Vancant Group combines expertise with innovation to deliver
+                    cutting-edge marketing solutions. We stay abreast of the
+                    latest trends, technologies, and regulatory developments
+                    within the crypto industry, enabling us to devise strategies
+                    that capture attention, build trust, and drive adoption for
+                    your crypto project.
+                  </p>
+                  <div>3</div>
+                </div>
               </RevealWrapper>
             </div>
           </div>

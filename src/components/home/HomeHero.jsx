@@ -28,7 +28,7 @@ function HomeHero() {
             <br />
             We will boost your marketing!
           </h1>
-          <h2>All-in-one performance tracking platform</h2>
+          <h2>End-to-end marketing solutions</h2>
           <div className="buttons">
             <Link href="#" className="main-button">
               Try now

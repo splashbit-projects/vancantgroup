@@ -15,7 +15,7 @@ function HomePercents() {
             </p>
           </div>
           <div>
-            <CircleProgressBar percentageMax={40} />
+            <CircleProgressBar percentageMax={50} />
             <p>
               Over 50% of crypto projects report that up to 40% of their budget
               is spent ineffectively due to poor targeting, inefficient campaign
