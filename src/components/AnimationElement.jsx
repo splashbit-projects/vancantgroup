@@ -6,7 +6,7 @@ function AnimationElement({ animation }) {
   return (
     <Suspense fallback={<div>...</div>}>
       <Spline scene={animation} />
-    </Suspense>
+    </Suspense> 
   );
 }
 
