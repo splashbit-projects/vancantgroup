@@ -1,5 +1,5 @@
 'use client';
-import Spline from "@splinetool/react-spline";
+import AnimationElement from "@/src/components/AnimationElement";
 
 function ServicesHero() {
   return (
@@ -14,7 +14,7 @@ function ServicesHero() {
               success with strategic precision.
             </p>
           </div>
-          <Spline scene="https://prod.spline.design/BItA6BDVRC1IudSH/scene.splinecode" />
+          <AnimationElement animation="https://prod.spline.design/BItA6BDVRC1IudSH/scene.splinecode" />
         </div>
       </div>
     </section>

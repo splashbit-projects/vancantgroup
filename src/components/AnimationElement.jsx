@@ -1,17 +1,10 @@
 "use client";
 import React, { Suspense, lazy } from "react";
-const Spline = lazy(
-  () =>
-    new Promise((resolve) => {
-      setTimeout(() => {
-        resolve(import("@splinetool/react-spline"));
-      }, 500); // Delay for 3 seconds
-    })
-);
+const Spline = lazy(() => import("@splinetool/react-spline"));
 
 function AnimationElement({ animation }) {
   return (
-    <Suspense>
+    <Suspense fallback={<div>Loading...</div>}>
       <Spline scene={animation} />
     </Suspense>
   );
