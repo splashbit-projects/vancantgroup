@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import AnimationElement from "@/src/components/AnimationElement";
 
 function ServicesHero() {
@@ -14,7 +14,10 @@ function ServicesHero() {
               success with strategic precision.
             </p>
           </div>
-          <AnimationElement animation="https://prod.spline.design/BItA6BDVRC1IudSH/scene.splinecode" fallbackImage="/images/services/services-hero.webp"/>
+          <AnimationElement
+            animation="https://prod.spline.design/BItA6BDVRC1IudSH/scene.splinecode"
+            fallbackImage="/images/services/services-hero.webp"
+          />
         </div>
       </div>
     </section>
