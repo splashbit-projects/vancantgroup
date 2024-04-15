@@ -1,28 +1,16 @@
 "use client";
 import Link from "next/link";
-import React from "react";
-import { useEffect, useRef } from "react";
+import React, { Suspense, lazy } from 'react';
+const Spline = lazy(() => import('@splinetool/react-spline'));
 import Spline from '@splinetool/react-spline';
 
 function HomeHero() {
-  const iframeRef = useRef(null);
-
-  /*useEffect(() => {
-    if (!iframeRef.current) {
-      const iframe = document.createElement("iframe");
-      iframe.src = "https://my.spline.design/YbsmvAJ4EDVCvhZ4vURpYjaR/";
-      iframe.frameBorder = "0";
-      iframe.width = "100%";
-      iframe.height = "100%";
-      document.querySelector(".home-hero").appendChild(iframe);
-
-      iframeRef.current = iframe;
-    }
-  }, []);*/
 
   return (
     <section className="home-hero">
-      <Spline scene="https://prod.spline.design/iGt1os0rBVcedTIf/scene.splinecode" />
+      <Suspense fallback={<img src="/images/home/animation1-placeholder.webp" />}>
+        <Spline scene="https://prod.spline.design/iGt1os0rBVcedTIf/scene.splinecode" />
+      </Suspense>
       <div className="_container">
         <div className="home-hero__body">
           <h1>
