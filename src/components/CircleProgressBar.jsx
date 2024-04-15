@@ -4,7 +4,7 @@ import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import VisibilitySensor from "react-visibility-sensor";
 
-const CircleProgressBar = ({ percentageMax }) => {
+const CircleProgressBar = ({ percentageMax, prefix = '' }) => {
   const [percentage, setPercentage] = useState(0);
   const [hasStarted, setHasStarted] = useState(false); 
 
@@ -30,7 +30,7 @@ const CircleProgressBar = ({ percentageMax }) => {
         <CircularProgressbar
           strokeWidth={5}
           value={percentage}
-          text={`${percentage}%`}
+          text={`${prefix}${percentage}%`}
           styles={buildStyles({
             strokeLinecap: "butt",
             pathTransitionDuration: 0.5,

@@ -2,23 +2,10 @@
 import React from "react";
 import { RevealList, RevealWrapper } from "next-reveal";
 import Link from "next/link";
-import { useEffect, useRef } from "react";
+import Spline from '@splinetool/react-spline';
 
 function HomeWhy() {
-  const iframeRef = useRef(null);
 
-  useEffect(() => {
-    if (!iframeRef.current) {
-      const iframe = document.createElement("iframe");
-      iframe.src = "https://my.spline.design/zV4znUuKNLPTppCxvyk3M3Yk/";
-      iframe.frameBorder = "0";
-      iframe.width = "100%";
-      iframe.height = "567";
-      document.querySelector(".home-why").appendChild(iframe);
-
-      iframeRef.current = iframe;
-    }
-  }, []);
   return (
     <section className="home-why">
       <div className="_container">
@@ -98,6 +85,7 @@ function HomeWhy() {
           </Link>
         </RevealWrapper>
       </div>
+      <Spline scene="https://prod.spline.design/NanMajFNd0h8gBBf/scene.splinecode" />
     </section>
   );
 }

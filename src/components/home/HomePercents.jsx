@@ -8,7 +8,7 @@ function HomePercents() {
         <h2>Learn the latest research data by Vacant Group</h2>
         <div className="home-percents__body">
           <div>
-            <CircleProgressBar percentageMax={30} />
+            <CircleProgressBar percentageMax={30}/>
             <p>
               Crypto projects lose approximately 30% of their potential revenue
               due to inadequate marketing analytics and insights.

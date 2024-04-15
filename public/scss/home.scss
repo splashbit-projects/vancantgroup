@@ -8,7 +8,7 @@
     @media (max-width:992px){
         padding-top: 290px;
     }
-    iframe{
+    iframe, canvas{
         position: absolute;
         height: 650px;
         right: 0;
@@ -16,8 +16,8 @@
         width: 735px;
         pointer-events: none;
         @media (max-width:992px){
-            width: 100%;
-            height: 290px;
+            width: 100%!important;
+            height: 290px!important;
         }
     }
     h1{
@@ -97,7 +97,7 @@
         @media (max-width:992px){
             display: none;
         }
-        iframe{
+        iframe, canvas{
             pointer-events: none;
         }
         .fixed-block{
@@ -244,13 +244,20 @@
             }
         }
     }
-    iframe{
+    >div:not(._container){
+        height: auto;
+        margin-top: -250px;
+        @media (max-width:992px){
+            margin-top: -50px;
+        }
+    }
+    iframe, canvas{
         pointer-events: none;
         z-index: 0;
         position: relative;
         margin-top: -150px;
         @media (max-width:992px){
-            height: 300px;
+            height: 300px!important;
             margin-top: -50px;
         }
     }
