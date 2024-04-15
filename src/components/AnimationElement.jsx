@@ -1,6 +1,6 @@
 "use client";
 import React, { Suspense, lazy } from "react";
-const Spline = lazy(() => import("@splinetool/react-spline"));
+const Spline = React.lazy(() => import("@splinetool/react-spline"));
 
 function AnimationElement({ animation }) {
   return (
