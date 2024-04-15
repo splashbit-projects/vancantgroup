@@ -4,7 +4,7 @@ const Spline = lazy(() => import("@splinetool/react-spline"));
 
 function AnimationElement({ animation }) {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<div>...</div>}>
       <Spline scene={animation} />
     </Suspense>
   );
