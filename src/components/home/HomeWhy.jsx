@@ -1,11 +1,12 @@
 "use client";
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import { RevealList, RevealWrapper } from "next-reveal";
 import Link from "next/link";
-import Spline from '@splinetool/react-spline';
+const Spline = lazy(() =>
+  import(/* webpackPrefetch: true */ "@splinetool/react-spline")
+);
 
 function HomeWhy() {
-
   return (
     <section className="home-why">
       <div className="_container">
@@ -85,7 +86,9 @@ function HomeWhy() {
           </Link>
         </RevealWrapper>
       </div>
-      <Spline scene="https://prod.spline.design/NanMajFNd0h8gBBf/scene.splinecode" />
+      <Suspense>
+        <Spline scene="https://prod.spline.design/NanMajFNd0h8gBBf/scene.splinecode" />
+      </Suspense>
     </section>
   );
 }

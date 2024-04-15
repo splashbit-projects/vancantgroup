@@ -1,14 +1,15 @@
 "use client";
+import React, { Suspense, lazy } from "react";
 import { RevealWrapper, RevealList } from "next-reveal";
 import { useRef, useState, useEffect } from "react";
-import Spline from '@splinetool/react-spline';
+const Spline = lazy(() =>
+  import(/* webpackPrefetch: true */ "@splinetool/react-spline")
+);
 
 function HomeSecond() {
   const sectionRef = useRef(null);
   const blockRef = useRef(null);
   const [blockClass, setblockClass] = useState("");
-
-  
 
   useEffect(() => {
     const handleScroll = () => {
@@ -46,7 +47,9 @@ function HomeSecond() {
         <div className="home-second__body">
           <div className="home-second__col-01">
             <div className={`fixed-block ${blockClass}`} ref={blockRef}>
-            <Spline scene="https://prod.spline.design/4LyeK5Yvi3fhB2P1/scene.splinecode" />
+              <Suspense>
+                <Spline scene="https://prod.spline.design/4LyeK5Yvi3fhB2P1/scene.splinecode" />
+              </Suspense>
             </div>
           </div>
           <div className="home-second__col-02">

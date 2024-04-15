@@ -1,13 +1,21 @@
 "use client";
 import Link from "next/link";
-import React, { Suspense, lazy } from 'react';
-const Spline = lazy(() => import('@splinetool/react-spline'));
+import React, { Suspense, lazy } from "react";
+const Spline = lazy(() =>
+  import(/* webpackPrefetch: true */ "@splinetool/react-spline")
+);
 
 function HomeHero() {
+  const Placeholder = () => (
+    <img
+      src="/images/home/animation1-placeholder.webp"
+      alt="Loading Animation"
+    />
+  );
 
   return (
     <section className="home-hero">
-      <Suspense fallback={<img src="/images/home/animation1-placeholder.webp" />}>
+      <Suspense fallback={<Placeholder />}>
         <Spline scene="https://prod.spline.design/iGt1os0rBVcedTIf/scene.splinecode" />
       </Suspense>
       <div className="_container">
