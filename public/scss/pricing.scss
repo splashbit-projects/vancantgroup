@@ -194,7 +194,7 @@
 
 
 .pricing-third { 
-    @include adaptiv-value('padding-bottom', 150, 0, 1);
+    @include adaptiv-value('margin-bottom', 150, 50, 1);
     &__container { 
 
     }
