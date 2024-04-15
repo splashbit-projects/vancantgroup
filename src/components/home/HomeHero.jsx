@@ -2,7 +2,6 @@
 import Link from "next/link";
 import React, { Suspense, lazy } from 'react';
 const Spline = lazy(() => import('@splinetool/react-spline'));
-import Spline from '@splinetool/react-spline';
 
 function HomeHero() {
 
