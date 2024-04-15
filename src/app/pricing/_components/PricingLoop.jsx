@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
 import { pricing } from "@/src/lib/pricing";
-import { RevealList } from "next-reveal";
+import { RevealWrapper, RevealList } from "next-reveal";
 
 function PricingLoop() {
   useEffect(() => {
@@ -12,6 +12,14 @@ function PricingLoop() {
     <>
       <section className="pricing-loop">
         <div className="_container">
+          <RevealWrapper origin="bottom">
+            <h2>
+              Seeking a comprehensive solution?
+              <br />
+              Discover our package offerings.
+            </h2>
+          </RevealWrapper>
+
           <RevealList
             origin="bottom"
             interval={0}
