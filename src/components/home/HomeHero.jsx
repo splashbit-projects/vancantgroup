@@ -5,7 +5,10 @@ import AnimationElement from "../AnimationElement";
 function HomeHero() {
   return (
     <section className="home-hero">
-      <AnimationElement animation="https://prod.spline.design/iGt1os0rBVcedTIf/scene.splinecode" />
+      <AnimationElement
+        animation="https://prod.spline.design/iGt1os0rBVcedTIf/scene.splinecode"
+        fallbackImage="/images/home/home-hero-mob.webp"
+      />
       <div className="_container">
         <div className="home-hero__body">
           <h1>

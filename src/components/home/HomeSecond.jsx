@@ -3,7 +3,6 @@ import { RevealWrapper, RevealList } from "next-reveal";
 import { useRef, useState, useEffect } from "react";
 import AnimationElement from "../AnimationElement";
 
-
 function HomeSecond() {
   const sectionRef = useRef(null);
   const blockRef = useRef(null);
@@ -45,7 +44,11 @@ function HomeSecond() {
         <div className="home-second__body">
           <div className="home-second__col-01">
             <div className={`fixed-block ${blockClass}`} ref={blockRef}>
-              <AnimationElement animation="https://prod.spline.design/4LyeK5Yvi3fhB2P1/scene.splinecode"/>
+              <AnimationElement
+                animation="https://prod.spline.design/4LyeK5Yvi3fhB2P1/scene.splinecode"
+                mobileHidden={true}
+                fallbackImage=""
+              />
             </div>
           </div>
           <div className="home-second__col-02">
