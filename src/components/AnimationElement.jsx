@@ -15,9 +15,7 @@ function AnimationElement({ animation, fallbackImage, mobileHidden }) {
     if (mobileHidden){
       return <></>;
     } else {
-      if(fallbackImage != ''){
-        return <img src={fallbackImage} alt="Fallback" className="animation" />;
-      }
+      return <img src={fallbackImage} alt="Fallback" className="animation" />;
     }
     
   }

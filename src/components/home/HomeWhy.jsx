@@ -84,7 +84,7 @@ function HomeWhy() {
           </Link>
         </RevealWrapper>
       </div>
-      <AnimationElement animation="https://prod.spline.design/NanMajFNd0h8gBBf/scene.splinecode" />
+      <AnimationElement animation="https://prod.spline.design/NanMajFNd0h8gBBf/scene.splinecode" fallbackImage="/images/home/home-why.webp"/>
     </section>
   );
 }
