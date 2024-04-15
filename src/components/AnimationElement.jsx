@@ -1,3 +1,4 @@
+'use client';
 import React, { Suspense, lazy, useState, useEffect } from 'react';
 const Spline = React.lazy(() => import('@splinetool/react-spline'));
 
