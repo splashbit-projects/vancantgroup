@@ -4,13 +4,14 @@ const Spline = React.lazy(() => import('@splinetool/react-spline'));
 
 function AnimationElement({ animation, fallbackImage, mobileHidden }) {
   const [isAndroidMobile, setIsAndroidMobile] = useState(false);
-  const [isMobileWidth, setIsMobileWidth] = useState(window.innerWidth < 767);
-
+  const [isMobileWidth, setIsMobileWidth] = useState(typeof window !== 'undefined' && window.innerWidth < 767);
 
   useEffect(() => {
-    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-    if (/android/i.test(userAgent)) {
-      setIsAndroidMobile(true);
+    if (typeof window !== 'undefined') {
+      const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+      if (/android/i.test(userAgent)) {
+        setIsAndroidMobile(true);
+      }
     }
   }, []);
 
