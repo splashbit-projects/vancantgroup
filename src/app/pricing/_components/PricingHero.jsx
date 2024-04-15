@@ -6,7 +6,7 @@ import AnimationElement from "@/src/components/AnimationElement";
 function PricingHero() {
   return (
     <section className="pricing-hero">
-      <AnimationElement animation="https://prod.spline.design/NXaowb1k5caLgEXi/scene.splinecode" />
+      <AnimationElement animation="https://prod.spline.design/NXaowb1k5caLgEXi/scene.splinecode" fallbackImage="/images/pricing/pricing-hero.webp"/>
       <div className="_container">
         <RevealList
           origin="bottom"
