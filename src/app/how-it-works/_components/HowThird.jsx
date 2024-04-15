@@ -1,10 +1,9 @@
 "use client";
 import { RevealWrapper, RevealList } from "next-reveal";
 import { useRef, useState, useEffect } from "react";
-import Spline from "@splinetool/react-spline";
 import AnimationElement from "@/src/components/AnimationElement";
 
-function PricingSecond() {
+function HowThird() {
   const sectionRef = useRef(null);
   const blockRef = useRef(null);
   const [blockClass, setblockClass] = useState("");
@@ -33,17 +32,11 @@ function PricingSecond() {
   }, []);
 
   return (
-    <section className="pricing-second" ref={sectionRef}>
+    <section className="how-third" ref={sectionRef}>
       <div className="_container">
-        <h3>
-          Each crypto project is unique. We understand that. That's why we can't
-          offer fixed <br />
-          prices. Instead, we fit our approach to match your project's needs
-          precisely.
-        </h3>
-        <h2>How we form prices for crypto marketing</h2>
-        <div className="pricing-second__body">
-          <div className="pricing-second__col-01">
+        <h2>How we turn unknown brands into success stories</h2>
+        <div className="how-third__body">
+          <div className="how-third__col-01">
             <div className={`fixed-block ${blockClass}`} ref={blockRef}>
               <AnimationElement
                 animation="https://prod.spline.design/4LyeK5Yvi3fhB2P1/scene.splinecode"
@@ -52,15 +45,17 @@ function PricingSecond() {
               />
             </div>
           </div>
-          <div className="pricing-second__col-02">
+          <div className="how-third__col-02">
             <div className="column">
               <RevealWrapper origin="bottom" delay={100}>
                 <div>
                   <div>
-                    <h3>Request</h3>
+                    <h3>Analysing Online Presence:</h3>
                     <p>
-                      Once we receive a request, we quickly reach out for more
-                      details.
+                      We conduct a thorough analysis of your project's online
+                      presence. This includes assessing its digital footprint
+                      and understanding how it is perceived in the digital
+                      space.
                     </p>
                   </div>
                   <div>1</div>
@@ -69,10 +64,11 @@ function PricingSecond() {
               <RevealWrapper origin="bottom" delay={100}>
                 <div>
                   <div>
-                    <h3>Project Analysis</h3>
+                    <h3>Optimising the Website</h3>
                     <p>
-                      We thoroughly analyse your project, examining its goals
-                      and market potential.
+                      We start by optimising your website to ensure it resonates
+                      with your target audience and effectively communicates
+                      your brand message and value proposition.
                     </p>
                   </div>
                   <div>2</div>
@@ -81,10 +77,12 @@ function PricingSecond() {
               <RevealWrapper origin="bottom" delay={100}>
                 <div>
                   <div>
-                    <h3>Competition Research</h3>
+                    <h3>Crafting Expert Content</h3>
                     <p>
-                      We study your competitors and market trends, finding both
-                      opportunities and challenges.
+                      Our content specialists create expert and relevant content
+                      that addresses the pain points and interests of your
+                      target audience, positioning your brand as a trusted
+                      authority in the industry.
                     </p>
                   </div>
                   <div>3</div>
@@ -93,10 +91,11 @@ function PricingSecond() {
               <RevealWrapper origin="bottom" delay={100}>
                 <div>
                   <div>
-                    <h3>Budget Evaluation</h3>
+                    <h3>Strategic Media Placement</h3>
                     <p>
-                      We consider your project's budget and allocate resources
-                      accordingly.
+                      We strategically select the best media outlets to feature
+                      your articles, ensuring maximum visibility and engagement
+                      among your target audience.
                     </p>
                   </div>
                   <div>4</div>
@@ -105,25 +104,14 @@ function PricingSecond() {
               <RevealWrapper origin="bottom" delay={100}>
                 <div>
                   <div>
-                    <h3>Context Exploration</h3>
+                    <h3>Natural Brand Mentions</h3>
                     <p>
-                      We consider your project's market position, reputation,
-                      and context to devise effective strategies.
+                      Through our network and partnerships, we secure natural
+                      brand mentions and placements on platforms and websites
+                      where your target audience is most active.
                     </p>
                   </div>
                   <div>5</div>
-                </div>
-              </RevealWrapper>
-              <RevealWrapper origin="bottom" delay={100}>
-                <div>
-                  <div>
-                    <h3>Price</h3>
-                    <p>
-                      Based on our analysis, we propose a price for our
-                      marketing efforts tailored to your project's success.
-                    </p>
-                  </div>
-                  <div>6</div>
                 </div>
               </RevealWrapper>
             </div>
@@ -134,4 +122,4 @@ function PricingSecond() {
   );
 }
 
-export default PricingSecond;
+export default HowThird;
