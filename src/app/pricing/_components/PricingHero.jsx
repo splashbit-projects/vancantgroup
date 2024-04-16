@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { RevealList } from "next-reveal";
-import AnimationElement from "@/src/components/AnimationElement";
+import AnimationElement from "@/src/components/LayoutElements/AnimationElement";
 
 function PricingHero() {
   return (

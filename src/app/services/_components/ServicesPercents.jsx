@@ -1,5 +1,5 @@
 import React from "react";
-import CircleProgressBar from "@/src/components/CircleProgressBar";
+import CircleProgressBar from "@/src/components/LayoutElements/CircleProgressBar";
 
 function ServicesPercents() {
   return (

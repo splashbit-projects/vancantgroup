@@ -1,7 +1,7 @@
 "use client";
 import { RevealWrapper, RevealList } from "next-reveal";
 import { useRef, useState, useEffect } from "react";
-import AnimationElement from "../AnimationElement";
+import AnimationElement from "../LayoutElements/AnimationElement";
 
 function HomeSecond() {
   const sectionRef = useRef(null);

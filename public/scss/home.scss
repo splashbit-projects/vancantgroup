@@ -394,6 +394,10 @@
 
 .home-key { 
 
+    @media(max-width: 767px) {
+        margin-top: 50px;
+    }
+
     &__container {
 
     }
@@ -407,6 +411,7 @@
         text-align: center;
         color: #fff;
         font-weight: 400;
+        
     }
 
     &__subtitle { 
@@ -414,6 +419,9 @@
         font-size: 36px;
         text-align: center;
         color: #fff;
+        @media(max-width: 767px) { 
+            margin-top: 20px;
+        }
     }
 
     &__content { 
@@ -433,7 +441,7 @@
             row-gap: 20px;
         }
 
-        .home-key__item { 
+        .home-key__item, .key-element { 
 
             &:nth-child(2) { 
                 margin-top: -186px;
@@ -463,7 +471,7 @@
             margin: 20px 0 0 0;
         }
 
-        .home-key__item { 
+        .home-key__item, .key-element { 
 
             &:nth-child(2) { 
                 margin-top: -186px;
@@ -493,7 +501,7 @@
             margin: 20px 0 0 0;
         }
 
-        .home-key__item { 
+        .home-key__item, .key-element { 
 
             &:nth-child(2) { 
                 margin-top: -186px;

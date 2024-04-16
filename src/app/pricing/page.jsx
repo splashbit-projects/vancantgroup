@@ -4,13 +4,19 @@ import PricingHero from "./_components/PricingHero";
 import PricingSecond from "./_components/PricingSecond";
 import PricingThird from "./_components/PricingThird";
 import PricingLoop from "./_components/PricingLoop";
+import RequestBlock from "@/src/components/LayoutElements/RequestBlock";
 
 function PricingPage() {
   return (
     <>
       <PricingHero />
       <PricingSecond />
-      <PricingThird />
+      <RequestBlock
+        title={`Have a crypto project?`}
+        subtitle={`Let us discuss its marketing to success!`}
+        buttonLink=""
+        buttonText={`Request solution`}
+      />
       <PricingLoop />
     </>
   );

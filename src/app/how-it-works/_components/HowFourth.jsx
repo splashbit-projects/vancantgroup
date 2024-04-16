@@ -1,5 +1,5 @@
 "use client";
-import AnimationElement from "@/src/components/AnimationElement";
+import AnimationElement from "@/src/components/LayoutElements/AnimationElement";
 import { RevealWrapper } from "next-reveal";
 import React from "react";
 

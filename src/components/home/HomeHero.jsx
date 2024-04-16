@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import AnimationElement from "../AnimationElement";
+import AnimationElement from "../LayoutElements/AnimationElement";
 
 function HomeHero() {
   return (

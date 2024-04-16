@@ -1,7 +1,7 @@
 "use client";
 import { RevealList, RevealWrapper } from "next-reveal";
 import Link from "next/link";
-import AnimationElement from "../AnimationElement";
+import AnimationElement from "../LayoutElements/AnimationElement";
 
 
 function HomeWhy() {

@@ -1,5 +1,5 @@
 import React from "react";
-import CircleProgressBar from "../CircleProgressBar";
+import CircleProgressBar from "../LayoutElements/CircleProgressBar";
 
 function HomePercents() {
   return (

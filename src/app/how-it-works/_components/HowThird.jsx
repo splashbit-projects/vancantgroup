@@ -1,7 +1,7 @@
 "use client";
 import { RevealWrapper, RevealList } from "next-reveal";
 import { useRef, useState, useEffect } from "react";
-import AnimationElement from "@/src/components/AnimationElement";
+import AnimationElement from "@/src/components/LayoutElements/AnimationElement";
 
 function HowThird() {
   const sectionRef = useRef(null);
