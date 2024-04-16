@@ -1,66 +1,205 @@
-.faq-hero{
-    margin: 125px 0 150px 0;
-    @media (max-width:992px){
-        margin: 125px 0 50px 0;
+.faq-hero {
+  margin: 125px 0 150px 0;
+  @media (max-width: 992px) {
+    margin: 125px 0 50px 0;
+  }
+  &__body {
+    h1 {
+      color: #fff;
+      margin: 0 0 10px 0;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 1.2;
+      text-align: center;
+      @media (max-width: 992px) {
+        font-size: 32px;
+      }
     }
-    &__body{
-        h1{
-            color: #fff;
-            margin: 0 0 10px 0;
-            font-size: 48px;
-            font-weight: 700;
-            line-height: 1.2;
-            text-align: center;
-            @media (max-width:992px){
-                font-size: 32px;
-            }
+    h2 {
+      color: #ffffff99;
+      margin: 0;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 1.2;
+      text-align: center;
+      @media (max-width: 992px) {
+        font-size: 16px;
+      }
+    }
+    > div {
+      > span {
+        display: block;
+        width: 100px;
+        height: 1px;
+        background: #e74848;
+        margin: 75px auto;
+        @media (max-width: 992px) {
+          margin: 50px auto;
         }
-        h2{
-            color: #FFFFFF99;
-            margin: 0;
-            font-size: 24px;
-            font-weight: 400;
-            line-height: 1.2;
-            text-align: center;
-            @media (max-width:992px){
-                font-size: 16px;
-            }
-        }
-        >div{
-            >span{
-                display: block;
-                width: 100px;
-                height: 1px;
-                background: #E74848;
-                margin: 75px auto;
-                @media (max-width:992px){
-                    margin: 50px auto;
-                }
-            }
-        }
+      }
+    }
 
-        p{
-            color: #FFFFFF99;
-            margin: 0 0 20px 0;
+    p {
+      color: #ffffff99;
+      margin: 0 0 20px 0;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.2;
+      text-align: center;
+      @media (max-width: 992px) {
+        font-size: 14px;
+      }
+    }
+    h4 {
+      color: #fff;
+      margin: 0 0 50px 0;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 1.2;
+      text-align: center;
+      @media (max-width: 992px) {
+        font-size: 32px;
+        margin: 0 0 30px 0;
+      }
+    }
+  }
+}
+
+.form-wrap {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  width: 540px;
+  border-radius: 34px;
+  padding: 1px;
+  max-width: 100%;
+  margin: 0 auto;
+  @media (max-width: 992px) {
+    border-radius: 20px;
+}
+  form {
+    background: #171717;
+    border-radius: 34px;
+    padding: 80px 95px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    @media (max-width: 992px) {
+        padding: 30px 20px;
+        border-radius: 20px;
+    }
+    >div{
+        width: 100%;
+        position: relative;
+        .error{
+            position: absolute;
+            left: 0;
+            color: #f00;
+            font-size: 12px;
+        }
+        input, textarea{
+            color: #fff;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
             font-size: 16px;
             font-weight: 400;
-            line-height: 1.2;
-            text-align: center;
-            @media (max-width:992px){
-                font-size: 14px;
+            line-height: 20.83px;
+            text-align: left;
+            border: 1px solid #FFFFFF26;
+            background: #0F0F0F;
+            width: 100%;
+            height: 50px;
+            border-radius: 10px;
+            &.invalid{
+                border-color: #f00;
             }
         }
-        h4{
-            color: #fff;
-            margin: 0 0 50px 0;
-            font-size: 36px;
-            font-weight: 700;
-            line-height: 1.2;
-            text-align: center;
-            @media (max-width:992px){
-                font-size: 32px;
-                margin: 0 0 30px 0;
-            }
+        textarea{
+            padding: 15px 20px;
+            height: 150px;
         }
     }
+    button{
+        margin: 10px auto 0 auto;
+    }
+  }
+}
+
+.faq-questions {
+  margin: 150px 0;
+  @media (max-width: 992px) {
+    margin: 50px 0;
+  }
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    .question-wrap {
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.2) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      width: 100%;
+      border-radius: 20px;
+      padding: 1px;
+      > div {
+        background: #171717;
+        border-radius: 20px;
+        padding: 50px;
+        position: relative;
+        @media (max-width: 992px) {
+          padding: 30px 20px;
+        }
+        > span {
+          color: #fff;
+          font-size: 12px;
+          font-weight: 700;
+          line-height: 1;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 25px;
+          padding: 0 20px;
+          background: #e74848;
+          border-radius: 40px;
+          position: absolute;
+          left: 50px;
+          top: -12px;
+          @media (max-width: 992px) {
+            left: 20px;
+          }
+        }
+        h2 {
+          margin: 0 0 30px 0;
+          color: #fff;
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 1.2;
+          text-align: left;
+          @media (max-width: 992px) {
+            font-size: 16px;
+          }
+        }
+        > div {
+          color: #ffffff99;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 1.2;
+          text-align: left;
+          @media (max-width: 992px) {
+            font-size: 14px;
+          }
+          strong {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
 }

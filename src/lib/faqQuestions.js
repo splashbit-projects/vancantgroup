@@ -1,4 +1,4 @@
-export const questions = [
+export const faqQuestions = [
     {
         id: 1,
         category: 'PR',

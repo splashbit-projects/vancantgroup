@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { RevealWrapper } from "next-reveal";
+import ContactForm from "./ContacFrom";
 
 function FaqHero() {
   return (
@@ -21,6 +22,7 @@ function FaqHero() {
           <RevealWrapper origin="bottom">
             <h4>I have a crypto marketing question</h4>
           </RevealWrapper>
+          <ContactForm />
         </div>
       </div>
     </section>
