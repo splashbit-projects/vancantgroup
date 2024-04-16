@@ -41,6 +41,13 @@ header{
             align-items: center;
             gap:20px;
             justify-content: flex-end;
+            .socials{
+                display: flex;
+                gap:10px;
+                @media (max-width:992px){
+                    display: none;
+                }
+            }
             .main-button{
                 width: 90px;
                 height: 25px;
