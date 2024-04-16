@@ -296,8 +296,9 @@
         position: relative;
         margin-top: -150px;
         @media (max-width:992px){
-            height: 300px!important;
+            height: auto!important;
             margin-top: -100px;
+            width: 100%;
         }
     }
     .button-wrap{
