@@ -1,48 +1,99 @@
-import React from "react";
+"use client";
+import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import "@/public/scss/header.scss";
 
 export default function Header() {
+  const [opened, setOpened] = useState(false);
+  const pathname = usePathname();
+
+  const menuOpen = () => {
+    setOpened(!opened);
+  };
+
+  useEffect(() => {
+    setOpened(false);
+  }, [pathname]);
+
   return (
-    <header>
-      <div className="_container">
-        <div className="head-wrap">
-          <Link href="/">
-            <img alt="logo" src="/images/logo.svg" />
-          </Link>
-          <div className="header-actions">
-            <div className="socials">
-              <Link
-                href="https://www.facebook.com/vancantgroup"
-                target="_blank"
-              >
-                <img alt="facebook" src="/images/facebook.svg" />
+    <>
+      <header>
+        <div className="_container">
+          <div className="head-wrap">
+            <Link href="/">
+              <img alt="logo" src="/images/logo.svg" />
+            </Link>
+            <div className="header-actions">
+              <div className="socials">
+                <Link
+                  href="https://www.facebook.com/vancantgroup"
+                  target="_blank"
+                >
+                  <img alt="facebook" src="/images/facebook.svg" />
+                </Link>
+                <Link
+                  href="https://www.instagram.com/vancantgroupcom/"
+                  target="_blank"
+                >
+                  <img alt="instagram" src="/images/instagram.svg" />
+                </Link>
+                <Link href="https://twitter.com/vancantgroup" target="_blank">
+                  <img alt="twitter" src="/images/x.svg" />
+                </Link>
+              </div>
+              <Link href="#" className="cart">
+                <img alt="logo" src="/images/cart.svg" />
               </Link>
-              <Link
-                href="https://www.instagram.com/vancantgroupcom/"
-                target="_blank"
-              >
-                <img alt="instagram" src="/images/instagram.svg" />
+              <Link href="#" className="main-button">
+                Sign in
               </Link>
-              <Link
-                href="https://twitter.com/vancantgroup"
-                target="_blank"
-              >
-                <img alt="twitter" src="/images/x.svg" />
-              </Link>
+              <span onClick={() => menuOpen()} className="menu-btn">
+                {!opened ? (
+                  <img alt="logo" src="/images/burger.svg" />
+                ) : (
+                  <img alt="logo" src="/images/burger-close.svg" />
+                )}
+              </span>
             </div>
-            <Link href="#" className="cart">
-              <img alt="logo" src="/images/cart.svg" />
+          </div>
+        </div>
+      </header>
+      <div className={`menu-wrap ${opened ? 'opened' : ''}`}>
+        <div className="_container">
+          <Link href="#" className="main-button">
+            Sign in
+          </Link>
+          <nav>
+            <div className="left-col">
+              <Link href="/">Home</Link>
+              <Link href="/services">Services</Link>
+              <Link href="/how-it-works">How It Works</Link>
+              <Link href="/pricing">Pricing</Link>
+            </div>
+            <div className="right-col">
+              <Link href="/about-us">About Us</Link>
+              <Link href="/blog">Blog</Link>
+              <Link href="/faq">FAQ</Link>
+              <Link href="/contact-us">Contact Us</Link>
+            </div>
+          </nav>
+          <div className="socials">
+            <Link href="https://www.facebook.com/vancantgroup" target="_blank">
+              <img alt="facebook" src="/images/facebook.svg" />
             </Link>
-            <Link href="#" className="main-button">
-              Sign in
+            <Link
+              href="https://www.instagram.com/vancantgroupcom/"
+              target="_blank"
+            >
+              <img alt="instagram" src="/images/instagram.svg" />
             </Link>
-            <Link href="#" className="manu-btn">
-              <img alt="logo" src="/images/burger.svg" />
+            <Link href="https://twitter.com/vancantgroup" target="_blank">
+              <img alt="twitter" src="/images/x.svg" />
             </Link>
           </div>
         </div>
       </div>
-    </header>
+    </>
   );
 }

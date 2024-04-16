@@ -1,58 +1,152 @@
-header{
-    position: fixed;
-    width: 100%;
-    left: 0;
-    top: 20px;
-    z-index: 999;
-    .head-wrap{
-        background: #FFFFFF08;
-        position: relative;
-        border-radius: 34px;
-        overflow: hidden;
-        padding: 14px 30px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        backdrop-filter: blur(25px);
-        @media (max-width:992px){
-            padding: 14px 20px;
-        }
-        &:before{
-            content: '';
-            position: absolute;
-            top: 0; right: 0; bottom: 0; left: 0;
-            border-radius: 34px; 
-            padding: 1px; 
-            background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
-            -webkit-mask: 
-                linear-gradient(#fff 0 0) content-box, 
-                linear-gradient(#fff 0 0);
-            -webkit-mask-composite: xor;
-                    mask-composite: exclude; /* Exclude the inner part, leaving only the border */
-            z-index: 0;
-        }
-        a{
-            display: flex;
-            z-index: 1;
-            position: relative;
-        }
-        .header-actions{
-            display: flex;
-            align-items: center;
-            gap:20px;
-            justify-content: flex-end;
-            .socials{
-                display: flex;
-                gap:10px;
-                @media (max-width:992px){
-                    display: none;
-                }
-            }
-            .main-button{
-                width: 90px;
-                height: 25px;
-                font-size: 12px;
-            }
-        }
+header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 20px;
+  z-index: 999;
+  .head-wrap {
+    background: #ffffff08;
+    position: relative;
+    border-radius: 34px;
+    overflow: hidden;
+    padding: 14px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(25px);
+    @media (max-width: 992px) {
+      padding: 14px 20px;
     }
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border-radius: 34px;
+      padding: 1px;
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.2) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      -webkit-mask: linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude; /* Exclude the inner part, leaving only the border */
+      z-index: 0;
+    }
+    a {
+      display: flex;
+      z-index: 1;
+      position: relative;
+    }
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      justify-content: flex-end;
+      .socials {
+        display: flex;
+        gap: 10px;
+        @media (max-width: 992px) {
+          display: none;
+        }
+      }
+      .main-button {
+        width: 90px;
+        height: 25px;
+        font-size: 12px;
+        @media (max-width: 992px) {
+          display: none;
+        }
+      }
+      .menu-btn {
+        z-index: 1;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        background: transparent;
+        padding: 0;
+        border: none;
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+
+.menu-wrap {
+  position: fixed;
+  z-index: 998;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #0f0f0f;
+  padding-top: 150px;
+  transition: all 0.5s;
+  left: 100%;
+  opacity: 0;
+  &.opened {
+    left: 0;
+    opacity: 1;
+  }
+  nav {
+    display: flex;
+    gap: 150px;
+    @media (max-width: 992px) {
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+    }
+    > div {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      @media (max-width: 992px) {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+      }
+      a {
+        color: #fff;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 1;
+        text-align: left;
+        &:hover {
+          color: #e74848;
+        }
+        @media (max-width: 992px) {
+            font-size: 36px;
+        }
+      }
+    }
+  }
+  .main-button {
+    width: 90px;
+    height: 25px;
+    font-size: 12px;
+    display: none;
+    @media (max-width: 992px) {
+      display: flex;
+      margin: 0 auto 30px auto;
+    }
+  }
+  .socials {
+    display: none;
+    gap: 15px;
+    @media (max-width: 992px) {
+      display: flex;
+      margin: 30px auto 0 auto;
+      justify-content: center;
+      img{
+        width: 40px;
+      }
+    }
+  }
 }
