@@ -3,6 +3,9 @@ import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import "@/public/scss/header.scss";
+import Facebook from "./LayoutElements/socials/Facebook";
+import Instagram from "./LayoutElements/socials/Instagram";
+import Twitter from "./LayoutElements/socials/Twitter";
 
 export default function Header() {
   const [opened, setOpened] = useState(false);
@@ -26,21 +29,9 @@ export default function Header() {
             </Link>
             <div className="header-actions">
               <div className="socials">
-                <Link
-                  href="https://www.facebook.com/vancantgroup"
-                  target="_blank"
-                >
-                  <img alt="facebook" src="/images/facebook.svg" />
-                </Link>
-                <Link
-                  href="https://www.instagram.com/vancantgroupcom/"
-                  target="_blank"
-                >
-                  <img alt="instagram" src="/images/instagram.svg" />
-                </Link>
-                <Link href="https://twitter.com/vancantgroup" target="_blank">
-                  <img alt="twitter" src="/images/x.svg" />
-                </Link>
+                <Facebook />
+                <Instagram />
+                <Twitter />
               </div>
               <Link href="#" className="cart">
                 <img alt="logo" src="/images/cart.svg" />
@@ -59,7 +50,7 @@ export default function Header() {
           </div>
         </div>
       </header>
-      <div className={`menu-wrap ${opened ? 'opened' : ''}`}>
+      <div className={`menu-wrap ${opened ? "opened" : ""}`}>
         <div className="_container">
           <Link href="#" className="main-button">
             Sign in
@@ -79,18 +70,9 @@ export default function Header() {
             </div>
           </nav>
           <div className="socials">
-            <Link href="https://www.facebook.com/vancantgroup" target="_blank">
-              <img alt="facebook" src="/images/facebook.svg" />
-            </Link>
-            <Link
-              href="https://www.instagram.com/vancantgroupcom/"
-              target="_blank"
-            >
-              <img alt="instagram" src="/images/instagram.svg" />
-            </Link>
-            <Link href="https://twitter.com/vancantgroup" target="_blank">
-              <img alt="twitter" src="/images/x.svg" />
-            </Link>
+            <Facebook />
+            <Instagram />
+            <Twitter />
           </div>
         </div>
       </div>

@@ -32,9 +32,9 @@ function ContactUsHero() {
           </RevealWrapper>
           <div className="contacts-row">
             <RevealWrapper origin="bottom">
-              <Link href="#">
+              <Link href="mailto:info@vancantgroup.com">
                 <img src="/images/contacts/email.svg" />
-                email
+                info@vancantgroup.com
               </Link>
             </RevealWrapper>
             <RevealWrapper origin="bottom">
