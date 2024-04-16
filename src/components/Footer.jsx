@@ -46,10 +46,10 @@ function Footer() {
               <div>
                 <h2>Legal</h2>
                 <nav>
-                  <Link href="/terms-of-use">Terms of Use</Link>
-                  <Link href="/privacy-policy">Privacy Policy</Link>
-                  <Link href="/refund-policy">Refund Policy</Link>
-                  <Link href="/cookie-policy">Cookie Policy</Link>
+                  <Link href="#">Terms of Use</Link>
+                  <Link href="#">Privacy Policy</Link>
+                  <Link href="#">Refund Policy</Link>
+                  <Link href="#">Cookie Policy</Link>
                 </nav>
               </div>
               <div>
