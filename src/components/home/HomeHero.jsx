@@ -18,10 +18,10 @@ function HomeHero() {
           </h1>
           <h2>End-to-end marketing solutions</h2>
           <div className="buttons">
-            <Link href="#" className="main-button">
+            <Link href="/services" className="main-button">
               Try now
             </Link>
-            <Link href="#" className="secondary-button">
+            <Link href="/how-it-works" className="secondary-button">
               Learn more
             </Link>
           </div>

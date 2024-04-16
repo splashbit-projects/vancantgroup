@@ -79,7 +79,7 @@ function HomeWhy() {
           </div>
         </RevealList>
         <RevealWrapper origin="bottom" className="button-wrap">
-          <Link href="#" className="main-button">
+          <Link href="/how-it-works" className="main-button">
             Learn more
           </Link>
         </RevealWrapper>

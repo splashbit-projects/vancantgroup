@@ -10,7 +10,7 @@ function RequestBlock({ title = '', subtitle = '', buttonText = '', buttonLink =
                 <h2 className="request-block__title" dangerouslySetInnerHTML={{ __html: title }}/>
                 <div className="request-block__text" dangerouslySetInnerHTML={{ __html: subtitle }} />
                 {buttonLink ? (
-                    <Link href="#" className="request-block__link">{buttonText}</Link>
+                    <Link href={buttonLink} className="request-block__link">{buttonText}</Link>
                 ) : (
                     <button className="request-block__link">{buttonText}</button>
                 )}

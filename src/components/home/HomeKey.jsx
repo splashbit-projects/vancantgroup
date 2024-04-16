@@ -89,7 +89,7 @@ function HomeKey() {
               />
             </div>
           </div>
-          <Link href="#" className="home-key__link">
+          <Link href="/services" className="home-key__link">
             Try now
           </Link>
         </div>
