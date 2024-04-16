@@ -57,16 +57,10 @@ const FormikDatePicker = ({ placeholder, ...props }) => {
   );
 };
 
-function extractTextFromHTML(htmlString) {
-  const tempDiv = document.createElement("div");
-  tempDiv.innerHTML = htmlString;
-  return tempDiv.textContent || tempDiv.innerText || "";
-}
-
 function OrderPopup() {
   const { orderPopupDisplay, setOrderPopupDisplay, serviceValue } = usePopup();
   const [resetFormFunction, setResetFormFunction] = useState(() => () => {});
- 
+
   const initialValues = {
     name: "",
     email: "",
@@ -96,7 +90,7 @@ function OrderPopup() {
         description: values.description,
         date: values.date,
         service: serviceValue,
-      }
+      };
       const response = await fetch("/api/order", {
         method: "POST",
         headers: {
@@ -109,6 +103,7 @@ function OrderPopup() {
         resetForm();
         setStatus({ success: true });
         setSubmitting(false);
+        setResetFormFunction(() => resetForm);
       } else {
         setStatus({ success: false });
       }
@@ -141,9 +136,6 @@ function OrderPopup() {
           />
         </svg>
         <div>
-          <h2>
-            <span dangerouslySetInnerHTML={{ __html: serviceValue }} /> order
-          </h2>
           <div className="form-wrap">
             <Formik
               initialValues={initialValues}
@@ -152,129 +144,142 @@ function OrderPopup() {
             >
               {({ isSubmitting, status, touched, errors }) => (
                 <Form>
-                  <Field
-                    type="hidden"
-                    name="service"
-                  />
-                  <div>
-                    <Field
-                      name="name"
-                      type="text"
-                      placeholder="Your Name"
-                      className={touched.name && errors.name ? "invalid" : ""}
-                    />
-                    <ErrorMessage
-                      name="name"
-                      component="div"
-                      className="error"
-                    />
-                  </div>
+                  {!status && (
+                    <div className="form-inner">
+                      <h2>
+                        <span
+                          dangerouslySetInnerHTML={{ __html: serviceValue }}
+                        />{" "}
+                        order
+                      </h2>
+                      <Field type="hidden" name="service" />
+                      <div>
+                        <Field
+                          name="name"
+                          type="text"
+                          placeholder="Your Name"
+                          className={
+                            touched.name && errors.name ? "invalid" : ""
+                          }
+                        />
+                        <ErrorMessage
+                          name="name"
+                          component="div"
+                          className="error"
+                        />
+                      </div>
 
-                  <div>
-                    <Field
-                      name="email"
-                      type="email"
-                      placeholder="Your Email"
-                      className={touched.email && errors.email ? "invalid" : ""}
-                    />
-                    <ErrorMessage
-                      name="email"
-                      component="div"
-                      className="error"
-                    />
-                  </div>
+                      <div>
+                        <Field
+                          name="email"
+                          type="email"
+                          placeholder="Your Email"
+                          className={
+                            touched.email && errors.email ? "invalid" : ""
+                          }
+                        />
+                        <ErrorMessage
+                          name="email"
+                          component="div"
+                          className="error"
+                        />
+                      </div>
 
-                  <div>
-                    <Field
-                      name="phone"
-                      type="tel"
-                      placeholder="Your phone"
-                      className={touched.phone && errors.phone ? "invalid" : ""}
-                    />
-                    <ErrorMessage
-                      name="phone"
-                      component="div"
-                      className="error"
-                    />
-                  </div>
+                      <div>
+                        <Field
+                          name="phone"
+                          type="tel"
+                          placeholder="Your phone"
+                          className={
+                            touched.phone && errors.phone ? "invalid" : ""
+                          }
+                        />
+                        <ErrorMessage
+                          name="phone"
+                          component="div"
+                          className="error"
+                        />
+                      </div>
 
-                  <div>
-                    <Field
-                      name="project"
-                      type="tel"
-                      placeholder="Project name"
-                      className={
-                        touched.project && errors.project ? "invalid" : ""
-                      }
-                    />
-                    <ErrorMessage
-                      name="project"
-                      component="div"
-                      className="error"
-                    />
-                  </div>
+                      <div>
+                        <Field
+                          name="project"
+                          type="text"
+                          placeholder="Project name"
+                          className={
+                            touched.project && errors.project ? "invalid" : ""
+                          }
+                        />
+                        <ErrorMessage
+                          name="project"
+                          component="div"
+                          className="error"
+                        />
+                      </div>
 
-                  <div>
-                    <FormikDatePicker
-                      name="date"
-                      placeholder="Preferred start date"
-                    />
-                  </div>
+                      <div>
+                        <FormikDatePicker
+                          name="date"
+                          placeholder="Preferred start date"
+                        />
+                      </div>
 
-                  <div className="full">
-                    <Field
-                      name="description"
-                      as="textarea"
-                      placeholder="Project description"
-                      className={
-                        touched.description && errors.description
-                          ? "invalid"
-                          : ""
-                      }
-                    />
-                    <ErrorMessage
-                      name="description"
-                      component="div"
-                      className="error"
-                    />
-                  </div>
+                      <div className="full">
+                        <Field
+                          name="description"
+                          as="textarea"
+                          placeholder="Project description"
+                          className={
+                            touched.description && errors.description
+                              ? "invalid"
+                              : ""
+                          }
+                        />
+                        <ErrorMessage
+                          name="description"
+                          component="div"
+                          className="error"
+                        />
+                      </div>
 
-                  <div className="checkbox">
-                    <Field
-                      type="checkbox"
-                      name="acceptTerms"
-                      id="acceptTerms"
-                    />
-                    <label htmlFor="acceptTerms">
-                      <svg
-                        width="14"
-                        height="14"
-                        viewBox="0 0 14 14"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
+                      <div className="checkbox">
+                        <Field
+                          type="checkbox"
+                          name="acceptTerms"
+                          id="acceptTerms"
+                        />
+                        <label htmlFor="acceptTerms">
+                          <svg
+                            width="14"
+                            height="14"
+                            viewBox="0 0 14 14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="7" cy="7" r="6.5" stroke="#333333" />
+                            <circle cx="7" cy="7" r="3" fill="#E74848" />
+                          </svg>
+                          <span>
+                            I agree to the Terms and Conditions of Vancant
+                            Group.
+                          </span>
+                        </label>
+                        <ErrorMessage
+                          name="acceptTerms"
+                          component="div"
+                          className="error"
+                        />
+                      </div>
+
+                      <button
+                        type="submit"
+                        className="main-button"
+                        disabled={isSubmitting}
                       >
-                        <circle cx="7" cy="7" r="6.5" stroke="#333333" />
-                        <circle cx="7" cy="7" r="3" fill="#E74848" />
-                      </svg>
-                      <span>
-                        I agree to the Terms and Conditions of Vancant Group.
-                      </span>
-                    </label>
-                    <ErrorMessage
-                      name="acceptTerms"
-                      component="div"
-                      className="error"
-                    />
-                  </div>
-
-                  <button
-                    type="submit"
-                    className="main-button"
-                    disabled={isSubmitting}
-                  >
-                    Send request
-                  </button>
-
+                        Send request
+                      </button>
+                    </div>
+                  )}
                   {status && status.success && (
                     <div className="success">
                       <img src="/images/success.svg" />

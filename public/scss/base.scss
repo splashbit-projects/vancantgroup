@@ -340,7 +340,8 @@ a {
   }
 }
 
-.request-popup-wrap, .order-popup-wrap {
+.request-popup-wrap,
+.order-popup-wrap {
   position: fixed;
   left: 0;
   top: 0;
@@ -414,6 +415,7 @@ a {
       line-height: 1.2;
       text-align: center;
       color: #fff;
+      width: 100%;
       @media (max-width: 992px) {
         font-size: 24px;
         br {
@@ -422,96 +424,98 @@ a {
       }
     }
     form {
-      display: flex;
-      column-gap: 30px;
-      row-gap: 20px;
-      flex-wrap: wrap;
-      > div {
-        width: calc(50% - 15px);
-        position: relative;
-        &.full {
-          width: 100%;
-        }
-        &.checkbox {
-          width: 100%;
-          .error {
-            text-align: center;
+      .form-inner {
+        display: flex;
+        column-gap: 30px;
+        row-gap: 20px;
+        flex-wrap: wrap;
+        > div {
+          width: calc(50% - 15px);
+          position: relative;
+          &.full {
             width: 100%;
-            @media (max-width: 992px) {
-              text-align: left;
-            }
           }
-          input {
-            display: none;
-            &:checked + label {
+          &.checkbox {
+            width: 100%;
+            .error {
+              text-align: center;
+              width: 100%;
+              @media (max-width: 992px) {
+                text-align: left;
+              }
+            }
+            input {
+              display: none;
+              &:checked + label {
+                svg {
+                  circle:last-child {
+                    opacity: 1;
+                    transition: all 0.5s;
+                  }
+                }
+              }
+            }
+            label {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              justify-content: center;
+              color: #ffffff;
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 1.2;
+              text-align: left;
               svg {
+                width: 14px;
                 circle:last-child {
-                  opacity: 1;
+                  opacity: 0;
                   transition: all 0.5s;
+                }
+              }
+              span {
+                @media (max-width: 992px) {
+                  width: calc(100% - 24px);
                 }
               }
             }
           }
-          label {
+          @media (max-width: 992px) {
+            width: 100%;
+          }
+          .error {
+            position: absolute;
+            left: 0;
+            color: #e74848;
+            font-size: 10px;
+          }
+          .react-datepicker-wrapper {
+            width: 100%;
+          }
+          input,
+          textarea,
+          .custom-input {
+            justify-content: space-between;
+            color: #ffffff80;
             display: flex;
             align-items: center;
-            gap: 10px;
-            justify-content: center;
-            color: #ffffff;
-            font-size: 14px;
+            padding: 0 20px;
+            font-size: 16px;
             font-weight: 400;
-            line-height: 1.2;
+            line-height: 20.83px;
             text-align: left;
-            svg {
-              width: 14px;
-              circle:last-child {
-                opacity: 0;
-                transition: all 0.5s;
-              }
-            }
-            span {
-              @media (max-width: 992px) {
-                width: calc(100% - 24px);
-              }
+            border: 1px solid #ffffff26;
+            background: #0f0f0f;
+            width: 100%;
+            height: 50px;
+            border-radius: 10px;
+            &.invalid {
+              border-color: #e74848;
             }
           }
-        }
-        @media (max-width: 992px) {
-          width: 100%;
-        }
-        .error {
-          position: absolute;
-          left: 0;
-          color: #e74848;
-          font-size: 10px;
-        }
-        .react-datepicker-wrapper {
-          width: 100%;
-        }
-        input,
-        textarea,
-        .custom-input {
-          justify-content: space-between;
-          color: #ffffff80;
-          display: flex;
-          align-items: center;
-          padding: 0 20px;
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 20.83px;
-          text-align: left;
-          border: 1px solid #ffffff26;
-          background: #0f0f0f;
-          width: 100%;
-          height: 50px;
-          border-radius: 10px;
-          &.invalid {
-            border-color: #e74848;
+          textarea {
+            padding: 15px 20px;
+            height: 150px;
           }
-        }
-        textarea {
-          padding: 15px 20px;
-          height: 150px;
         }
       }
 
