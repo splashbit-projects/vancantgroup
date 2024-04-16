@@ -8,9 +8,21 @@ import RequestPopup from "../components/LayoutElements/RequestPopup";
 
 const dm_sans = DM_Sans({ subsets: ["latin"] });
 
+
 export const metadata = {
-  title: "Vancant Group",
-  description: "",
+  title: {
+    default: "Vancant Group",
+    template: "%s",
+  },
+  description: "Vancant Group",
+  openGraph: {
+    title: {
+      default: "Vancant Group",
+      template: "%s",
+    },
+    description: 'Vancant Group',
+    images: "https://vancantgroup.com/images/meta.jpg",
+  },
 };
 
 export default function RootLayout({ children }) {
