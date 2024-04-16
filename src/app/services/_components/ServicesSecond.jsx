@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import { services } from "@/src/lib/services";
 import ServiceBlock from "./ServiceBlock";
 import { RevealList } from "next-reveal";
+import OrderButton from "@/src/components/LayoutElements/OrderButton";
 
 function ServicesSecond() {
   useEffect(() => {
@@ -37,7 +38,7 @@ function ServicesSecond() {
                       className="included"
                       dangerouslySetInnerHTML={{ __html: service.included }}
                     />
-                    <button className="main-button">Order now</button>
+                    <OrderButton serviceInfo={service.title}/>
                   </div>
                 </div>
                 <span>{service.id}</span>

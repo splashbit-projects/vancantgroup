@@ -5,6 +5,7 @@ import ServicesPercents from "./_components/ServicesPercents";
 import ServicesNeed from "./_components/ServicesNeed";
 import ServicesSecond from "./_components/ServicesSecond";
 import RequestBlock from "@/src/components/LayoutElements/RequestBlock";
+import OrderPopup from "@/src/components/LayoutElements/OrderPopup";
 
 function ServicesPage() {
   return (
@@ -15,9 +16,10 @@ function ServicesPage() {
       <RequestBlock
         title={`Need assistance?`}
         subtitle={`Our experts are ready to analyse your crypto business and provide a tailored solution. It's free!`}
-        buttonLink="#"
+        buttonLink="/contact-us"
         buttonText={`Contact us`}
       />
+      <OrderPopup />
     </>
   );
 }

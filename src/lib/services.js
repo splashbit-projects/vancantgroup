@@ -1,7 +1,7 @@
 export const services = [
     {
         id: 1,
-        title: "Brand Development <br/>and Positioning",
+        title: "Brand Development and Positioning",
         content: `We work closely with you to define and refine your project's brand identity, positioning, and messaging. We ensure that your project stands out in a crowded market through meticulous logo design, brand guidelines development, and visual asset creation.`,
         result: `A strong and recognizable brand presence that resonates with your target audience, builds trust, and fosters long-term loyalty among investors and users.`,
         included: `<ul>
@@ -14,7 +14,7 @@ export const services = [
     },
     {
         id: 2,
-        title: "Content Marketing <br/>and PR",
+        title: "Content Marketing and PR",
         content: `Our expert team crafts compelling content and strategic PR campaigns to establish your project as a trusted authority in the crypto space. From impactful press releases and thought leadership articles to engaging guest blogs and media outreach, we ensure widespread recognition and positive sentiment.`,
         result: `Enhanced project credibility, increased media coverage, and improved brand reputation driving investor confidence and community engagement.`,
         included: `<ul>
@@ -27,7 +27,7 @@ export const services = [
     },
     {
         id: 3,
-        title: "Community Engagement <br/>and Management",
+        title: "Community Engagement and Management",
         content: `Our team fosters an engaged and active community around your crypto project. We ensure continuous interaction and participation through strategic social media management, interactive community forums, and engaging online events.`,
         result: `A loyal and enthusiastic following that drives word-of-mouth referrals, boosts project credibility, and increases user adoption rates.`,
         included: `<ul>
@@ -40,7 +40,7 @@ export const services = [
     },
     {
         id: 4,
-        title: "Search Engine <br/>Optimization and <br/>Traffic Generation",
+        title: "Search Engine Optimization and Traffic Generation",
         content: `We employ advanced SEO techniques to optimise your project's online presence and drive targeted traffic to your website. We ensure your project ranks prominently in search engine results through keyword research, content optimization, and link-building strategies. Our strategies strictly comply with search engine rules and requirements.`,
         result: `Increased organic visibility, higher website traffic, and improved conversion rates, leading to enhanced project visibility and investor interest.`,
         included: `<ul>
@@ -53,7 +53,7 @@ export const services = [
     },
     {
         id: 5,
-        title: "Advertising and <br/>Promotion",
+        title: "Advertising and Promotion",
         content: `Our targeted advertising campaigns across social media platforms, crypto-specific websites, and influencer partnerships maximise your project's reach and visibility. We drive high-quality traffic and engagement by strategically positioning your project in front of your key demographics.`,
         result: `Increased project awareness, expanded user base, and improved conversion rates, ultimately leading to accelerated project growth and success.`,
         included: `<ul>

@@ -10,24 +10,37 @@ const ContactForm = () => {
   };
 
   const validationSchema = Yup.object({
-    name: Yup.string().required("Name is required"),
+    name: Yup.string().required("This field is required."),
     email: Yup.string()
-      .email("Invalid email address")
-      .required("Email is required"),
-    question: Yup.string().required("Please enter your question"),
+      .email("Please provide a corrected email address.")
+      .required("This field is required."),
+    question: Yup.string().required("This field is required."),
   });
 
   const handleSubmit = async (
     values,
     { setSubmitting, resetForm, setStatus }
   ) => {
-    // Simulate submitting to server
-    setTimeout(() => {
-      //alert('Your question has been submitted successfully. You will receive an email with a link to our FAQ page when your question will be answered');
-      resetForm();
-      setStatus({ success: true });
-      setSubmitting(false);
-    }, 400);
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values),
+      });
+      console.log(JSON.stringify(values));
+      if (response.ok) {
+        resetForm();
+        setStatus({ success: true });
+        setSubmitting(false);
+      } else {
+        setStatus({ success: false });
+      }
+    } catch (error) {
+      console.error(error);
+    }
+    
   };
 
   return (
@@ -69,7 +82,11 @@ const ContactForm = () => {
               <ErrorMessage name="question" component="div" className="error" />
             </div>
 
-            <button type="submit" className="main-button" disabled={isSubmitting}>
+            <button
+              type="submit"
+              className="main-button"
+              disabled={isSubmitting}
+            >
               Submit
             </button>
 

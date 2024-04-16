@@ -2,8 +2,9 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "@/public/scss/base.scss";
 import { DM_Sans } from "next/font/google";
-import { OrderProvider } from "../utils/OrderContext";
+import { PopupsProvider } from "../utils/PopupsContext";
 import Preloader from "../components/Preloader";
+import RequestPopup from "../components/LayoutElements/RequestPopup";
 
 const dm_sans = DM_Sans({ subsets: ["latin"] });
 
@@ -16,12 +17,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={dm_sans.className}>
-        <OrderProvider>
-          <Preloader/>
+        <PopupsProvider>
+          <Preloader />
           <Header />
           <main>{children}</main>
           <Footer />
-        </OrderProvider>
+          <RequestPopup />
+          
+        </PopupsProvider>
       </body>
     </html>
   );

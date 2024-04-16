@@ -1,7 +1,15 @@
+'use client';
 import React from 'react';
 import Link from 'next/link';
+import { usePopup } from "@/src/utils/PopupsContext";
 
 function RequestBlock({ title = '', subtitle = '', buttonText = '', buttonLink = ''}) {
+  const { requestPopupDisplay, setRequestPopupDisplay } = usePopup();
+
+  const requestPopupOpen = () => {
+    setRequestPopupDisplay(true);
+  }
+
   return (
     <section className="request-block">
       <div className="request-block__container _container">
@@ -12,7 +20,7 @@ function RequestBlock({ title = '', subtitle = '', buttonText = '', buttonLink =
                 {buttonLink ? (
                     <Link href={buttonLink} className="request-block__link">{buttonText}</Link>
                 ) : (
-                    <button className="request-block__link">{buttonText}</button>
+                    <button onClick={() => requestPopupOpen()} className="request-block__link">{buttonText}</button>
                 )}
                 
             </div>
