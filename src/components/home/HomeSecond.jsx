@@ -13,10 +13,10 @@ function HomeSecond() {
       if (sectionRef.current && blockRef.current) {
         const sectionRect = sectionRef.current.getBoundingClientRect();
         const blockRect = blockRef.current.getBoundingClientRect();
-
+        console.log();
         if (sectionRect.top >= 0) {
           setblockClass("");
-        } else if (sectionRect.bottom <= window.innerHeight - 300) {
+        } else if (sectionRect.bottom <= window.innerHeight - 250) {
           setblockClass("is-absolute");
         } else if (
           sectionRect.top < 0 &&
@@ -32,7 +32,7 @@ function HomeSecond() {
   }, []);
 
   return (
-    <section className="home-second" ref={sectionRef}>
+    <section className="home-second" >
       <div className="_container">
         <h3>
           Crypto marketing is all about real-time data for informed decisions.
@@ -51,7 +51,7 @@ function HomeSecond() {
               />
             </div>
           </div>
-          <div className="home-second__col-02">
+          <div className="home-second__col-02" ref={sectionRef}>
             <div className="column">
               <RevealWrapper origin="bottom" delay={500}>
                 <h3>Strategic Data-Driven Marketing</h3>
