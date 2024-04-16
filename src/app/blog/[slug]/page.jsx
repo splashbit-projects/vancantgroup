@@ -11,6 +11,7 @@ export async function generateMetadata({ params: { slug } }) {
   };
 }
 
+
 async function BlogSingle({ params: { slug } }) {
   const post = await getPost(slug);
   return (
