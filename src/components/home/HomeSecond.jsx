@@ -32,14 +32,18 @@ function HomeSecond() {
   }, []);
 
   return (
-    <section className="home-second" >
+    <section className="home-second">
       <div className="_container">
-        <h3>
-          Crypto marketing is all about real-time data for informed decisions.
-          Say goodbye <br />
-          to guesswork and hello to a data-driven approach for unprecedented
-          success.
-        </h3>
+        <div className="home-second__banner">
+          <h5>
+            Crypto marketing is all about real-time data for informed decisions
+          </h5>
+          <h3>
+            Say goodbye to guesswork and hello to a data-
+            <br />
+            driven approach for unprecedented success.
+          </h3>
+        </div>
         <h2>What is the Vacant Group?</h2>
         <div className="home-second__body">
           <div className="home-second__col-01">
