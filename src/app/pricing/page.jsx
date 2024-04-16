@@ -5,6 +5,7 @@ import PricingSecond from "./_components/PricingSecond";
 import PricingThird from "./_components/PricingThird";
 import PricingLoop from "./_components/PricingLoop";
 import RequestBlock from "@/src/components/LayoutElements/RequestBlock";
+import OrderPopup from "@/src/components/LayoutElements/OrderPopup";
 
 function PricingPage() {
   return (
@@ -18,6 +19,7 @@ function PricingPage() {
         buttonText={`Request solution`}
       />
       <PricingLoop />
+      <OrderPopup />
     </>
   );
 }

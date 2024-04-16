@@ -2,6 +2,7 @@
 import React, { useEffect } from "react";
 import { pricing } from "@/src/lib/pricing";
 import { RevealWrapper, RevealList } from "next-reveal";
+import OrderButton from "@/src/components/LayoutElements/OrderButton";
 
 function PricingLoop() {
   useEffect(() => {
@@ -42,7 +43,7 @@ function PricingLoop() {
                       dangerouslySetInnerHTML={{ __html: item.included }}
                     />
                     <div className="price-row">
-                      <button className="main-button">Order now</button>
+                      <OrderButton serviceInfo={item.title} />
                       <span>{item.price}</span>
                     </div>
                   </div>
