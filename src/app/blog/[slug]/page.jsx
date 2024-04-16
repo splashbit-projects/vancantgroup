@@ -1,7 +1,12 @@
-import { getPost } from "@/src/utils/blogUtils";
+import { getPost, getSlugs } from "@/src/utils/blogUtils";
 import React from "react";
 import "@/public/scss/blog.scss";
 import Link from "next/link";
+
+export async function generateStaticParams() {
+  const slugs = await getSlugs();
+  return slugs.map((slug) => ({ slug }));
+}
 
 export async function generateMetadata({ params: { slug } }) {
   const post = await getPost(slug);
