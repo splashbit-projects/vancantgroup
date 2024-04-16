@@ -21,7 +21,7 @@ export const metadata = {
       template: "%s",
     },
     description: 'Vancant Group',
-    images: "https://vancantgroup.com/images/meta.jpg",
+    images: "https://vancantgroup.com/images/meta.png",
   },
 };
 
