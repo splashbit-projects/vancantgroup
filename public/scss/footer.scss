@@ -69,7 +69,11 @@ footer {
           display: flex;
           flex-direction: column;
           gap: 20px;
-
+          a{
+            &:hover{
+              color: #e74848;
+            }
+          }
           a,
           span {
             color: #fff;

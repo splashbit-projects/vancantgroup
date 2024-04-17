@@ -90,7 +90,21 @@ a {
   align-items: center;
   justify-content: center;
   width: 160px;
+  transition: all .5s ease-in-out;
+  transform: scale(1);
+  &:hover{
+    transform: scale(1.05);
+  }
 }
+
+.request-block__link, .home-key__link{
+  transition: all .5s ease-in-out;
+  transform: scale(1);
+  &:hover{
+    transform: scale(1.05);
+  }
+}
+
 .secondary-button {
   background: #ffffff08;
   border: 1px solid #ffffff33;
@@ -105,6 +119,11 @@ a {
   align-items: center;
   justify-content: center;
   width: 160px;
+  transition: all .5s ease-in-out;
+  transform: scale(1);
+  &:hover{
+    transform: scale(1.05);
+  }
 }
 
 @keyframes floatAnimation {
