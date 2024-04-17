@@ -33,12 +33,6 @@ export default function Header() {
                 <Instagram />
                 <Twitter />
               </div>
-              <Link href="#" className="cart">
-                <img alt="logo" src="/images/cart.svg" />
-              </Link>
-              <Link href="#" className="main-button">
-                Sign in
-              </Link>
               <span onClick={() => menuOpen()} className="menu-btn">
                 {!opened ? (
                   <img alt="logo" src="/images/burger.svg" />
@@ -52,9 +46,7 @@ export default function Header() {
       </header>
       <div className={`menu-wrap ${opened ? "opened" : ""}`}>
         <div className="_container">
-          <Link href="#" className="main-button">
-            Sign in
-          </Link>
+
           <nav>
             <div className="left-col">
               <Link href="/">Home</Link>
