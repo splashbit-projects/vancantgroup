@@ -39,7 +39,9 @@ const Preloader = () => {
         visibility: isVisible ? 'visible' : 'hidden',
       }}
     >
-      <span>Loading...</span>
+      <span>
+        <img width={70} src="/images/preloader.gif"/>
+      </span>
     </div>
   );
 };
