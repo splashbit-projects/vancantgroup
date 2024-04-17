@@ -3,7 +3,11 @@
 * {
   box-sizing: border-box;
 }
-
+html{
+  @media (min-width:1700px){
+    zoom: 1.2;
+  }
+}
 html,
 body {
   //overflow-x: hidden;
