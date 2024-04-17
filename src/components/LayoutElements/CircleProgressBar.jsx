@@ -33,7 +33,7 @@ const CircleProgressBar = ({ percentageMax, prefix = '' }) => {
           text={`${prefix}${percentage}%`}
           styles={buildStyles({
             strokeLinecap: "butt",
-            pathTransitionDuration: 0.5,
+            pathTransitionDuration: 0.005,
             pathColor: `#E74848`,
             textColor: "#fff",
             trailColor: "#1B1B1B",

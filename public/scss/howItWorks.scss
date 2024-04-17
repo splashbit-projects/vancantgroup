@@ -216,6 +216,7 @@
   }
   .animation{
     margin-top: -200px;
+    pointer-events: none;
   }
   h2 {
     color: #fff;
@@ -343,7 +344,14 @@
             gap:20px;
         }
         >div{
-            
+            &:first-child{
+              >div{
+                padding-bottom: 60px;
+                @media (max-width:992px){
+                  padding-bottom: 40px;
+                }
+              }
+            }
             
         }
     }
