@@ -19,6 +19,7 @@
       .animation{
         width: 470px!important;
         height: 470px!important;
+        pointer-events: none;
         @media (max-width: 992px) {
             height: auto!important;
         }
