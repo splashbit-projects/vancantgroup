@@ -16,7 +16,7 @@ function HomeSecond() {
         console.log();
         if (sectionRect.top >= 0) {
           setblockClass("");
-        } else if (sectionRect.bottom <= window.innerHeight - 250) {
+        } else if (sectionRect.bottom <= window.innerHeight - 300) {
           setblockClass("is-absolute");
         } else if (
           sectionRect.top < 0 &&
