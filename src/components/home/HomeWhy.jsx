@@ -3,7 +3,6 @@ import { RevealList, RevealWrapper } from "next-reveal";
 import Link from "next/link";
 import AnimationElement from "../LayoutElements/AnimationElement";
 
-
 function HomeWhy() {
   return (
     <section className="home-why">
@@ -84,7 +83,10 @@ function HomeWhy() {
           </Link>
         </RevealWrapper>
       </div>
-      <AnimationElement animation="https://prod.spline.design/NanMajFNd0h8gBBf/scene.splinecode" fallbackImage="/images/home/home-why.webp"/>
+      <AnimationElement
+        animation="https://prod.spline.design/NanMajFNd0h8gBBf/scene.splinecode"
+        fallbackImage="/images/home/home-why.webp"
+      />
     </section>
   );
 }
