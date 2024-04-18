@@ -44,7 +44,7 @@ function HomeSecond() {
             driven approach for unprecedented success.
           </h3>
         </div>
-        <h2>What is the Vacant Group?</h2>
+        <h2>What is the Vancant Group?</h2>
         <div className="home-second__body">
           <div className="home-second__col-01">
             <div className={`fixed-block ${blockClass}`} ref={blockRef}>

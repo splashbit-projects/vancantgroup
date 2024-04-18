@@ -5,7 +5,7 @@ function HomePercents() {
   return (
     <section className="home-percents">
       <div className="_container">
-        <h2>Learn the latest research data by Vacant Group</h2>
+        <h2>Learn the latest research data by Vancant Group</h2>
         <div className="home-percents__body">
           <div>
             <CircleProgressBar percentageMax={30}/>

@@ -10,7 +10,7 @@ function HomeWhy() {
       <div className="_container">
         <RevealWrapper origin="bottom">
           <h2>
-            Why you need Vacant Group <br />
+            Why you need Vancant Group <br />
             for your crypto project
           </h2>
         </RevealWrapper>
@@ -60,7 +60,7 @@ function HomeWhy() {
             <h3>Data-Driven Insights</h3>
             <p>
               Harness the power of real-time analytics and audience insights to
-              drive informed decision-making. With the Vacant Group solutions,
+              drive informed decision-making. With the Vancant Group solutions,
               you get actionable data that empowers you to refine your targeting
               strategies, optimise campaign performance, and maximise ROI.
             </p>

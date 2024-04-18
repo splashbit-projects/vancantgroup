@@ -8,7 +8,7 @@ function HomeKey() {
       <div className="home-key__container _container">
         <div className="home-key__body">
           <h2 className="home-key__title">
-            Maximise your marketing with Vacant Group
+            Maximise your marketing with Vancant Group
           </h2>
           <h3 className="home-key__subtitle">Key tasks</h3>
           <div className="home-key__content">
