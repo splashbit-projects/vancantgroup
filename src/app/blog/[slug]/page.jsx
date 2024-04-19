@@ -13,6 +13,11 @@ export async function generateMetadata({ params: { slug } }) {
   return {
     title: post.seo_title,
     description: post.seo_description,
+    openGraph: {
+      title: post.seo_title,
+      description: post.seo_description,
+      images: "https://vancantgroup.com/images/meta.png",
+    },
   };
 }
 

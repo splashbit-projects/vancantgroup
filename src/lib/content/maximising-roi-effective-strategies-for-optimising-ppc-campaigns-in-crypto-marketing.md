@@ -1,7 +1,7 @@
 ---
 title: "Maximising ROI: Effective Strategies for Optimising PPC Campaigns in Crypto Marketing"
-seo_title: "Maximising ROI: Effective Strategies for Optimising PPC Campaigns in Crypto Marketing"
-seo_description: "Maximising ROI: Effective Strategies for Optimising PPC Campaigns in Crypto Marketing"
+seo_title: "How to maximise ROI in crypto marketing"
+seo_description: "Explore the proven tactics to maximise return on investment in your crypto marketing efforts. Get insights from actual Vancant Group campaigns."
 
 ---
 

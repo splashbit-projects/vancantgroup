@@ -7,6 +7,16 @@ import PricingLoop from "./_components/PricingLoop";
 import RequestBlock from "@/src/components/LayoutElements/RequestBlock";
 import OrderPopup from "@/src/components/LayoutElements/OrderPopup";
 
+export const metadata = {
+  title: "Crypto marketing pricing",
+  description: "Explore Vancant Group's pricing approach. Learn how we explore and analyse a project to offer and price a solution. Discover complex service packages for different stages of crypto projects.",
+  openGraph: {
+    title: "Crypto marketing pricing",
+    description: "Explore Vancant Group's pricing approach. Learn how we explore and analyse a project to offer and price a solution. Discover complex service packages for different stages of crypto projects.",
+    images: "https://vancantgroup.com/images/meta.png",
+  },
+};
+
 function PricingPage() {
   return (
     <>

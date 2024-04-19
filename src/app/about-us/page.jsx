@@ -6,6 +6,16 @@ import AboutGoals from "./_components/AboutGoals";
 import AboutSecond from "./_components/AboutSecond";
 import AboutThird from "./_components/AboutThird";
 
+export const metadata = {
+  title: "About us ",
+  description: "Learn how we came to Vancant Group, as well as our mission and vision, objectives, and strategies for driving crypto projects to success. Get to know us better. Contact Vancant Group.",
+  openGraph: {
+    title: "About us ",
+    description: "Learn how we came to Vancant Group, as well as our mission and vision, objectives, and strategies for driving crypto projects to success. Get to know us better. Contact Vancant Group.",
+    images: "https://vancantgroup.com/images/meta.png",
+  },
+};
+
 function AboutUsPage() {
   return (
     <>

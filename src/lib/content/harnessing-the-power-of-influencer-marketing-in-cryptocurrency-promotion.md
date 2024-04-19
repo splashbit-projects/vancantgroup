@@ -1,7 +1,7 @@
 ---
 title: "Harnessing the Power of Influencer Marketing in Cryptocurrency Promotion"
-seo_title: "Harnessing the Power of Influencer Marketing in Cryptocurrency Promotion"
-seo_description: "Harnessing the Power of Influencer Marketing in Cryptocurrency Promotion"
+seo_title: "The role of influencer marketing for crypto promotion"
+seo_description: "Explore how influencer marketing affects the success of your crypto project. Influencer mentions and reviews boost trust and ignite the interest of the target audience."
 
 ---
 

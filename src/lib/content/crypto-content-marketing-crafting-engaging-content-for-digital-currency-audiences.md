@@ -1,7 +1,7 @@
 ---
 title: "Crypto Content Marketing: Crafting Engaging Content for Digital Currency Audiences"
-seo_title: "Crypto Content Marketing: Crafting Engaging Content for Digital Currency Audiences"
-seo_description: "Crypto Content Marketing: Crafting Engaging Content for Digital Currency Audiences"
+seo_title: "How to create effective content for crypto marketing"
+seo_description: "Creating just some content is not enough for crypto project success. Learn what content the industry needs to drive your crypto project to success: boost your target audience's interest, engagement, and interactions."
 
 ---
 

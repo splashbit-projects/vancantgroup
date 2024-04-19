@@ -2,10 +2,19 @@ import React from "react";
 import "@/public/scss/services.scss";
 import ServicesHero from "./_components/ServicesHero";
 import ServicesPercents from "./_components/ServicesPercents";
-import ServicesNeed from "./_components/ServicesNeed";
 import ServicesSecond from "./_components/ServicesSecond";
 import RequestBlock from "@/src/components/LayoutElements/RequestBlock";
 import OrderPopup from "@/src/components/LayoutElements/OrderPopup";
+
+export const metadata = {
+  title: "Crypto marketing services",
+  description: " Explore crypto marketing services for community building, SEO, PR, advertising strategies, compliance, and branding. At Vancant Group, we guide your project from inception to success.",
+  openGraph: {
+    title: "Crypto marketing services",
+    description: " Explore crypto marketing services for community building, SEO, PR, advertising strategies, compliance, and branding. At Vancant Group, we guide your project from inception to success.",
+    images: "https://vancantgroup.com/images/meta.png",
+  },
+};
 
 function ServicesPage() {
   return (

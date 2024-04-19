@@ -8,19 +8,20 @@ import RequestPopup from "../components/LayoutElements/RequestPopup";
 
 const dm_sans = DM_Sans({ subsets: ["latin"] });
 
-
 export const metadata = {
   title: {
-    default: "Vancant Group",
-    template: "%s",
+    default: "Crypto marketing solutions | Vancant Group",
+    template: "%s | Vancant Group",
   },
-  description: "Vancant Group",
+  description:
+    "Discover the potential of marketing for your crypto projects. Vancant Group drives your crypto project to success through natural mentions, influencer recommendations, and connections.",
   openGraph: {
     title: {
-      default: "Vancant Group",
-      template: "%s",
+      default: "Crypto marketing solutions | Vancant Group",
+      template: "%s | Vancant Group",
     },
-    description: 'Vancant Group',
+    description:
+      "Discover the potential of marketing for your crypto projects. Vancant Group drives your crypto project to success through natural mentions, influencer recommendations, and connections.",
     images: "https://vancantgroup.com/images/meta.png",
   },
 };
@@ -35,7 +36,6 @@ export default function RootLayout({ children }) {
           <main>{children}</main>
           <Footer />
           <RequestPopup />
-          
         </PopupsProvider>
       </body>
     </html>

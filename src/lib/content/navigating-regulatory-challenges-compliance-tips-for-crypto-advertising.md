@@ -1,7 +1,7 @@
 ---
 title: "Navigating Regulatory Challenges: Compliance Tips for Crypto Advertising"
-seo_title: "Navigating Regulatory Challenges: Compliance Tips for Crypto Advertising"
-seo_description: "Navigating Regulatory Challenges: Compliance Tips for Crypto Advertising"
+seo_title: "Crypto marketing compliance"
+seo_description: " The regulations in the crypto industry restrict your marketing efforts. Struggle to overcome these limitations? Learn how to comply with laws and regulations."
 
 ---
 

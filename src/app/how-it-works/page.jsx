@@ -7,6 +7,16 @@ import HowLast from "./_components/HowLast";
 import HowSecond from "./_components/HowSecond";
 import RequestBlock from "@/src/components/LayoutElements/RequestBlock";
 
+export const metadata = {
+  title: "How it works",
+  description: "Learn how we approach each project by analysing and valuing it, exploring the target audience and competition, and developing marketing solutions for success.",
+  openGraph: {
+    title: "How it works",
+    description: "Learn how we approach each project by analysing and valuing it, exploring the target audience and competition, and developing marketing solutions for success.",
+    images: "https://vancantgroup.com/images/meta.png",
+  },
+};
+
 function HowItWorksPage() {
   return (
     <>

@@ -57,7 +57,7 @@ function HomeSecond() {
           </div>
           <div className="home-second__col-02" ref={sectionRef}>
             <div className="column">
-              <RevealWrapper origin="bottom" delay={500}>
+              <RevealWrapper origin="bottom" delay={100}>
                 <h3>Strategic Data-Driven Marketing</h3>
                 <div>
                   <p>
@@ -71,7 +71,7 @@ function HomeSecond() {
                   <div>1</div>
                 </div>
               </RevealWrapper>
-              <RevealWrapper origin="bottom" delay={500}>
+              <RevealWrapper origin="bottom" delay={100}>
                 <h3>End-to-End Crypto Marketing Solutions</h3>
                 <div>
                   <p>
@@ -86,7 +86,7 @@ function HomeSecond() {
                   <div>2</div>
                 </div>
               </RevealWrapper>
-              <RevealWrapper origin="bottom" delay={500}>
+              <RevealWrapper origin="bottom" delay={100}>
                 <h3>Expertise in Crypto Marketing Innovation</h3>
                 <div>
                   <p>
