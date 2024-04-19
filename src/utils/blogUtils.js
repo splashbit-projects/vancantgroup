@@ -4,9 +4,9 @@ import { marked } from "marked";
 
 export async function getPost(slug) {
     const text = await readFile(`./src/lib/content/${slug}.md`, "utf8");
-    const { content, data: { title, seo_title, seo_desctiption } } = matter(text);
+    const { content, data: { title, seo_title, seo_description } } = matter(text);
     const body = marked(content);
-    return {slug, title, seo_title, seo_desctiption, body}
+    return {slug, title, seo_title, seo_description, body}
  }
 
  export async function getSlugs() {
