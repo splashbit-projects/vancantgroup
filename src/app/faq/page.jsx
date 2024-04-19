@@ -3,7 +3,7 @@ import "@/public/scss/faq.scss";
 import FaqHero from "./_components/FaqHero";
 import RequestBlock from "@/src/components/LayoutElements/RequestBlock";
 import FaqQuestions from "./_components/FaqQuestions";
-s
+
 export const metadata = {
   title: "Crypto marketing FAQ",
   description: "Struggling to succeed in crypto marketing? Submit your issue to our experts, and we will provide you with possible reasons and solutions to drive your project to success. Read our expert answers.",
