@@ -4,40 +4,14 @@ import { useRef, useState, useEffect } from "react";
 import AnimationElement from "@/src/components/LayoutElements/AnimationElement";
 
 function HowThird() {
-  const sectionRef = useRef(null);
-  const blockRef = useRef(null);
-  const [blockClass, setblockClass] = useState("");
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (sectionRef.current && blockRef.current) {
-        const sectionRect = sectionRef.current.getBoundingClientRect();
-        const blockRect = blockRef.current.getBoundingClientRect();
-
-        if (sectionRect.top >= 0) {
-          setblockClass("");
-        } else if (sectionRect.bottom <= window.innerHeight - 300) {
-          setblockClass("is-absolute");
-        } else if (
-          sectionRect.top < 0 &&
-          sectionRect.bottom > window.innerHeight - 300
-        ) {
-          setblockClass("is-fixed");
-        }
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   return (
-    <section className="how-third" ref={sectionRef}>
+    <section className="how-third" >
       <div className="_container">
         <h2>How we turn unknown brands into success stories</h2>
         <div className="how-third__body">
           <div className="how-third__col-01">
-            <div className={`fixed-block ${blockClass}`} ref={blockRef}>
+            <div className={`fixed-block`}>
               <AnimationElement
                 animation="https://prod.spline.design/4LyeK5Yvi3fhB2P1/scene.splinecode"
                 mobileHidden={true}

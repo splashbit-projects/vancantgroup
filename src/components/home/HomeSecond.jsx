@@ -9,7 +9,7 @@ function HomeSecond() {
   const [blockClass, setblockClass] = useState("");
 
   useEffect(() => {
-    const handleScroll = () => {
+    /*const handleScroll = () => {
       if (sectionRef.current && blockRef.current) {
         const sectionRect = sectionRef.current.getBoundingClientRect();
         const blockRect = blockRef.current.getBoundingClientRect();
@@ -28,7 +28,7 @@ function HomeSecond() {
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);*/
   }, []);
 
   return (

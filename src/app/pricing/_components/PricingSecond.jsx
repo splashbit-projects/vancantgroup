@@ -5,35 +5,10 @@ import Spline from "@splinetool/react-spline";
 import AnimationElement from "@/src/components/LayoutElements/AnimationElement";
 
 function PricingSecond() {
-  const sectionRef = useRef(null);
-  const blockRef = useRef(null);
-  const [blockClass, setblockClass] = useState("");
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (sectionRef.current && blockRef.current) {
-        const sectionRect = sectionRef.current.getBoundingClientRect();
-        const blockRect = blockRef.current.getBoundingClientRect();
-
-        if (sectionRect.top >= 0) {
-          setblockClass("");
-        } else if (sectionRect.bottom <= window.innerHeight - 300) {
-          setblockClass("is-absolute");
-        } else if (
-          sectionRect.top < 0 &&
-          sectionRect.bottom > window.innerHeight - 300
-        ) {
-          setblockClass("is-fixed");
-        }
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+ 
 
   return (
-    <section className="pricing-second" ref={sectionRef}>
+    <section className="pricing-second">
       <div className="_container">
         <h3>
           Each crypto project is unique. We understand that. That's why we can't
@@ -44,7 +19,7 @@ function PricingSecond() {
         <h2>How we form prices for crypto marketing</h2>
         <div className="pricing-second__body">
           <div className="pricing-second__col-01">
-            <div className={`fixed-block ${blockClass}`} ref={blockRef}>
+            <div className={`fixed-block`} >
               <AnimationElement
                 animation="https://prod.spline.design/4LyeK5Yvi3fhB2P1/scene.splinecode"
                 mobileHidden={true}
