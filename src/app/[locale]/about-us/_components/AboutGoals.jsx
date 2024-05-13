@@ -1,4 +1,4 @@
-import CardWithHover from '@/src/components/LayoutElements/CardWithHover'
+import CardWithHover from '@/src/app/_global-components/LayoutElements/CardWithHover'
 import React from 'react'
 
 function AboutGoals() {
