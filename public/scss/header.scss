@@ -47,6 +47,10 @@ header {
       align-items: center;
       gap: 20px;
       justify-content: flex-end;
+      .lang-switcher{
+        display: flex;
+        gap: 10px;
+      }
       .socials {
         display: flex;
         gap: 10px;
