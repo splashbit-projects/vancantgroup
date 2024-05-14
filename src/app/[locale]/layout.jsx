@@ -6,6 +6,7 @@ import { PopupsProvider } from "../../utils/PopupsContext";
 import Preloader from "@/src/app/_global-components/Preloader";
 import RequestPopup from "@/src/app/_global-components/LayoutElements/RequestPopup";
 import { NextIntlClientProvider, useMessages } from "next-intl";
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 const dm_sans = DM_Sans({ subsets: ["latin"] });
 
@@ -32,6 +33,7 @@ export default function RootLayout({ children, params: { locale } }) {
   return (
     <html lang={locale}>
       <body className={dm_sans.className}>
+        <GoogleAnalytics gaId="G-N1SFZ1RDHK" />
         <NextIntlClientProvider
         >
           <PopupsProvider>
