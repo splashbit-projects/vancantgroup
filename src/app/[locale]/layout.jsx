@@ -33,7 +33,7 @@ export default function RootLayout({ children, params: { locale } }) {
   return (
     <html lang={locale}>
       <body className={dm_sans.className}>
-        <GoogleAnalytics gaId="G-N1SFZ1RDHK" />
+        <GoogleAnalytics gaId="G-RRDWRRC3K0" />
         <NextIntlClientProvider
         >
           <PopupsProvider>
