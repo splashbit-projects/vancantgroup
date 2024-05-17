@@ -262,10 +262,6 @@ function TermsAndConditions() {
               and services are free of charge, we will not be liable for any
               loss or damage.
             </p>
-            <p>
-              As long as our website and its information and services are free
-              of charge, we will not be liable for any loss or damage.
-            </p>
             <h2>
               <strong>Changes to These Terms</strong>
             </h2>
