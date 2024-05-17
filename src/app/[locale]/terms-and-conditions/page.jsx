@@ -37,7 +37,7 @@ function TermsAndConditions() {
               Mah&eacute;, Seychelles.
             </p>
             <p>
-               "Party," "Parties," or "Us" designate both the Client and
+              "Party," "Parties," or "Us" designate both the Client and
               ourselves. All terms and conditions herein refer to the offer,
               acceptance, and consideration of payment necessary to undertake
               the process of our assistance to the Client most suitably for the
@@ -55,7 +55,7 @@ function TermsAndConditions() {
               Vancant Group Ltd offers a diverse array of marketing services,
               which can be ordered on our website. Detailed information
               regarding our services will be provided at the time of order or as
-              otherwise communicated to you. 
+              otherwise communicated to you.
             </p>
             <p>
               <strong>
@@ -93,7 +93,7 @@ function TermsAndConditions() {
               employee of Vancant Group Ltd to terminate employment with Vancant
               Group Ltd or to commence part-time employment with Vancant Group
               Ltd, or in any way interfere with the relationship between Vancant
-              Group Ltd and any employee thereof; 
+              Group Ltd and any employee thereof;
             </p>
             <p>
               (b) hire any person employed or contracted by Vancant Group Ltd.
@@ -258,14 +258,9 @@ function TermsAndConditions() {
             <p>
               To the fullest extent permitted by applicable law, we disclaim all
               representations, warranties, and conditions relating to our
-              website and its use. This disclaimer does not limit or exclude
-              liability for death or personal injury caused by negligence,
-              fraud, or fraudulent misrepresentation. It also does not limit any
-              liabilities that cannot be excluded under applicable law. The
-              limitations and exclusions of liability outlined in this
-              disclaimer apply to all liabilities arising under the disclaimer,
-              including liabilities arising in contract, tort, or breach of
-              statutory duty.
+              website and its use. As long as our website and its information
+              and services are free of charge, we will not be liable for any
+              loss or damage.
             </p>
             <p>
               As long as our website and its information and services are free
@@ -293,8 +288,13 @@ function TermsAndConditions() {
               <li>
                 Website: <Link href="/">vancantgroup.com</Link>
               </li>
-              <li>Phone: <a href="tel:+447458149501">+447458149501</a></li>
-              <li>Email: <a href="mailto:info@vancantgroup.com">info@vancantgroup.com</a></li>
+              <li>
+                Phone: <a href="tel:+447458149501">+447458149501</a>
+              </li>
+              <li>
+                Email:{" "}
+                <a href="mailto:info@vancantgroup.com">info@vancantgroup.com</a>
+              </li>
             </ul>
             <p>
               We strive to respond to all inquiries promptly and provide
