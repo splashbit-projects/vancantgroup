@@ -36,6 +36,7 @@ export async function generateMetadata({ params: { locale } }) {
 }
 
 async function PrivacyPolicy({ params: { locale } }) {
+  unstable_setRequestLocale(locale);
   const page = await getPage("privacy-policy", locale);
   return (
     <section className="policy-wrap">

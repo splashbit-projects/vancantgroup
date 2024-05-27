@@ -36,6 +36,7 @@ export async function generateMetadata({ params: { locale } }) {
 }
 
 async function TermsAndConditions({ params: { locale } }) {
+  unstable_setRequestLocale(locale);
   const page = await getPage("terms-and-conditions", locale);
   return (
     <section className="policy-wrap">

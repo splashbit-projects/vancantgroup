@@ -36,6 +36,7 @@ export async function generateMetadata({ params: { locale } }) {
 }
 
 async function CookiePolicy({ params: { locale } }) {
+  unstable_setRequestLocale(locale);
   const page = await getPage("cookie-policy", locale);
   return (
     <section className="policy-wrap">
