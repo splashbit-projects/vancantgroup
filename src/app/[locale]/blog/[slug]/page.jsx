@@ -2,7 +2,7 @@ import { getPost, getSlugs } from "@/src/utils/blogUtils";
 import React from "react";
 import "@/public/scss/blog.scss";
 import { Link } from "@/src/navigation";
-import {getTranslations, getLocale} from 'next-intl/server';
+import MoreButton from "../_components/MoreButton";
 
 export async function generateStaticParams() {
   const slugs = await getSlugs();
@@ -20,7 +20,6 @@ export async function generateStaticParams() {
 
 
 export async function generateMetadata({ params: { slug, locale } }) {
-  unstable_setRequestLocale(locale);
   const post = await getPost(slug, locale);
 
   return {
@@ -38,7 +37,6 @@ export async function generateMetadata({ params: { slug, locale } }) {
 
 async function BlogSingle({ params: { slug, locale } }) {
   const post = await getPost(slug, locale);
-  const t = await getTranslations("BlogPage");
   return (
     <section className="single-post">
       <div className="_container">
@@ -47,7 +45,7 @@ async function BlogSingle({ params: { slug, locale } }) {
           <article
             dangerouslySetInnerHTML={{ __html: post.body }}
           />
-          <Link href="/blog" className="main-button">{t("more")}</Link>
+          <MoreButton/>
         </div>
       </div>
     </section>
