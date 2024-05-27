@@ -2,16 +2,20 @@ import React from "react";
 import "@/public/scss/policy.scss";
 import { Link } from "@/src/navigation";
 import { getPage, getPageSlugs } from "@/src/utils/blogUtils";
+import {unstable_setRequestLocale} from 'next-intl/server';
 
 export async function generateStaticParams() {
+  unstable_setRequestLocale(locale);
   const slugs = await getPageSlugs();
   const locales = ['en', 'it', 'de'];
 
   const params = [];
   slugs.forEach((slug) => {
-    locales.forEach((locale) => {
-      params.push({ slug, locale });
-    });
+    if (!slug.startsWith('IT-') && !slug.startsWith('DE-')) {
+      locales.forEach((locale) => {
+        params.push({ slug, locale });
+      });
+    }
   });
 
   return params;
