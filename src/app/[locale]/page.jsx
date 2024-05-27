@@ -53,6 +53,7 @@ export default function Home() {
         whyText4={tW("whyText4")}
         whyTitle5={tW("whyTitle5")}
         whyText5={tW("whyText5")}
+        learnButton={t("learnButton")}
       />
       <HomePercents
         title={tP("title")}

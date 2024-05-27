@@ -15,6 +15,7 @@ function HomeWhy({
   whyText4,
   whyTitle5,
   whyText5,
+  learnButton
 }) {
   return (
     <section className="home-why">
@@ -66,7 +67,7 @@ function HomeWhy({
         </RevealList>
         <RevealWrapper origin="bottom" className="button-wrap">
           <Link href="/how-it-works" className="main-button">
-            Learn more
+            {learnButton}
           </Link>
         </RevealWrapper>
       </div>
