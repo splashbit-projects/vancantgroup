@@ -21,7 +21,7 @@ export async function generateStaticParams() {
 
 
 export async function generateMetadata({ params: { slug, locale } }) {
-  unstable_setRequestLocale(locale);
+  
   const post = await getPost(slug, locale);
 
   return {
@@ -38,8 +38,11 @@ export async function generateMetadata({ params: { slug, locale } }) {
 
 
 async function BlogSingle({ params: { slug, locale } }) {
+  unstable_setRequestLocale(locale);
+
   const post = await getPost(slug, locale);
   const t = await getTranslations({locale, namespace: 'BlogPage'});
+  
   return (
     <section className="single-post">
       <div className="_container">
