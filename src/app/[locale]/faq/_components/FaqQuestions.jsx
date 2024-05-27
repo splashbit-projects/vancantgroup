@@ -1,14 +1,13 @@
 "use client";
 import React from "react";
-import { faqQuestions } from "@/src/lib/faqQuestions";
 import { RevealWrapper } from "next-reveal";
 
-function FaqQuestions() {
+function FaqQuestions({questions}) {
   return (
     <section className="faq-questions">
       <div className="_container">
         <div className="faq-questions__body">
-          {faqQuestions.map((question, index) => (
+          {questions.map((question, index) => (
             <RevealWrapper
               origin="bottom"
               className="question-wrap"

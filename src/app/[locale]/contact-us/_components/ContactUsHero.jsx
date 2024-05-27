@@ -3,18 +3,17 @@ import React from "react";
 import { RevealWrapper } from "next-reveal";
 import { Link } from "@/src/navigation";
 
-function ContactUsHero() {
+function ContactUsHero({title, subtitle, text, submit}) {
   return (
     <section className="contact-us">
       <div className="_container">
         <div className="contact-us__body">
           <RevealWrapper origin="bottom">
-            <h1>We are here to help you!</h1>
+            <h1>{title}</h1>
           </RevealWrapper>
           <RevealWrapper origin="bottom">
             <h2>
-              Get assistance from crypto marketing experts - any questions. It
-              is free.
+              {subtitle}
             </h2>
           </RevealWrapper>
           <RevealWrapper origin="bottom">
@@ -22,13 +21,11 @@ function ContactUsHero() {
           </RevealWrapper>
           <RevealWrapper origin="bottom">
             <p>
-              Do you need a cryptocurrency marketing strategy? Or are you
-              looking for <br />
-              blockchain marketing? Our company is here to assist you!
+              {text}
             </p>
           </RevealWrapper>
           <RevealWrapper origin="bottom">
-            <h4>Submit your question</h4>
+            <h4>{submit}</h4>
           </RevealWrapper>
           <div className="contacts-row">
             <RevealWrapper origin="bottom">

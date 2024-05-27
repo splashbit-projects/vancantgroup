@@ -1,4 +1,4 @@
-export const services = [
+export const servicesEn = [
     {
         id: 1,
         title: "Brand Development and Positioning",

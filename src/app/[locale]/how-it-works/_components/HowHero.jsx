@@ -1,8 +1,8 @@
 "use client";
-import AnimationElement from "@/src/app/_global-components/LayoutElements/AnimationElement";
+import AnimationElement from "@/src/app/[locale]/_global-components/LayoutElements/AnimationElement";
 import React from "react";
 
-function HowHero() {
+function HowHero({ title, subtitle}) {
   return (
     <section className="how-hero">
       <AnimationElement
@@ -12,9 +12,9 @@ function HowHero() {
       <div className="_container">
         <div className="how-hero__body">
           <div>
-            <h1>How it works</h1>
+            <h1>{title}</h1>
 
-            <p>Discovering the backstage</p>
+            <p>{subtitle}</p>
           </div>
         </div>
       </div>

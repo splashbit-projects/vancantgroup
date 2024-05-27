@@ -3,7 +3,7 @@ import { RevealWrapper } from "next-reveal";
 import Image from "next/image";
 import React from "react";
 
-function AboutSecond() {
+function AboutSecond({ description }) {
   return (
     <section className="about-second">
       <div className="_container">
@@ -14,12 +14,7 @@ function AboutSecond() {
             width={540}
             height={215}
           />
-          <p>
-            Before Vancant Group, each of us was a respected expert in crypto
-            and marketing. We often collaborated on tasks too challenging to
-            tackle alone. Realising our collective strength, we joined forces to
-            form Vancant Group.
-          </p>
+          <p>{description}</p>
         </RevealWrapper>
       </div>
     </section>

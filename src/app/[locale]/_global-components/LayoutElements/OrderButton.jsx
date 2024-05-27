@@ -2,7 +2,7 @@
 import React from "react";
 import { usePopup } from "@/src/utils/PopupsContext";
 
-function OrderButton({ serviceInfo }) {
+function OrderButton({ serviceInfo, orderButtonText }) {
   const { orderPopupDisplay, setOrderPopupDisplay, serviceValue, setServiceValue } = usePopup();
 
   const orderPopupOpen = () => {
@@ -10,7 +10,7 @@ function OrderButton({ serviceInfo }) {
     setOrderPopupDisplay(true);
   };
 
-  return <button onClick={() => orderPopupOpen()} className="main-button">Order now</button>;
+  return <button onClick={() => orderPopupOpen()} className="main-button">{orderButtonText}</button>;
 }
 
 export default OrderButton;

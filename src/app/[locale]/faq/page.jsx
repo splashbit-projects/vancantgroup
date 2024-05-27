@@ -1,32 +1,59 @@
 import React from "react";
 import "@/public/scss/faq.scss";
 import FaqHero from "./_components/FaqHero";
-import RequestBlock from "@/src/app/_global-components/LayoutElements/RequestBlock";
+import RequestBlock from "@/src/app/[locale]/_global-components/LayoutElements/RequestBlock";
 import FaqQuestions from "./_components/FaqQuestions";
+import { useTranslations } from "next-intl";
+import { faqQuestionsIt } from "@/src/lib/faqQuestionsIt";
+import { faqQuestionsEn } from "@/src/lib/faqQuestionsEn";
+import ContactForm from "./_components/ContactForm";
+import { getLocale } from "next-intl/server";
 
 export const metadata = {
   title: "Crypto marketing FAQ",
-  description: "Struggling to succeed in crypto marketing? Submit your issue to our experts, and we will provide you with possible reasons and solutions to drive your project to success. Read our expert answers.",
+  description:
+    "Struggling to succeed in crypto marketing? Submit your issue to our experts, and we will provide you with possible reasons and solutions to drive your project to success. Read our expert answers.",
   openGraph: {
     title: "Crypto marketing FAQ",
-    description: "Struggling to succeed in crypto marketing? Submit your issue to our experts, and we will provide you with possible reasons and solutions to drive your project to success. Read our expert answers.",
+    description:
+      "Struggling to succeed in crypto marketing? Submit your issue to our experts, and we will provide you with possible reasons and solutions to drive your project to success. Read our expert answers.",
     images: "https://vancantgroup.com/images/meta.png",
   },
 };
 
-function FaqPage() {
+
+
+function FaqPage({ params }) {
+  const t = useTranslations("FaqPage");
+  const faqQuestions = params.locale === "it" ? faqQuestionsIt : faqQuestionsEn;
+  
   return (
     <>
-      <FaqHero />
-      <FaqQuestions/>
+      <FaqHero
+        faqHeroTitle={t("faqHeroTitle")}
+        faqHeroSubtitle={t("faqHeroSubtitle")}
+        faqHeroQuestion={t("faqHeroQuestion")}
+      />
+      <ContactForm
+        contactFormNamePlaceholder={t("contactFormNamePlaceholder")}
+        contactFormEmailPlaceholder={t("contactFormEmailPlaceholder")}
+        contactFormQuestionPlaceholder={t("contactFormQuestionPlaceholder")}
+        contactFormSubmitButton={t("contactFormSubmitButton")}
+        contactFormSuccessMessage={t("contactFormSuccessMessage")}
+        validation_required={t("validation_required")}
+        validation_email={t("validation_email")}
+      />
+      <FaqQuestions questions={faqQuestions} />
       <RequestBlock
-        title="Need assistance?"
-        subtitle="Our experts are ready to analyse your crypto business and provide a tailored solution. It's free!"
+        title={t("requestBlockTitle")}
+        subtitle={t("requestBlockSubtitle")}
         buttonLink="/contact-us"
-        buttonText="Contact us"
+        buttonText={t("requestBlockButtonText")}
       />
     </>
   );
 }
+
+
 
 export default FaqPage;

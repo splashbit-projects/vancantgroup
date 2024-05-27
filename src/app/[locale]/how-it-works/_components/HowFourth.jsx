@@ -1,37 +1,28 @@
 "use client";
-import AnimationElement from "@/src/app/_global-components/LayoutElements/AnimationElement";
+import AnimationElement from "@/src/app/[locale]/_global-components/LayoutElements/AnimationElement";
 import { RevealWrapper } from "next-reveal";
 import React from "react";
 
-function HowFourth() {
+function HowFourth({ title, subtitle, description }) {
   return (
     <section className="how-fourth">
       <div className="_container">
         <div className="how-fourth__body">
           <RevealWrapper origin="bottom">
-            <h2>The result?</h2>
+            <h2>{title}</h2>
           </RevealWrapper>
           <RevealWrapper origin="bottom">
-            <h3>Engaged and Enthusiastic Users</h3>
+            <h3>{subtitle}</h3>
           </RevealWrapper>
           <RevealWrapper origin="bottom">
-            <p>
-              By immersing your brand in front of your target audience and
-              leveraging data-
-              <br />
-              driven insights, we cultivate a community of eager users who are
-              willing to <br />
-              participate in your project, support it, advocate for it, and
-              share it with others.
-            </p>
+            <p dangerouslySetInnerHTML={{ __html: description }}></p>
           </RevealWrapper>
-          
         </div>
       </div>
       <AnimationElement
-            animation="https://prod.spline.design/NanMajFNd0h8gBBf/scene.splinecode"
-            fallbackImage="/images/home/home-why.webp"
-          />
+        animation="https://prod.spline.design/NanMajFNd0h8gBBf/scene.splinecode"
+        fallbackImage="/images/home/home-why.webp"
+      />
     </section>
   );
 }

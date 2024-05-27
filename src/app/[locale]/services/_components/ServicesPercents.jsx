@@ -1,45 +1,40 @@
 import React from "react";
-import CircleProgressBar from "@/src/app/_global-components/LayoutElements/CircleProgressBar";
+import CircleProgressBar from "@/src/app/[locale]/_global-components/LayoutElements/CircleProgressBar";
 
-function ServicesPercents() {
+function ServicesPercents({percentsTitle, organicTraffic, socialMediaEngagement, costPerAction, conversionRate, clickThroughRate}) {
   return (
     <section className="services-percents">
       <div className="_container">
-        <h2>Expected growth metrics</h2>
+        <h2>{percentsTitle}</h2>
         <div className="services-percents__body">
           <div>
             <CircleProgressBar percentageMax={100} prefix="+" />
             <p>
-              Organic <br />
-              traffic
+              {organicTraffic}
             </p>
           </div>
           <div>
             <CircleProgressBar percentageMax={75} prefix="+" />
             <p>
-              Social media <br />
-              engagement
+              {socialMediaEngagement}
             </p>
           </div>
           <div>
             <CircleProgressBar percentageMax={47} prefix="-" />
             <p>
-              Cost <br />
-              per action
+              {costPerAction}
             </p>
           </div>
           <div>
             <CircleProgressBar percentageMax={23} prefix="+" />
             <p>
-              Conversion <br />
-              rate
+              {conversionRate}
             </p>
           </div>
           <div>
             <CircleProgressBar percentageMax={41} prefix="+" />
             <p>
-              Click <br />
-              through rate
+              {clickThroughRate}
             </p>
           </div>
         </div>

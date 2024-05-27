@@ -1,4 +1,4 @@
-export const pricing = [
+export const pricingEn = [
     {
         id: 1,
         title: "Brand new",

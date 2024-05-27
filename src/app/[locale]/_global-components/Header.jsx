@@ -7,16 +7,24 @@ import Facebook from "./LayoutElements/socials/Facebook";
 import Instagram from "./LayoutElements/socials/Instagram";
 import Twitter from "./LayoutElements/socials/Twitter";
 
-export default function Header() {
+export default function Header({home, services, howItWorks, pricing, about, blog, faq, contact}) {
   const [opened, setOpened] = useState(false);
   const pathname = usePathname();
-  let lastSegment = pathname.split('/').pop();
-  if(lastSegment == 'de' || lastSegment == 'it'){
-    lastSegment = `/`;
-  } else {
-    lastSegment = `/${lastSegment}`;
-  }
-  console.log(pathname);
+  const getLastSegment = (pathname) => {
+    const segments = pathname.split('/');
+    const lastSegment = segments.pop();
+
+    // If the last segment is empty (which means the URL ends with '/blog'), pop another segment
+    if (lastSegment === "" || lastSegment === "it" || lastSegment === "de") {
+      return segments.join('/').replace('/it', '').replace('/de', '') || '/';
+    }
+
+    // Join the remaining segments excluding the language segment '/it' or '/de'
+    return segments.join('/').replace('/it', '').replace('/de', '') + '/' + lastSegment;
+  };
+
+  const lastSegment = getLastSegment(pathname);
+  console.log(lastSegment);
 
   const menuOpen = () => {
     setOpened(!opened);
@@ -66,16 +74,16 @@ export default function Header() {
         <div className="_container">
           <nav>
             <div className="left-col">
-              <Link href="/">Home</Link>
-              <Link href="/services">Services</Link>
-              <Link href="/how-it-works">How It Works</Link>
-              <Link href="/pricing">Pricing</Link>
+              <Link href="/">{home}</Link>
+              <Link href="/services">{services}</Link>
+              <Link href="/how-it-works">{howItWorks}</Link>
+              <Link href="/pricing">{pricing}</Link>
             </div>
             <div className="right-col">
-              <Link href="/about-us">About Us</Link>
-              <Link href="/blog">Blog</Link>
-              <Link href="/faq">FAQ</Link>
-              <Link href="/contact-us">Contact Us</Link>
+              <Link href="/about-us">{about}</Link>
+              <Link href="/blog">{blog}</Link>
+              <Link href="/faq">{faq}</Link>
+              <Link href="/contact-us">{contact}</Link>
             </div>
           </nav>
           <div className="socials">

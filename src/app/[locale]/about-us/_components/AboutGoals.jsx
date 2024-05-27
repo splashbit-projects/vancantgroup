@@ -1,54 +1,54 @@
-import CardWithHover from '@/src/app/_global-components/LayoutElements/CardWithHover'
-import React from 'react'
+import CardWithHover from '@/src/app/[locale]/_global-components/LayoutElements/CardWithHover';
+import React from 'react';
 
-function AboutGoals() {
+function AboutGoals({ goalsTitle, goals }) {
   return (
     <section className="about-goals">
       <div className="about-goals__container _container">
         <div className="about-goals__body">
           <h2 className="about-goals__title">
-          Our Goals
+            {goalsTitle}
           </h2>
           <div className="about-goals__content">
             <div className="about-goals__row-01">
               <CardWithHover 
-              image={`/images/about/goal1.png`}
-              title={`New Technologies`}
-              text={`Continuously adopt and integrate the latest technologies and tools to enhance our marketing strategies and stay ahead of industry trends.`}
+                image={goals[0].image}
+                title={goals[0].title}
+                text={goals[0].text}
               />
               <CardWithHover 
-              image={`/images/about/goal2.png`}
-              title={`Team Growth`}
-              text={`Cultivate a talented and diverse team of professionals passionate about delivering exceptional results and driving innovation.`}
+                image={goals[1].image}
+                title={goals[1].title}
+                text={goals[1].text}
               />
               <CardWithHover 
-              image={`/images/about/goal3.png`}
-              title={`Market Expansion`}
-              text={`Expand our market reach and presence globally, establishing Vancant as a leading provider of crypto marketing solutions.`}
+                image={goals[2].image}
+                title={goals[2].title}
+                text={goals[2].text}
               />
             </div>
             <div className="about-goals__row-02">
-            <CardWithHover 
-              image={`/images/about/goal4.png`}
-              title={`New Industries to Cover`}
-              text={`Diversify our portfolio by exploring new industries and verticals to offer our expertise and services.`}
+              <CardWithHover 
+                image={goals[3].image}
+                title={goals[3].title}
+                text={goals[3].text}
               />
               <CardWithHover 
-              image={`/images/about/goal5.png`}
-              title={`New Solutions to Add`}
-              text={`Develop and introduce new marketing solutions and services to address the evolving needs of our clients and the market.`}
+                image={goals[4].image}
+                title={goals[4].title}
+                text={goals[4].text}
               />
               <CardWithHover 
-              image={`/images/about/goal6.png`}
-              title={`Continuous Improvement`}
-              text={`Strive for continuous improvement and excellence in all operations for highest level satisfaction.`}
+                image={goals[5].image}
+                title={goals[5].title}
+                text={goals[5].text}
               />
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default AboutGoals
+export default AboutGoals;

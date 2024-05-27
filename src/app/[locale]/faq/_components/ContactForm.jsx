@@ -2,7 +2,15 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
-const ContactForm = () => {
+const ContactForm = ({
+  contactFormNamePlaceholder,
+  contactFormEmailPlaceholder,
+  contactFormQuestionPlaceholder,
+  contactFormSubmitButton,
+  contactFormSuccessMessage,
+  validation_required,
+  validation_email
+}) => {
   const initialValues = {
     name: "",
     email: "",
@@ -10,11 +18,11 @@ const ContactForm = () => {
   };
 
   const validationSchema = Yup.object({
-    name: Yup.string().required("This field is required."),
+    name: Yup.string().required(validation_required),
     email: Yup.string()
-      .email("Please provide a corrected email address.")
-      .required("This field is required."),
-    question: Yup.string().required("This field is required."),
+      .email(validation_email)
+      .required(validation_required),
+    question: Yup.string().required(validation_required),
   });
 
   const handleSubmit = async (
@@ -40,11 +48,10 @@ const ContactForm = () => {
     } catch (error) {
       console.error(error);
     }
-    
   };
 
   return (
-    <div className="form-wrap">
+    <div className="faq-form">
       <Formik
         initialValues={initialValues}
         validationSchema={validationSchema}
@@ -56,7 +63,7 @@ const ContactForm = () => {
               <Field
                 name="name"
                 type="text"
-                placeholder="Your Name"
+                placeholder={contactFormNamePlaceholder}
                 className={touched.name && errors.name ? "invalid" : ""}
               />
               <ErrorMessage name="name" component="div" className="error" />
@@ -66,7 +73,7 @@ const ContactForm = () => {
               <Field
                 name="email"
                 type="email"
-                placeholder="Your Email"
+                placeholder={contactFormEmailPlaceholder}
                 className={touched.email && errors.email ? "invalid" : ""}
               />
               <ErrorMessage name="email" component="div" className="error" />
@@ -76,7 +83,7 @@ const ContactForm = () => {
               <Field
                 name="question"
                 as="textarea"
-                placeholder="Your Question"
+                placeholder={contactFormQuestionPlaceholder}
                 className={touched.question && errors.question ? "invalid" : ""}
               />
               <ErrorMessage name="question" component="div" className="error" />
@@ -87,14 +94,12 @@ const ContactForm = () => {
               className="main-button"
               disabled={isSubmitting}
             >
-              Submit
+              {contactFormSubmitButton}
             </button>
 
             {status && status.success && (
               <p className="success">
-                Your question has been submitted successfully. You will receive
-                an email with a link to our FAQ page when your question will be
-                answered.
+                {contactFormSuccessMessage}
               </p>
             )}
           </Form>

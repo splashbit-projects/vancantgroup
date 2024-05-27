@@ -1,10 +1,10 @@
 "use client";
 import React, { useEffect } from "react";
-import { pricing } from "@/src/lib/pricing";
-import { RevealWrapper, RevealList } from "next-reveal";
-import OrderButton from "@/src/app/_global-components/LayoutElements/OrderButton";
 
-function PricingLoop() {
+import { RevealWrapper, RevealList } from "next-reveal";
+import OrderButton from "@/src/app/[locale]/_global-components/LayoutElements/OrderButton";
+
+function PricingLoop({pricing, title, orderButtonText}) {
   useEffect(() => {
     console.log(pricing);
   }, []);
@@ -15,9 +15,7 @@ function PricingLoop() {
         <div className="_container">
           <RevealWrapper origin="bottom">
             <h2>
-              Seeking a comprehensive solution?
-              <br />
-              Discover our package offerings.
+              {title}
             </h2>
           </RevealWrapper>
 
@@ -43,7 +41,7 @@ function PricingLoop() {
                       dangerouslySetInnerHTML={{ __html: item.included }}
                     />
                     <div className="price-row">
-                      <OrderButton serviceInfo={item.title} />
+                      <OrderButton orderButtonText={orderButtonText} serviceInfo={item.title} />
                       <span>{item.price}</span>
                     </div>
                   </div>

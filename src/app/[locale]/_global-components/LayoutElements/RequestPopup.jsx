@@ -10,30 +10,17 @@ import {
 } from "formik";
 import * as Yup from "yup";
 import { usePopup } from "@/src/utils/PopupsContext";
-import DatePicker, { registerLocale } from "react-datepicker";
+import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
-const validationSchema = Yup.object({
-  name: Yup.string().required("This field is required."),
-  email: Yup.string()
-    .email("Please provide a corrected email address.")
-    .required("This field is required."),
-  phone: Yup.string().required("This field is required."),
-  project: Yup.string().required("This field is required."),
-  acceptTermsRequest: Yup.boolean().oneOf(
-    [true],
-    "You must accept the terms and conditions."
-  ),
-});
-
-const CustomInput = React.forwardRef(({ value, onClick, placeholder }, ref) => (
+const CustomInput = React.forwardRef(({ value, onClick, inputPlaceholder }, ref) => (
   <span
     className="custom-input"
-    data-placeholder={placeholder}
+    data-placeholder={inputPlaceholder}
     onClick={onClick}
     ref={ref}
   >
-    <span>{value || "Preferred start date"}</span>
+    <span>{value || inputPlaceholder}</span>
     <img src="/images/date.svg" />
   </span>
 ));
@@ -48,7 +35,7 @@ const FormikDatePicker = ({ placeholder, ...props }) => {
         {...props}
         selected={field.value ? new Date(field.value) : null}
         onChange={(date) => setFieldValue(field.name, date)}
-        customInput={<CustomInput placeholder={placeholder} />}
+        customInput={<CustomInput inputPlaceholder={placeholder} />}
       />
       {meta.touched && meta.error ? (
         <div className="error">{meta.error}</div>
@@ -57,9 +44,33 @@ const FormikDatePicker = ({ placeholder, ...props }) => {
   );
 };
 
-function RequestPopup() {
+function RequestPopup({
+  requestPopup_title,
+  requestPopup_namePlaceholder,
+  requestPopup_emailPlaceholder,
+  requestPopup_phonePlaceholder,
+  requestPopup_projectPlaceholder,
+  requestPopup_datePlaceholder,
+  requestPopup_descriptionPlaceholder,
+  requestPopup_acceptTerms,
+  requestPopup_submitButton,
+  requestPopup_successMessage,
+  requestPopup_successDescription,
+  validation_required,
+  validation_email,
+}) {
   const { requestPopupDisplay, setRequestPopupDisplay } = usePopup();
   const [resetFormFunction, setResetFormFunction] = useState(() => () => {});
+
+  const validationSchema = Yup.object({
+    name: Yup.string().required(validation_required),
+    email: Yup.string()
+      .email(validation_email)
+      .required(validation_required),
+    phone: Yup.string().required(validation_required),
+    project: Yup.string().required(validation_required),
+    acceptTermsRequest: Yup.boolean().oneOf([true], validation_required),
+  });
 
   const initialValues = {
     name: "",
@@ -123,8 +134,8 @@ function RequestPopup() {
           <path
             d="M18 18.5L2 2.5M18 2.5L2 18.5"
             stroke="#fff"
-            stroke-width="4"
-            stroke-linecap="round"
+            strokeWidth="4"
+            strokeLinecap="round"
           />
         </svg>
         <div>
@@ -138,12 +149,12 @@ function RequestPopup() {
                 <Form>
                   {!status && (
                     <div className="form-inner">
-                      <h2>Crypto marketing services request</h2>
+                      <h2>{requestPopup_title}</h2>
                       <div>
                         <Field
                           name="name"
                           type="text"
-                          placeholder="Your Name"
+                          placeholder={requestPopup_namePlaceholder}
                           className={
                             touched.name && errors.name ? "invalid" : ""
                           }
@@ -159,7 +170,7 @@ function RequestPopup() {
                         <Field
                           name="email"
                           type="email"
-                          placeholder="Your Email"
+                          placeholder={requestPopup_emailPlaceholder}
                           className={
                             touched.email && errors.email ? "invalid" : ""
                           }
@@ -175,7 +186,7 @@ function RequestPopup() {
                         <Field
                           name="phone"
                           type="tel"
-                          placeholder="Your phone"
+                          placeholder={requestPopup_phonePlaceholder}
                           className={
                             touched.phone && errors.phone ? "invalid" : ""
                           }
@@ -191,7 +202,7 @@ function RequestPopup() {
                         <Field
                           name="project"
                           type="text"
-                          placeholder="Project name"
+                          placeholder={requestPopup_projectPlaceholder}
                           className={
                             touched.project && errors.project ? "invalid" : ""
                           }
@@ -206,7 +217,7 @@ function RequestPopup() {
                       <div>
                         <FormikDatePicker
                           name="date"
-                          placeholder="Preferred start date"
+                          placeholder={requestPopup_datePlaceholder}
                         />
                       </div>
 
@@ -214,7 +225,7 @@ function RequestPopup() {
                         <Field
                           name="description"
                           as="textarea"
-                          placeholder="Project description"
+                          placeholder={requestPopup_descriptionPlaceholder}
                           className={
                             touched.description && errors.description
                               ? "invalid"
@@ -245,13 +256,10 @@ function RequestPopup() {
                             <circle cx="7" cy="7" r="6.5" stroke="#333333" />
                             <circle cx="7" cy="7" r="3" fill="#E74848" />
                           </svg>
-                          <span>
-                            I agree to the Terms and Conditions of Vancant
-                            Group.
-                          </span>
+                          <span>{requestPopup_acceptTerms}</span>
                         </label>
                         <ErrorMessage
-                          name="acceptTerms"
+                          name="acceptTermsRequest"
                           component="div"
                           className="error"
                         />
@@ -262,21 +270,15 @@ function RequestPopup() {
                         className="main-button"
                         disabled={isSubmitting}
                       >
-                        Send request
+                        {requestPopup_submitButton}
                       </button>
                     </div>
                   )}
                   {status && status.success && (
                     <div className="success">
                       <img src="/images/success.svg" />
-                      <h3>Thank you for submitting your request!</h3>
-                      <p>
-                        Your order for crypto marketing services has been
-                        successfully sent to Vancant Group.
-                        <br />
-                        Our team will review your submission and get back to you
-                        shortly.
-                      </p>
+                      <h3>{requestPopup_successMessage}</h3>
+                      <p>{requestPopup_successDescription}</p>
                     </div>
                   )}
                 </Form>

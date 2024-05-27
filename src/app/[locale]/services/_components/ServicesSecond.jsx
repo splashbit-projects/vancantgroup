@@ -1,11 +1,11 @@
 "use client";
 import React, { useEffect } from "react";
-import { services } from "@/src/lib/services";
+
 import ServiceBlock from "./ServiceBlock";
 import { RevealList } from "next-reveal";
-import OrderButton from "@/src/app/_global-components/LayoutElements/OrderButton";
+import OrderButton from "@/src/app/[locale]/_global-components/LayoutElements/OrderButton";
 
-function ServicesSecond() {
+function ServicesSecond({services, orderButtonText, result, included}) {
   useEffect(() => {
     console.log(services);
   }, []);
@@ -28,17 +28,17 @@ function ServicesSecond() {
                     <h2 dangerouslySetInnerHTML={{ __html: service.title }} />
                     <p>{service.content}</p>
                     <p>
-                      <strong>The result: </strong>
+                      <strong>{`${result} `}</strong>
                       {service.result}
                     </p>
                   </div>
                   <div className="right">
-                    <h2>What is included?</h2>
+                    <h2>{included}</h2>
                     <div
                       className="included"
                       dangerouslySetInnerHTML={{ __html: service.included }}
                     />
-                    <OrderButton serviceInfo={service.title}/>
+                    <OrderButton orderButtonText={orderButtonText} serviceInfo={service.title}/>
                   </div>
                 </div>
                 <span>{service.id}</span>

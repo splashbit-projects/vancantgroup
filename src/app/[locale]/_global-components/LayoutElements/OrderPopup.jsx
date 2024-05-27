@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
   Formik,
   Form,
@@ -10,30 +10,17 @@ import {
 } from "formik";
 import * as Yup from "yup";
 import { usePopup } from "@/src/utils/PopupsContext";
-import DatePicker, { registerLocale } from "react-datepicker";
+import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
-const validationSchema = Yup.object({
-  name: Yup.string().required("This field is required."),
-  email: Yup.string()
-    .email("Please provide a corrected email address.")
-    .required("This field is required."),
-  phone: Yup.string().required("This field is required."),
-  project: Yup.string().required("This field is required."),
-  acceptTerms: Yup.boolean().oneOf(
-    [true],
-    "You must accept the terms and conditions."
-  ),
-});
-
-const CustomInput = React.forwardRef(({ value, onClick, placeholder }, ref) => (
+const CustomInput = React.forwardRef(({ value, onClick, inputPlaceholder }, ref) => (
   <span
     className="custom-input"
-    data-placeholder={placeholder}
+    data-placeholder={inputPlaceholder}
     onClick={onClick}
     ref={ref}
   >
-    <span>{value || "Preferred start date"}</span>
+    <span>{value || inputPlaceholder}</span>
     <img src="/images/date.svg" />
   </span>
 ));
@@ -48,7 +35,7 @@ const FormikDatePicker = ({ placeholder, ...props }) => {
         {...props}
         selected={field.value ? new Date(field.value) : null}
         onChange={(date) => setFieldValue(field.name, date)}
-        customInput={<CustomInput placeholder={placeholder} />}
+        customInput={<CustomInput inputPlaceholder={placeholder} />}
       />
       {meta.touched && meta.error ? (
         <div className="error">{meta.error}</div>
@@ -57,9 +44,24 @@ const FormikDatePicker = ({ placeholder, ...props }) => {
   );
 };
 
-function OrderPopup() {
+function OrderPopup({ orderTitle, placeholders, validationMessages }) {
   const { orderPopupDisplay, setOrderPopupDisplay, serviceValue } = usePopup();
   const [resetFormFunction, setResetFormFunction] = useState(() => () => {});
+
+  const validationSchema = Yup.object({
+    name: Yup.string().required(validationMessages.required),
+    email: Yup.string()
+      .email(validationMessages.email)
+      .required(validationMessages.required),
+    phone: Yup.string().required(validationMessages.required),
+    project: Yup.string().required(validationMessages.required),
+    acceptTerms: Yup.boolean().oneOf(
+      [true],
+      validationMessages.acceptTerms
+    ),
+  });
+
+  console.log("serviceValue", serviceValue);
 
   const initialValues = {
     name: "",
@@ -131,8 +133,8 @@ function OrderPopup() {
           <path
             d="M18 18.5L2 2.5M18 2.5L2 18.5"
             stroke="#fff"
-            stroke-width="4"
-            stroke-linecap="round"
+            strokeWidth="4"
+            strokeLinecap="round"
           />
         </svg>
         <div>
@@ -141,6 +143,7 @@ function OrderPopup() {
               initialValues={initialValues}
               validationSchema={validationSchema}
               onSubmit={handleSubmit}
+              enableReinitialize
             >
               {({ isSubmitting, status, touched, errors }) => (
                 <Form>
@@ -150,14 +153,14 @@ function OrderPopup() {
                         <span
                           dangerouslySetInnerHTML={{ __html: serviceValue }}
                         />{" "}
-                        order
+                        {orderTitle}
                       </h2>
                       <Field type="hidden" name="service" />
                       <div>
                         <Field
                           name="name"
                           type="text"
-                          placeholder="Your Name"
+                          placeholder={placeholders.name}
                           className={
                             touched.name && errors.name ? "invalid" : ""
                           }
@@ -173,7 +176,7 @@ function OrderPopup() {
                         <Field
                           name="email"
                           type="email"
-                          placeholder="Your Email"
+                          placeholder={placeholders.email}
                           className={
                             touched.email && errors.email ? "invalid" : ""
                           }
@@ -189,7 +192,7 @@ function OrderPopup() {
                         <Field
                           name="phone"
                           type="tel"
-                          placeholder="Your phone"
+                          placeholder={placeholders.phone}
                           className={
                             touched.phone && errors.phone ? "invalid" : ""
                           }
@@ -205,7 +208,7 @@ function OrderPopup() {
                         <Field
                           name="project"
                           type="text"
-                          placeholder="Project name"
+                          placeholder={placeholders.project}
                           className={
                             touched.project && errors.project ? "invalid" : ""
                           }
@@ -220,7 +223,7 @@ function OrderPopup() {
                       <div>
                         <FormikDatePicker
                           name="date"
-                          placeholder="Preferred start date"
+                          placeholder={placeholders.date}
                         />
                       </div>
 
@@ -228,7 +231,7 @@ function OrderPopup() {
                         <Field
                           name="description"
                           as="textarea"
-                          placeholder="Project description"
+                          placeholder={placeholders.description}
                           className={
                             touched.description && errors.description
                               ? "invalid"
@@ -260,8 +263,7 @@ function OrderPopup() {
                             <circle cx="7" cy="7" r="3" fill="#E74848" />
                           </svg>
                           <span>
-                            I agree to the Terms and Conditions of Vancant
-                            Group.
+                            {validationMessages.acceptTermsLabel}
                           </span>
                         </label>
                         <ErrorMessage
@@ -276,21 +278,15 @@ function OrderPopup() {
                         className="main-button"
                         disabled={isSubmitting}
                       >
-                        Send request
+                        {orderTitle}
                       </button>
                     </div>
                   )}
                   {status && status.success && (
                     <div className="success">
                       <img src="/images/success.svg" />
-                      <h3>Thank you for submitting your request!</h3>
-                      <p>
-                        Your order for crypto marketing services has been
-                        successfully sent to Vancant Group.
-                        <br />
-                        Our team will review your submission and get back to you
-                        shortly.
-                      </p>
+                      <h3>{validationMessages.successTitle}</h3>
+                      <p>{validationMessages.successMessage}</p>
                     </div>
                   )}
                 </Form>

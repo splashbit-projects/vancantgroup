@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
 import { RevealList } from "next-reveal";
-import AnimationElement from "@/src/app/_global-components/LayoutElements/AnimationElement";
+import AnimationElement from "@/src/app/[locale]/_global-components/LayoutElements/AnimationElement";
 
-function PricingHero() {
+function PricingHero({ title, subtitle }) {
   return (
     <section className="pricing-hero">
       <AnimationElement animation="https://prod.spline.design/NXaowb1k5caLgEXi/scene.splinecode" fallbackImage="/images/pricing/pricing-hero.webp"/>
@@ -14,11 +14,8 @@ function PricingHero() {
           delay={0}
           className="pricing-hero__body"
         >
-          <h1>Crypto marketing pricing</h1>
-          <h2>
-            Tailored pricing solutions, maximising <br />
-            your crypto project's potential
-          </h2>
+          <h1>{title}</h1>
+          <h2>{subtitle}</h2>
           <span></span>
         </RevealList>
       </div>

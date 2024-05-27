@@ -1,5 +1,5 @@
 .faq-hero {
-  margin: 125px 0 150px 0;
+  margin: 125px 0 50px 0;
   @media (max-width: 992px) {
     margin: 125px 0 50px 0;
   }
@@ -63,68 +63,70 @@
       }
     }
   }
-  .form-wrap {
-    background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.2) 0%,
-      rgba(255, 255, 255, 0) 100%
-    );
-    width: 540px;
+}
+
+.faq-form {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  width: 540px;
+  border-radius: 34px;
+  padding: 1px;
+  max-width: 100%;
+  margin: 0 auto 150px auto;
+  @media (max-width: 992px) {
+    border-radius: 20px;
+    margin: 0 auto 50px auto;
+  }
+  form {
+    background: #171717;
     border-radius: 34px;
-    padding: 1px;
-    max-width: 100%;
-    margin: 0 auto;
+    padding: 80px 95px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     @media (max-width: 992px) {
+      padding: 30px 20px;
       border-radius: 20px;
     }
-    form {
-      background: #171717;
-      border-radius: 34px;
-      padding: 80px 95px;
+    > div {
+      width: 100%;
       position: relative;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      @media (max-width: 992px) {
-        padding: 30px 20px;
-        border-radius: 20px;
+      .error {
+        position: absolute;
+        left: 0;
+        color: #e74848;
+        font-size: 10px;
       }
-      > div {
+      input,
+      textarea {
+        color: #fff;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20.83px;
+        text-align: left;
+        border: 1px solid #ffffff26;
+        background: #0f0f0f;
         width: 100%;
-        position: relative;
-        .error {
-          position: absolute;
-          left: 0;
-          color: #e74848;
-          font-size: 10px;
-        }
-        input,
-        textarea {
-          color: #fff;
-          display: flex;
-          align-items: center;
-          padding: 0 20px;
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 20.83px;
-          text-align: left;
-          border: 1px solid #ffffff26;
-          background: #0f0f0f;
-          width: 100%;
-          height: 50px;
-          border-radius: 10px;
-          &.invalid {
-            border-color: #e74848;
-          }
-        }
-        textarea {
-          padding: 15px 20px;
-          height: 150px;
+        height: 50px;
+        border-radius: 10px;
+        &.invalid {
+          border-color: #e74848;
         }
       }
-      button {
-        margin: 10px auto 0 auto;
+      textarea {
+        padding: 15px 20px;
+        height: 150px;
       }
+    }
+    button {
+      margin: 10px auto 0 auto;
     }
   }
 }

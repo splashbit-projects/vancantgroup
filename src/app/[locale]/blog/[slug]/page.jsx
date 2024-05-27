@@ -2,14 +2,26 @@ import { getPost, getSlugs } from "@/src/utils/blogUtils";
 import React from "react";
 import "@/public/scss/blog.scss";
 import { Link } from "@/src/navigation";
+import {getTranslations, getLocale} from 'next-intl/server';
 
 export async function generateStaticParams() {
   const slugs = await getSlugs();
-  return slugs.map((slug) => ({ slug }));
+  const locales = ['en', 'it', 'de'];
+
+  const params = [];
+  slugs.forEach((slug) => {
+    locales.forEach((locale) => {
+      params.push({ slug, locale });
+    });
+  });
+
+  return params;
 }
 
-export async function generateMetadata({ params: { slug } }) {
-  const post = await getPost(slug);
+
+export async function generateMetadata({ params: { slug, locale } }) {
+  const post = await getPost(slug, locale);
+
   return {
     title: post.seo_title,
     description: post.seo_description,
@@ -22,8 +34,10 @@ export async function generateMetadata({ params: { slug } }) {
 }
 
 
-async function BlogSingle({ params: { slug } }) {
-  const post = await getPost(slug);
+
+async function BlogSingle({ params: { slug, locale } }) {
+  const post = await getPost(slug, locale);
+  const t = await getTranslations("BlogPage");
   return (
     <section className="single-post">
       <div className="_container">
@@ -32,7 +46,7 @@ async function BlogSingle({ params: { slug } }) {
           <article
             dangerouslySetInnerHTML={{ __html: post.body }}
           />
-          <Link href="/blog" className="main-button">More articles</Link>
+          <Link href="/blog" className="main-button">{t("more")}</Link>
         </div>
       </div>
     </section>
