@@ -1,49 +1,49 @@
 ---
-title: "Cookie Policy"
+title: "Cookie-Richtlinie"
 ---
 
-Vancant Group Ltd ("us," "we," or "our") operates the website [vancantgroup.com](https://vancantgroup.com) (the "Service").
+Vancant Group Ltd („wir“ oder „unser“) betreibt die Website [vancantgroup.com](https://vancantgroup.com) (der „Dienst“).
 
-This page informs you of our policies regarding the collection, use, and disclosure of cookies on our website.
+Diese Seite informiert Sie über unsere Richtlinien bezüglich der Erfassung, Verwendung und Weitergabe von Cookies auf unserer Website.
 
-## What are Cookies?
+## Was sind Cookies?
 
-Cookies are small text files sent to your web browser by a website you visit. A cookie file is stored in your web browser and allows the Service or a third party to recognize you, making your next visit easier and the Service more useful to you.
+Cookies sind kleine Textdateien, die von einer von Ihnen besuchten Website an Ihren Webbrowser gesendet werden. Eine Cookie-Datei wird in Ihrem Webbrowser gespeichert und ermöglicht es dem Dienst oder einem Drittanbieter, Sie zu erkennen und Ihren nächsten Besuch einfacher und den Dienst für Sie nützlicher zu gestalten.
 
-## How We Use Cookies
+## Wie wir Cookies verwenden
 
-We may place several cookie files in your web browser when you access the Service. We use cookies for the following purposes:
+Wir können mehrere Cookie-Dateien in Ihrem Webbrowser ablegen, wenn Sie auf den Service zugreifen. Wir verwenden Cookies für die folgenden Zwecke:
 
-- To enable certain functions of the Service
-- To provide analytics
-- To store your preferences
-- To enable advertisement delivery, including behavioural advertising
+- Um bestimmte Funktionen des Dienstes zu ermöglichen
+- Um Analysen zu liefern
+- So speichern Sie Ihre Einstellungen
+- Um die Auslieferung von Werbung zu ermöglichen, einschließlich verhaltensbezogener Werbung
 
-We use both session and persistent cookies on the Service, and we use different types of cookies to run the Service:
+Wir verwenden sowohl Sitzungscookies als auch dauerhafte Cookies für den Dienst, und wir verwenden verschiedene Arten von Cookies, um den Dienst zu betreiben:
 
-- **Essential cookies**: We may use essential cookies to authenticate users and prevent fraudulent use of user accounts.
-- **Analytical/performance cookies**: We may use analytical/performance cookies to improve the performance of our website and provide a better user experience.
-- **Functionality cookies**: We may use functionality cookies to recognize you on our website and remember your previously selected preferences.
-- **Targeting cookies**: We may use targeting cookies to collect information about your browsing habits to deliver advertisements that may interest you.
+- **Notwendige Cookies**: Wir können notwendige Cookies verwenden, um Benutzer zu authentifizieren und die betrügerische Nutzung von Benutzerkonten zu verhindern.
+- **Analytische/Leistungs-Cookies**: Wir können Analyse-/Leistungs-Cookies verwenden, um die Leistung unserer Website zu verbessern und eine bessere Benutzererfahrung zu bieten.
+- **Funktionale Cookies**: Wir können funktionale Cookies verwenden, um Sie auf unserer Website wiederzuerkennen und Ihre zuvor gewählten Einstellungen zu speichern.
+- **Targeting-Cookies**: Wir können Targeting-Cookies verwenden, um Informationen über Ihre Surfgewohnheiten zu erheben und Ihnen Werbung zu liefern, die Sie interessieren könnte.
 
-## Third-party Cookies
+## Cookies von Dritten
 
-In addition to our own cookies, we may also use various third-party cookies to report service usage statistics, deliver advertisements on and through the Service, and so on.
+Zusätzlich zu unseren eigenen Cookies können wir auch verschiedene Cookies von Dritten verwenden, um Statistiken über die Nutzung des Dienstes zu erstellen, um Werbung im und über den Dienst zu schalten und so weiter.
 
-## What are Your Choices Regarding Cookies?
+## Welche Wahlmöglichkeiten haben Sie in Bezug auf Cookies?
 
-If you'd like to delete cookies or instruct your web browser to delete or refuse cookies, please visit your browser's help pages.
+Wenn Sie Cookies löschen möchten oder Ihren Webbrowser anweisen möchten, Cookies zu löschen oder abzulehnen, besuchen Sie bitte die Hilfeseiten Ihres Browsers.
 
-Please note, however, that if you delete cookies or refuse to accept them, you might not be able to use all of our features, you may not be able to store your preferences, and some of our pages might not display properly.
+Bitte beachten Sie jedoch, dass Sie, wenn Sie Cookies löschen oder ablehnen, möglicherweise nicht alle unsere Funktionen nutzen können, dass Sie Ihre Einstellungen nicht speichern können und dass einige unserer Seiten möglicherweise nicht richtig angezeigt werden.
 
-For more information about cookies and how to turn them off, visit [http://www.allaboutcookies.org](http://www.allaboutcookies.org).
+Weitere Informationen über Cookies und wie Sie sie deaktivieren können, finden Sie unter [http://www.allaboutcookies.org](http://www.allaboutcookies.org).
 
-## Contact Us
+## Kontaktieren Sie uns
 
-If you have any questions about this Cookie Policy, please contact us:
+Wenn Sie Fragen zu dieser Cookie-Richtlinie haben, kontaktieren Sie uns bitte:
 
-- Website: [vancantgroup.com](http://vancantgroup.com)
-- Phone: [+447458149501](tel:+447458149501)
-- Email: [info@vancantgroup.com](mailto:info@vancantgroup.com)
+- Website: [vancantgroup.com](https://vancantgroup.com)
+- Telefon: [+447458149501](tel:+447458149501)
+- E-Mail: [info@vancantgroup.com](mailto:info@vancantgroup.com)
 
-We strive to respond to all inquiries promptly and provide assistance as needed.
+Wir bemühen uns, alle Anfragen umgehend zu beantworten und Ihnen zu helfen.

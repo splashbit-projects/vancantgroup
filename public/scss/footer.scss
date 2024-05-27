@@ -1,3 +1,18 @@
+html[lang="de"] {
+  footer {
+    .footer-top {
+      .navigation {
+        > div {
+          h2{
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
 footer {
   .footer-top {
     background: #161616;

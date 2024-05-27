@@ -6,6 +6,7 @@ import FaqQuestions from "./_components/FaqQuestions";
 import { useTranslations } from "next-intl";
 import { faqQuestionsIt } from "@/src/lib/faqQuestionsIt";
 import { faqQuestionsEn } from "@/src/lib/faqQuestionsEn";
+import { faqQuestionsDe } from "@/src/lib/faqQuestionsDe";
 import ContactForm from "./_components/ContactForm";
 import { getLocale } from "next-intl/server";
 
@@ -25,7 +26,11 @@ export const metadata = {
 
 function FaqPage({ params }) {
   const t = useTranslations("FaqPage");
-  const faqQuestions = params.locale === "it" ? faqQuestionsIt : faqQuestionsEn;
+  const faqQuestions = params.locale === "it" 
+    ? faqQuestionsIt 
+    : params.locale === "de" 
+        ? faqQuestionsDe 
+        : faqQuestionsEn;
   
   return (
     <>

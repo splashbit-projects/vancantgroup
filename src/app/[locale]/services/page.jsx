@@ -8,6 +8,7 @@ import OrderPopup from "@/src/app/[locale]/_global-components/LayoutElements/Ord
 import { useTranslations } from "next-intl";
 import { servicesEn } from "@/src/lib/servicesEn";
 import { servicesIt } from "@/src/lib/servicesIt";
+import { servicesDe } from "@/src/lib/servicesDe";
 
 export const metadata = {
   title: "Crypto marketing services",
@@ -24,7 +25,11 @@ export const metadata = {
 function ServicesPage({ params }) {
   const tP = useTranslations("PricingPage");
   const tS = useTranslations("ServicesPage");
-  const services = params.locale === "it" ? servicesIt : servicesEn;
+  const services = params.locale === "it" 
+    ? servicesIt 
+    : params.locale === "de" 
+        ? servicesDe 
+        : servicesEn;
 
   const validationMessages = {
     required: tP("validation.required"),
