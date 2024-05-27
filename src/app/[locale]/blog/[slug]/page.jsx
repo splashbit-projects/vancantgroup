@@ -20,6 +20,7 @@ export async function generateStaticParams() {
 
 
 export async function generateMetadata({ params: { slug, locale } }) {
+  unstable_setRequestLocale(locale);
   const post = await getPost(slug, locale);
 
   return {
