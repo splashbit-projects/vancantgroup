@@ -11,13 +11,16 @@ export async function generateStaticParams() {
 
   const params = [];
   slugs.forEach((slug) => {
-    locales.forEach((locale) => {
-      params.push({ slug, locale });
-    });
+    if (!slug.startsWith('IT-') && !slug.startsWith('DE-')) {
+      locales.forEach((locale) => {
+        params.push({ slug, locale });
+      });
+    }
   });
 
   return params;
 }
+
 
 
 export async function generateMetadata({ params: { slug, locale } }) {
@@ -42,7 +45,7 @@ async function BlogSingle({ params: { slug, locale } }) {
 
   const post = await getPost(slug, locale);
   const t = await getTranslations({locale, namespace: 'BlogPage'});
-  
+
   return (
     <section className="single-post">
       <div className="_container">
