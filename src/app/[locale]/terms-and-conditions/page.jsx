@@ -5,7 +5,7 @@ import { getPage, getPageSlugs } from "@/src/utils/blogUtils";
 import {unstable_setRequestLocale} from 'next-intl/server';
 
 export async function generateStaticParams() {
-  unstable_setRequestLocale(locale);
+  
   const slugs = await getPageSlugs();
   const locales = ['en', 'it', 'de'];
 
@@ -23,7 +23,7 @@ export async function generateStaticParams() {
 
 
 export async function generateMetadata({ params: { locale } }) {
-  
+  unstable_setRequestLocale(locale);
   const page = await getPage("terms-and-conditions", locale);
   
   return {
