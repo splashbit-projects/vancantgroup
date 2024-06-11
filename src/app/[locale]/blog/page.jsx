@@ -5,13 +5,13 @@ import BlogWrap from "./_components/BlogWrap";
 import { useTranslations } from "next-intl";
 
 export const metadata = {
-  title: "Crypto marketing blog",
+  title: "Marketing blog",
   description:
-    "Get insights and recommendations from top crypto marketing experts. The Vancant Group team closely monitors marketing trends and the crypto industry to provide you with the most effective solutions.",
+    " Get insights and recommendations from top marketing experts. The Vancant Group team closely monitors marketing trends to provide you with the most effective solutions. ",
   openGraph: {
-    title: "Crypto marketing blog",
+    title: "Marketing blog",
     description:
-      "Get insights and recommendations from top crypto marketing experts. The Vancant Group team closely monitors marketing trends and the crypto industry to provide you with the most effective solutions.",
+      " Get insights and recommendations from top marketing experts. The Vancant Group team closely monitors marketing trends to provide you with the most effective solutions. ",
     images: "https://vancantgroup.com/images/meta.png",
   },
 };

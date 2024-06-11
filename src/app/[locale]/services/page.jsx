@@ -11,13 +11,13 @@ import { servicesIt } from "@/src/lib/servicesIt";
 import { servicesDe } from "@/src/lib/servicesDe";
 
 export const metadata = {
-  title: "Crypto marketing services",
+  title: " Our marketing services",
   description:
-    " Explore crypto marketing services for community building, SEO, PR, advertising strategies, compliance, and branding. At Vancant Group, we guide your project from inception to success.",
+    "Explore marketing services for community building, SEO, PR, advertising strategies, compliance, and branding. At Vancant Group, we guide your project from inception to success.",
   openGraph: {
-    title: "Crypto marketing services",
+    title: " Our marketing services",
     description:
-      " Explore crypto marketing services for community building, SEO, PR, advertising strategies, compliance, and branding. At Vancant Group, we guide your project from inception to success.",
+      "Explore marketing services for community building, SEO, PR, advertising strategies, compliance, and branding. At Vancant Group, we guide your project from inception to success.",
     images: "https://vancantgroup.com/images/meta.png",
   },
 };

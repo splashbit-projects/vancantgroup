@@ -15,7 +15,7 @@ export const servicesEn = [
     {
         id: 2,
         title: "Content Marketing and PR",
-        content: `Our expert team crafts compelling content and strategic PR campaigns to establish your project as a trusted authority in the crypto space. From impactful press releases and thought leadership articles to engaging guest blogs and media outreach, we ensure widespread recognition and positive sentiment.`,
+        content: `Our expert team crafts compelling content and strategic PR campaigns to establish your project as a trusted authority in the digital space. From impactful press releases and thought leadership articles to engaging guest blogs and media outreach, we ensure widespread recognition and positive sentiment. `,
         result: `Enhanced project credibility, increased media coverage, and improved brand reputation driving investor confidence and community engagement.`,
         included: `<ul>
         <li>Content creation (articles, blog posts, press releases)</li>
@@ -28,7 +28,7 @@ export const servicesEn = [
     {
         id: 3,
         title: "Community Engagement and Management",
-        content: `Our team fosters an engaged and active community around your crypto project. We ensure continuous interaction and participation through strategic social media management, interactive community forums, and engaging online events.`,
+        content: `Our team fosters an engaged and active community around your project. We ensure continuous interaction and participation through strategic social media management, interactive community forums, and engaging online events. `,
         result: `A loyal and enthusiastic following that drives word-of-mouth referrals, boosts project credibility, and increases user adoption rates.`,
         included: `<ul>
         <li>Social media management (content posting, engagement)</li>
@@ -54,7 +54,7 @@ export const servicesEn = [
     {
         id: 5,
         title: "Advertising and Promotion",
-        content: `Our targeted advertising campaigns across social media platforms, crypto-specific websites, and influencer partnerships maximise your project's reach and visibility. We drive high-quality traffic and engagement by strategically positioning your project in front of your key demographics.`,
+        content: `Our targeted advertising campaigns across social media platforms, reputable websites, and influencer partnerships maximise your project's reach and visibility. We drive high-quality traffic and engagement by strategically positioning your project in front of your key demographics. `,
         result: `Increased project awareness, expanded user base, and improved conversion rates, ultimately leading to accelerated project growth and success.`,
         included: `<ul>
         <li>Social media advertising (Facebook ads, Twitter ads)</li>

@@ -12,13 +12,13 @@ import { pricingIt } from "@/src/lib/pricingIt";
 import { pricingDe } from "@/src/lib/pricingDe";
 
 export const metadata = {
-  title: "Crypto marketing pricing",
+  title: "Marketing services pricing",
   description:
-    "Explore Vancant Group's pricing approach. Learn how we explore and analyse a project to offer and price a solution. Discover complex service packages for different stages of crypto projects.",
+    "Explore Vancant Group's pricing approach. Learn how we explore and analyse a project to offer and price a solution. Discover complex service packages for different stages of brand growth.",
   openGraph: {
-    title: "Crypto marketing pricing",
+    title: "Marketing services pricing",
     description:
-      "Explore Vancant Group's pricing approach. Learn how we explore and analyse a project to offer and price a solution. Discover complex service packages for different stages of crypto projects.",
+      "Explore Vancant Group's pricing approach. Learn how we explore and analyse a project to offer and price a solution. Discover complex service packages for different stages of brand growth.",
     images: "https://vancantgroup.com/images/meta.png",
   },
 };

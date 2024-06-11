@@ -2,7 +2,7 @@ export const pricingEn = [
     {
         id: 1,
         title: "Brand new",
-        content: `Ideal for newly launched crypto projects, the Brand New Package provides comprehensive marketing support for startups. It includes everything needed to establish a strong online presence, build brand awareness, and attract the target audience.`,
+        content: `Ideal for newly launched projects, the Brand New Package provides comprehensive marketing support for startups. It includes everything needed to establish a strong online presence, build brand awareness, and attract the target audience.`,
         included: `<ul>
         <li>Branding: Logo design, brand identity development</li>
         <li>Website Development: Custom website design, development, and launch</li>
@@ -16,7 +16,7 @@ export const pricingEn = [
     {
         id: 2,
         title: "Launched",
-        content: `Designed for crypto projects with an existing website and branding, the Launched Package focuses on increasing visibility and engagement. It suits crypto businesses looking to enhance their online presence and attract more customers.`,
+        content: `Designed for the projects with an existing website and branding, the Launched Package focuses on increasing visibility and engagement. It suits businesses looking to enhance their online presence and attract more customers.`,
         included: `<ul>
         <li>SEO Optimization: Content optimization, link building</li>
         <li>PR Campaigns: Media relations, feature articles, press releases</li>
@@ -29,7 +29,7 @@ export const pricingEn = [
     {
         id: 3,
         title: "Established",
-        content: `The Established Package is suitable for crypto projects with an active website and community presence. It aims to boost traffic and authority and is ideal for crypto businesses seeking to expand their reach and strengthen their position in the market.`,
+        content: `The Established Package is suitable for the projects with an active website and community presence. It aims to boost traffic and authority and is ideal for businesses seeking to expand their reach and strengthen their position in the market.`,
         included: `<ul>
         <li>Paid Advertising: Google Ads, Facebook Ads, display advertising</li>
         <li>Content Marketing: Blog post writing, whitepapers, case studies</li>
@@ -42,7 +42,7 @@ export const pricingEn = [
     {
         id: 4,
         title: "Competing",
-        content: `Tailored for crypto projects ready to compete with rivals, the Competing Package offers advanced marketing solutions. It's designed for businesses looking to outshine competitors and dominate the niche.`,
+        content: `Tailored for projects ready to compete with rivals, the Competing Package offers advanced marketing solutions. It's designed for businesses looking to outshine competitors and dominate the niche.`,
         included: `<ul>
         <li>Additional Media Coverage: Press mentions, guest posting, industry awards</li>
         <li>Competitor Analysis: Detailed analysis of competitors' strategies and performance</li>

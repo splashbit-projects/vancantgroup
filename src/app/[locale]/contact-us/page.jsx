@@ -11,11 +11,11 @@ import { useTranslations } from "next-intl";
 export const metadata = {
   title: "Contact Us",
   description:
-    "Contact a crypto marketing expert to find a solution for your crypto marketing challenge. The Vancant Group team will consult you on possible solutions from branding to compliance.",
+    "Contact a marketing expert to find a solution for any marketing challenge. The Vancant Group team will consult you on possible solutions from branding to compliance.",
   openGraph: {
     title: "Contact Us",
     description:
-      "Contact a crypto marketing expert to find a solution for your crypto marketing challenge. The Vancant Group team will consult you on possible solutions from branding to compliance.",
+      "Contact a marketing expert to find a solution for any marketing challenge. The Vancant Group team will consult you on possible solutions from branding to compliance.",
     images: "https://vancantgroup.com/images/meta.png",
   },
 };

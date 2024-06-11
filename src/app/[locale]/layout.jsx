@@ -13,18 +13,18 @@ const dm_sans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata = {
   title: {
-    default: "Crypto marketing solutions | Vancant Group",
+    default: "Advanced marketing solutions | Vancant Group",
     template: "%s | Vancant Group",
   },
   description:
-    "Discover the potential of marketing for your crypto projects. Vancant Group drives your crypto project to success through natural mentions, influencer recommendations, and connections.",
+    "Discover the potential of marketing for your projects. Vancant Group drives your project to success through natural mentions, influencer recommendations, and connections.",
   openGraph: {
     title: {
-      default: "Crypto marketing solutions | Vancant Group",
+      default: "Advanced marketing solutions | Vancant Group",
       template: "%s | Vancant Group",
     },
     description:
-      "Discover the potential of marketing for your crypto projects. Vancant Group drives your crypto project to success through natural mentions, influencer recommendations, and connections.",
+      "Discover the potential of marketing for your projects. Vancant Group drives your project to success through natural mentions, influencer recommendations, and connections.",
     images: "https://vancantgroup.com/images/meta.png",
   },
 };

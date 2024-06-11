@@ -11,13 +11,13 @@ import ContactForm from "./_components/ContactForm";
 import { getLocale } from "next-intl/server";
 
 export const metadata = {
-  title: "Crypto marketing FAQ",
+  title: "Marketing FAQ",
   description:
-    "Struggling to succeed in crypto marketing? Submit your issue to our experts, and we will provide you with possible reasons and solutions to drive your project to success. Read our expert answers.",
+    "Struggling to succeed in marketing? Submit your issue to our experts, and we will provide you with possible reasons and solutions to drive your project to success. Read our expert answers.",
   openGraph: {
-    title: "Crypto marketing FAQ",
+    title: "Marketing FAQ",
     description:
-      "Struggling to succeed in crypto marketing? Submit your issue to our experts, and we will provide you with possible reasons and solutions to drive your project to success. Read our expert answers.",
+      "Struggling to succeed in marketing? Submit your issue to our experts, and we will provide you with possible reasons and solutions to drive your project to success. Read our expert answers.",
     images: "https://vancantgroup.com/images/meta.png",
   },
 };

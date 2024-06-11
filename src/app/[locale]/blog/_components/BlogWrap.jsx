@@ -11,11 +11,11 @@ function BlogWrap({mainPostTitle, mainPostDescription, secondaryPost1Title, seco
         <div className="blog-wrap__body">
           <div className="left">
             <RevealWrapper origin="bottom">
-              <Link href="/blog/maximising-roi-effective-strategies-for-optimising-ppc-campaigns-in-crypto-marketing">
+              <Link href="/blog/maximising-roi-effective-strategies-for-optimising-ppc-campaigns">
                 <img src="/images/blog.png" />
               </Link>
               <h2>
-                <Link href="/blog/maximising-roi-effective-strategies-for-optimising-ppc-campaigns-in-crypto-marketing">
+                <Link href="/blog/maximising-roi-effective-strategies-for-optimising-ppc-campaigns">
                   {mainPostTitle}
                 </Link>
               </h2>
@@ -23,7 +23,7 @@ function BlogWrap({mainPostTitle, mainPostDescription, secondaryPost1Title, seco
                 {mainPostDescription}
               </p>
               <Link
-                href="/blog/maximising-roi-effective-strategies-for-optimising-ppc-campaigns-in-crypto-marketing"
+                href="/blog/maximising-roi-effective-strategies-for-optimising-ppc-campaigns"
                 className="main-button"
               >
                 {readButton}
@@ -33,12 +33,12 @@ function BlogWrap({mainPostTitle, mainPostDescription, secondaryPost1Title, seco
           <div className="right">
             <RevealWrapper origin="bottom">
               <h2>
-                <Link href="/blog/maximising-roi-effective-strategies-for-optimising-ppc-campaigns-in-crypto-marketing">
+                <Link href="/blog/navigating-regulatory-challenges-compliance-tips-for-advertising">
                   {secondaryPost1Title}
                 </Link>
               </h2>
               <Link
-                href="/blog/navigating-regulatory-challenges-compliance-tips-for-crypto-advertising"
+                href="/blog/navigating-regulatory-challenges-compliance-tips-for-advertising"
                 className="main-button"
               >
                 {readButton}
@@ -46,12 +46,12 @@ function BlogWrap({mainPostTitle, mainPostDescription, secondaryPost1Title, seco
             </RevealWrapper>
             <RevealWrapper origin="bottom">
               <h2>
-                <Link href="/blog/maximising-roi-effective-strategies-for-optimising-ppc-campaigns-in-crypto-marketing">
+                <Link href="/blog/harnessing-the-power-of-influencer-marketing">
                  {secondaryPost2Title}
                 </Link>
               </h2>
               <Link
-                href="/blog/harnessing-the-power-of-influencer-marketing-in-cryptocurrency-promotion"
+                href="/blog/harnessing-the-power-of-influencer-marketing"
                 className="main-button"
               >
                 {readButton}
@@ -59,12 +59,12 @@ function BlogWrap({mainPostTitle, mainPostDescription, secondaryPost1Title, seco
             </RevealWrapper>
             <RevealWrapper origin="bottom">
               <h2>
-                <Link href="/blog/maximising-roi-effective-strategies-for-optimising-ppc-campaigns-in-crypto-marketing">
+                <Link href="/blog/content-marketing-crafting-really-engaging-content-for-your-audiences">
                   {secondaryPost3Title}
                 </Link>
               </h2>
               <Link
-                href="/blog/crypto-content-marketing-crafting-engaging-content-for-digital-currency-audiences"
+                href="/blog/content-marketing-crafting-really-engaging-content-for-your-audiences"
                 className="main-button"
               >
                 {readButton}

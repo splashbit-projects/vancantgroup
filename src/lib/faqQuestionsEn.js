@@ -11,7 +11,7 @@ export const faqQuestionsEn = [
     {
         id: 2,
         category: 'SEO',
-        question: "We've developed a landing page to promote our crypto project, but it fails to rank on Google. What shall we do?",
+        question: "We've developed a landing page to promote our project, but it fails to rank on Google. What shall we do?",
         answer: `Landing pages often struggle to rank on search engines due to a lack of high-quality content, relevant backlinks, and natural mentions. To address this issue, consider the following strategies:
         <br/><br/>
         <strong>Improve your website:</strong> Develop a comprehensive website with valuable content that addresses user intent and pain points.
@@ -26,14 +26,11 @@ export const faqQuestionsEn = [
         id: 3,
         category: 'Community Building',
         question: "We have accounts on Facebook and Twitter, and we regularly post content in various formats. However, we're experiencing very low engagement and struggle to attract users. What are we doing wrong?",
-        answer: `To provide a comprehensive answer, we'd need more data and analysis. However, your current approach may be too heavily focused on content creation and quantitative metrics. In the crypto industry, effective promotion requires precision and specificity.
+        answer: `To provide a comprehensive answer, we'd need more data and analysis. However, your current approach may be too heavily focused on content creation and quantitative metrics. Effective promotion requires precision and specificity.
         <br/><br/>
-        One aspect to consider is whether you've chosen the right platforms for your project. While Facebook and Twitter are popular social networks, they may not be the most effective channels for reaching your target audience in the crypto space. Instead, focusing on crypto-specific media outlets and social networks could yield better results. 
+        One aspect to consider is whether you've chosen the right platforms for your project. While Facebook and Twitter are popular social networks, they may not be the most effective channels for reaching your target audience. Instead, focusing on industry-specific media outlets and social networks could yield better results. 
         <br/><br/>
-        These platforms are tailored to the interests of crypto enthusiasts and investors, making it easier to attract your target audience without the need for a significant budget.
-        <br/><br/>
-        Additionally, conducting a thorough audience analysis is essential. By understanding your target audience's preferences and pain points, you can tailor your content and targeting strategies to better resonate with them.
-        If you're able to provide more details, we can further explore the reasons behind your low engagement and collaborate on developing a growth strategy.`
+        Additionally, conducting a thorough audience analysis is essential. By understanding your target audience's preferences and pain points, you can tailor your content and targeting strategies to better resonate with them. If you're able to provide more details, we can further explore the reasons behind your low engagement and collaborate on developing a growth strategy.`
     },
     {
         id: 4,
