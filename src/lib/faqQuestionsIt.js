@@ -11,7 +11,7 @@ export const faqQuestionsIt = [
     {
         id: 2,
         category: 'SEO',
-        question: "Abbiamo sviluppato una landing page per promuovere il nostro progetto crypto, ma non riesce a posizionarsi su Google. Cosa dovremmo fare?",
+        question: "Abbiamo sviluppato una landing page per promuovere il nostro progetto, ma non riesce a posizionarsi su Google. Cosa dovremmo fare?",
         answer: `Le landing page spesso faticano a posizionarsi sui motori di ricerca a causa della mancanza di contenuti di alta qualità, backlink rilevanti e menzioni naturali. Per affrontare questo problema, considera le seguenti strategie:
         <br/><br/>
         <strong>Migliora il tuo sito web:</strong> Sviluppa un sito web completo con contenuti di valore che rispondano all'intento degli utenti e ai loro punti dolenti.
@@ -26,14 +26,12 @@ export const faqQuestionsIt = [
         id: 3,
         category: 'Community Building',
         question: "Abbiamo account su Facebook e Twitter e pubblichiamo regolarmente contenuti in vari formati. Tuttavia, riscontriamo un coinvolgimento molto basso e fatichiamo ad attrarre utenti. Cosa stiamo sbagliando?",
-        answer: `Per fornire una risposta completa, avremmo bisogno di più dati e analisi. Tuttavia, il tuo approccio attuale potrebbe essere troppo concentrato sulla creazione di contenuti e metriche quantitative. Nel settore crypto, una promozione efficace richiede precisione e specificità.
+        answer: `Per fornire una risposta completa, avremmo bisogno di più dati e analisi. Tuttavia, potrebbe essere che il vostro attuale approccio sia troppo concentrato sulla creazione di contenuti e metriche quantitative. Una promozione efficace richiede precisione e specificità.
         <br/><br/>
-        Un aspetto da considerare è se hai scelto le piattaforme giuste per il tuo progetto. Sebbene Facebook e Twitter siano social network popolari, potrebbero non essere i canali più efficaci per raggiungere il tuo pubblico di riferimento nel settore crypto. Invece, concentrarsi su media e social network specifici per il crypto potrebbe dare risultati migliori.
+        Un aspetto da considerare è se avete scelto le piattaforme giuste per il vostro progetto. Mentre Facebook e Twitter sono popolari reti sociali, potrebbero non essere i canali più efficaci per raggiungere il vostro pubblico target. Invece, concentrarsi su media specifici del settore e reti sociali potrebbe dare risultati migliori.
         <br/><br/>
-        Queste piattaforme sono adattate agli interessi degli appassionati e degli investitori crypto, rendendo più facile attrarre il tuo pubblico di riferimento senza necessitare di un budget significativo.
-        <br/><br/>
-        Inoltre, è essenziale condurre un'analisi approfondita del pubblico. Comprendendo le preferenze e i punti dolenti del tuo pubblico di riferimento, puoi adattare meglio i tuoi contenuti e le strategie di targeting per risuonare con loro.
-        Se puoi fornire più dettagli, possiamo approfondire le ragioni del tuo basso coinvolgimento e collaborare per sviluppare una strategia di crescita.`
+        Inoltre, condurre un'analisi approfondita del pubblico è essenziale. Comprendendo le preferenze e i punti critici del vostro pubblico target, potrete adattare i vostri contenuti e le strategie di targeting per interagire meglio con loro.
+Se potete fornire ulteriori dettagli, possiamo esplorare ulteriormente le ragioni dietro il basso coinvolgimento e collaborare allo sviluppo di una strategia di crescita.`
     },
     {
         id: 4,

@@ -15,7 +15,7 @@ export const servicesIt = [
     {
         id: 2,
         title: "Content Marketing e PR",
-        content: `Il nostro team di esperti crea contenuti avvincenti e campagne di PR strategiche per stabilire il tuo progetto come autorità affidabile nello spazio cripto. Da comunicati stampa d'impatto e articoli di leadership di pensiero a blog ospiti coinvolgenti e attività di media outreach, garantiamo un riconoscimento diffuso e una sentiment positiva.`,
+        content: `Il nostro team di esperti crea contenuti convincenti e campagne strategiche di relazioni pubbliche per stabilire il tuo progetto come un'autorità affidabile nello spazio digitale. Dai comunicati stampa efficaci e agli articoli di leadership del pensiero, ai blog ospitati coinvolgenti e al contatto con i media, garantiamo un riconoscimento diffuso e un sentimento positivo.`,
         result: `Maggiore credibilità del progetto, maggiore copertura mediatica e migliorata reputazione del brand che alimentano la fiducia degli investitori e l'engagement della comunità.`,
         included: `<ul>
         <li>Creazione di contenuti (articoli, post di blog, comunicati stampa)</li>
@@ -27,8 +27,8 @@ export const servicesIt = [
     },
     {
         id: 3,
-        title: "Engagement e Gestione della Comunità",
-        content: `Il nostro team favorisce una comunità coinvolta e attiva intorno al tuo progetto cripto. Garantiamo un'interazione continua e una partecipazione strategica attraverso la gestione strategica dei social media, forum comunitari interattivi e eventi online coinvolgenti.`,
+        title: "Coinvolgimento e Gestione della Comunità",
+        content: `Il nostro team promuove una comunità impegnata e attiva intorno al tuo progetto. Garantiamo un'interazione continua e partecipazione attraverso una gestione strategica dei social media, forum comunitari interattivi ed eventi online coinvolgenti.`,
         result: `Un seguito fedele ed entusiasta che favorisce il passaparola, aumenta la credibilità del progetto e incrementa i tassi di adozione degli utenti.`,
         included: `<ul>
         <li>Gestione dei social media (pubblicazione di contenuti, engagement)</li>
@@ -54,12 +54,12 @@ export const servicesIt = [
     {
         id: 5,
         title: "Pubblicità e Promozione",
-        content: `Le nostre campagne pubblicitarie mirate su piattaforme di social media, siti web specifici per cripto e partnership con influencer massimizzano la portata e la visibilità del tuo progetto. Posizioniamo strategicamente il tuo progetto davanti ai tuoi principali segmenti demografici, generando traffico e engagement di alta qualità.`,
+        content: `Le nostre campagne pubblicitarie mirate su piattaforme di social media, siti web affidabili e partnership con influencer massimizzano la visibilità e la portata del tuo progetto. Attraverso un posizionamento strategico rivolto alle tue demografie chiave, generiamo traffico e interazione di alta qualità.`,
         result: `Maggiore consapevolezza del progetto, espansione della base utenti e miglioramento dei tassi di conversione, portando infine alla crescita e al successo accelerati del progetto.`,
         included: `<ul>
         <li>Pubblicità sui social media (annunci su Facebook, annunci su Twitter)</li>
         <li>Google Ads (annunci di ricerca, annunci display)</li>
-        <li>Piattaforme pubblicitarie specifiche per cripto (CoinMarketCap, CoinGecko)</li>
+        <li>Le migliori piattaforme pubblicitarie</li>
         <li>Campagne di marketing con influencer</li>
         <li>Contenuti sponsorizzati e opportunità di pubblicità nativa</li>
         </ul>`

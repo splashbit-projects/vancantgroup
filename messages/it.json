@@ -1,48 +1,48 @@
 {
   "Home": {
-    "title": "Hai un progetto crittografico? <br></br>Potenzia il tuo marketing con noi!",
+    "title": "Hai un nuovo progetto? <br></br>Potenzia il tuo marketing con noi!",
     "subtitle": "Soluzioni di marketing complete",
     "tryButton": "Prova ora",
     "learnButton": "Scopri di più"
   },
   "HomeSecond": {
-    "bannerTitle": "Il marketing crypto si basa sui dati in tempo reale per decisioni informate",
-    "bannerSubtitle": "Dì addio alle supposizioni e benvenuto a un approccio basato sui dati per un successo senza precedenti.",
+    "bannerTitle": "Il vero marketing si basa su dati in tempo reale per decisioni informate.",
+    "bannerSubtitle": "Dimentica l'approccio basato sull'ipotesi e abbraccia un approccio guidato dai dati per un successo senza precedenti.",
     "whatTitle": "Che cos'è il Vancant Group?",
     "stepOneTitle": "Marketing Strategico Basato sui Dati",
-    "stepOneText": "L'approccio di Vancant Group si fonda su un'analisi strategica delle dinamiche del mercato crypto, dei comportamenti del pubblico e delle strategie dei concorrenti. Sfruttando il potere degli insight basati sui dati, creiamo strategie di marketing personalizzate che risuonano con la comunità crypto, promuovendo l'engagement e l'adozione del tuo progetto.",
-    "stepTwoTitle": "Soluzioni di Marketing Complete per Progetti Crypto",
-    "stepTwoText": "Vancant Group offre soluzioni di marketing complete progettate specificamente per i progetti crypto. Dalla costruzione della comunità al miglioramento della visibilità nei motori di ricerca, dalla creazione di credibilità al raffinamento dell'identità del marchio all'interno dell'ecosistema crypto, i nostri servizi coprono tutti gli aspetti della promozione dei progetti crypto, garantendo un supporto completo per il successo del tuo progetto.",
-    "stepThreeTitle": "Esperti in Innovazione del Marketing Crypto",
-    "stepThreeText": "Con un team di professionisti profondamente immersi nel settore crypto, Vancant Group combina competenza e innovazione per offrire soluzioni di marketing all'avanguardia. Restiamo aggiornati sulle ultime tendenze, tecnologie e sviluppi normativi all'interno dell'industria crypto, permettendoci di elaborare strategie che catturano l'attenzione, costruiscono fiducia e favoriscono l'adozione del tuo progetto crypto."
+    "stepOneText": "L'approccio di Vancant Group si basa sull'analisi strategica della dinamica di mercato, dei comportamenti del pubblico e delle strategie dei concorrenti. Sfruttando il potere delle intuizioni basate sui dati, creiamo strategie di marketing personalizzate che risuonano con la comunità digitale, stimolando l'interazione e l'adozione del tuo progetto.",
+    "stepTwoTitle": "Soluzioni di Marketing End-to-End",
+    "stepTwoText": "Vancant Group offre soluzioni di marketing complete: dalla costruzione della community e miglioramento della visibilità sui motori di ricerca, all'instaurazione di credibilità e rifinitura dell'identità del marchio, i nostri servizi coprono tutti gli aspetti della promozione del tuo progetto, garantendo un supporto completo per il tuo successo.",
+    "stepThreeTitle": "Esperti nelle più recenti innovazioni nel campo del marketing",
+    "stepThreeText": "Con un team di professionisti profondamente immersi nelle tecnologie di marketing, Vancant Group unisce competenza e innovazione per fornire soluzioni di marketing all'avanguardia. Rimaniamo aggiornati sulle ultime tendenze, tecnologie e strumenti, il che ci consente di elaborare strategie che catturano l'attenzione, generano fiducia e favoriscono l'adozione del tuo progetto."
   },
   "HomeKey": {
     "title": "Massimizza il tuo marketing con Vancant Group",
     "subtitle": "Compiti chiave",
     "taskTitle1": "Costruzione e Coinvolgimento della Comunità",
-    "taskText1": "Costruiamo e coltiviamo comunità attive intorno al tuo progetto crypto, favorendo discussioni e incoraggiando la partecipazione per creare un seguito leale.",
+    "taskText1": "Costruiamo e coltiviamo comunità coinvolte intorno al tuo progetto, promuovendo discussioni e incoraggiando la partecipazione per creare un seguito fedele.",
     "taskTitle2": "Ottimizzazione per i Motori di Ricerca (SEO)",
     "taskText2": "Il nostro team ottimizza la presenza online del tuo progetto per migliorare la visibilità sui motori di ricerca, garantendo che il tuo progetto si posizioni in modo prominente nelle pagine dei risultati dei motori di ricerca, attirando traffico organico e potenziali investitori.",
     "taskTitle3": "Creazione e Distribuzione di Contenuti",
     "taskText3": "Sviluppiamo contenuti specifici che mostrano la competenza, l'esperienza e la proposta di valore del tuo progetto. Distribuiamo poi strategicamente questi contenuti su vari canali, tra cui social media, blog e influencer del settore, per ampliare la portata e la visibilità.",
     "taskTitle4": "Gestione della Reputazione",
-    "taskText4": "Miglioriamo la reputazione e la credibilità del tuo progetto all'interno della comunità crypto attraverso messaggi strategici, coinvolgimento proattivo e gestione delle crisi.",
+    "taskText4": "Miglioriamo la reputazione e la credibilità del tuo progetto all'interno della comunità digitale attraverso messaggistica strategica, coinvolgimento proattivo e gestione delle crisi.",
     "taskTitle5": "Sviluppo dell'Identità del Marchio",
-    "taskText5": "Affiniamo l'identità del tuo marchio per trasmettere autenticità, competenza e affidabilità all'interno dell'ecosistema crypto. Garantiamo coerenza e chiarezza in tutti i punti di contatto del branding, dal design del logo alla comunicazione del marchio.",
+    "taskText5": "Affiniamo l'identità del tuo marchio per trasmettere autenticità, competenza e affidabilità. Garantiamo coerenza e uniformità su tutti i punti di contatto del marchio, dal design del logo ai messaggi del brand.",
     "taskTitle6": "Partnership con Influencer",
-    "taskText6": "Identifichiamo e instauriamo partnership strategiche con i principali influencer e leader di pensiero del settore crypto per amplificare il messaggio del tuo progetto e raggiungere un pubblico più ampio.",
+    "taskText6": "Individuiamo e stringiamo partnership strategiche con influenzatori chiave del settore e leader di pensiero per amplificare il messaggio del tuo progetto e raggiungere un pubblico più ampio.",
     "taskTitle7": "Campagne Pubblicitarie a Pagamento",
-    "taskText7": "Progettiamo e gestiamo campagne pubblicitarie mirate su varie piattaforme, inclusi social media, motori di ricerca e canali specifici del settore crypto, per massimizzare visibilità e portata.",
+    "taskText7": "Progettiamo e gestiamo campagne pubblicitarie mirate su diverse piattaforme, inclusi social media, motori di ricerca e altri canali, per massimizzare visibilità e portata.",
     "taskTitle8": "Analisi e Reportistica",
-    "taskText8": "Forniamo analisi e reportistica complete per tracciare le performance degli sforzi di marketing, misurare i principali indicatori di performance e ricavare insight utili per l'ottimizzazione continua e il miglioramento.",
+    "taskText8": "Garantiamo che il marketing aderisca alle linee guida normative e agli standard di conformità pertinenti nel settore, mitigando i rischi e mantenendo l'integrità della reputazione del tuo progetto.",
     "taskTitle9": "Conformità Regolamentare",
-    "taskText9": "Assicuriamo che il marketing aderisca alle linee guida regolamentari e agli standard di conformità pertinenti all'interno dell'industria crypto, mitigando i rischi e mantenendo l'integrità della reputazione del tuo progetto.",
+    "taskText9": "Ci assicuriamo che il marketing rispetti le linee guida normative pertinenti e gli standard di conformità del settore, mitigando i rischi e mantenendo l'integrità della reputazione del tuo progetto.",
     "tryButton": "Prova ora"
   },
   "HomeWhy": {
-    "title": "Perché hai bisogno di Vancant Group <br></br>per il tuo progetto crypto",
+    "title": "Perché hai bisogno di Vancant Group <br></br>per il tuo progetto",
     "whyTitle1": "Tecnologia Avanzata",
-    "whyText1": "Vancant Group offre una soluzione integrata su misura per il marketing crypto. I nostri strumenti e tecniche avanzate integrano perfettamente le analisi, coprendo tutti gli aspetti delle tue esigenze di marketing in un unico posto. Con il nostro impegno nell'utilizzare le ultime innovazioni, i tuoi sforzi di marketing sono pronti per avere successo competitivo nell'industria crypto.",
+    "whyText1": "Vancant Group offre soluzioni ottimizzate su misura per qualsiasi obiettivo di marketing. I nostri strumenti e tecniche avanzate integrano analisi in modo fluido, coprendo tutti gli aspetti delle tue necessità di marketing in un'unica piattaforma. Con il nostro impegno nell'utilizzare gli ultimi sviluppi, i tuoi sforzi di marketing sono pronti per il successo competitivo.",
     "whyTitle2": "Soluzioni Adattabili",
     "whyText2": "Portaci il tuo progetto, indipendentemente dalle dimensioni o dal budget, e guardalo prosperare. Offriamo soluzioni flessibili che si adattano a progetti di ogni livello. Puoi personalizzare il tuo kit di strumenti in base alle esigenze specifiche del tuo progetto. Il nostro approccio garantisce il successo senza costi inutili, adattandosi perfettamente alle tue necessità.",
     "whyTitle3": "Collaborazione Trasparente",
@@ -50,28 +50,28 @@
     "whyTitle4": "Insights Basati sui Dati",
     "whyText4": "Sfrutta il potere dell'analisi in tempo reale e delle informazioni sul pubblico per prendere decisioni informate. Con le soluzioni di Vancant Group, ottieni dati attuabili che ti consentono di affinare le tue strategie di targeting, ottimizzare le performance delle campagne e massimizzare il ROI.",
     "whyTitle5": "Raggiungimento Mediatico Esclusivo",
-    "whyText5": "La nostra rete copre i principali media del settore crypto e esperti influenti, offrendoti accesso a piattaforme difficili da raggiungere per i tuoi concorrenti. Con la nostra guida, i leader del settore presenteranno e recensiranno il tuo marchio in modo prominente, aumentando la tua visibilità e credibilità all'interno della comunità crypto. Affidati a noi per assicurarti un'esposizione mediatica che ti distingua dalla concorrenza."
+    "whyText5": "La nostra rete include i principali media e esperti influenti, offrendoti accesso a piattaforme che i tuoi concorrenti potrebbero trovare difficili da raggiungere. Con la nostra guida, i leader del settore presenteranno e recenseranno prominentemente il tuo marchio, aumentando la tua visibilità e credibilità nella comunità digitale. Affidati a noi per garantirti una esposizione mediatica che ti distingua dalla concorrenza."
   },
   "HomePercents": {
     "title": "Scopri gli ultimi dati di ricerca del Vancant Group",
-    "col1": "I progetti crypto perdono circa il 30% del loro potenziale guadagno a causa di analisi di marketing e insights inadeguati.",
-    "col2": "Oltre il 50% dei progetti crypto riferisce che fino al 40% del loro budget viene speso in modo inefficace a causa di un targeting scadente, una gestione inefficiente delle campagne e una mancanza di decisioni basate sui dati.",
-    "col3": "Quasi il 70% dei progetti crypto fallisce entro il primo anno di attività sul mercato, spesso a causa di difficoltà nell'acquisire e mantenere utenti, strategie di marketing inefficaci e concorrenza agguerrita.",
-    "col4": "Il nostro studio mostra che oltre il 60% delle aziende crypto fatica con un targeting inefficace del pubblico, risultando in tassi di conversione più bassi e performance delle campagne subottimali.",
-    "col5": "L'80% dei progetti crypto ammette di non sfruttare appieno i dati disponibili per scopi di marketing, perdendo preziosi insights che potrebbero guidare strategie più efficaci e risultati migliori."
+    "col1": "I nuovi progetti perdono circa il 30% del loro potenziale di ricavi a causa di analisi e intuizioni di marketing inadeguate.",
+    "col2": "Oltre il 50% dei nuovi progetti riporta che fino al 40% del loro budget viene speso in modo inefficace a causa di un targeting inadeguato, una gestione inefficiente delle campagne e la mancanza di decisioni basate sui dati.",
+    "col3": "Quasi il 70% dei nuovi progetti fallisce entro il primo anno di operatività sul mercato, spesso attribuito a difficoltà nell'acquisire e trattenere utenti, strategie di marketing inefficaci e una forte concorrenza.",
+    "col4": "Il nostro studio mostra che oltre il 60% delle nuove aziende ha difficoltà con un targeting del pubblico inefficace, con conseguente riduzione dei tassi di conversione e prestazioni subottimali delle campagne.",
+    "col5": "L'80% dei nuovi progetti ammette di sottoutilizzare i dati disponibili per fini di marketing, perdendo preziose intuizioni che potrebbero guidare strategie più efficaci e ottenere risultati migliori."
   },
   "RequestBlock": {
     "title": "Hai bisogno di assistenza?",
-    "subtitle": "I nostri esperti sono pronti ad analizzare la tua attività crypto e a fornire una soluzione personalizzata. È gratis!",
+    "subtitle": "I nostri esperti sono pronti ad analizzare la tua azienda e fornire una soluzione su misura. È gratuito!",
     "buttonText": "Contattaci"
   },
   "Footer": {
-    "aboutCompany": "Vancant Group - soluzioni di marketing specializzate per criptovalute, ottimizzando le attività per il successo nel mondo digitale.",
+    "aboutCompany": "Vancant Group - soluzioni avanzate di marketing, ottimizzazione delle aziende per il successo nel mondo digitale.",
     "colOneTitle": "Servizi",
     "colTwoTitle": "Azienda",
     "colThreeTitle": "Legale",
     "colFourTitle": "Contatti",
-    "copyright": "© 2024 Vancant Group Ltd. Driving Crypto Project Growth.",
+    "copyright": "© 2024 Vancant Group Ltd. Stimoliamo la Crescita Aziendale.",
     "address": "Global Gateway 8, Rue de la Perle, Providence, Mahé, Seychelles"
   },
   "Menu": {
@@ -89,14 +89,14 @@
   },
   "ContactUs": {
     "title": "Siamo qui per aiutarti!",
-    "subtitle": "Ottieni assistenza dagli esperti di marketing crypto per qualsiasi domanda. È gratuito.",
-    "text": "Hai bisogno di una strategia di marketing per criptovalute? Oppure cerchi <br></br>marketing per blockchain? La nostra azienda è qui per aiutarti!",
+    "subtitle": "Ottenete assistenza da esperti di marketing - senza alcun costo per le domande che avete.",
+    "text": "Avete bisogno di una strategia di marketing specifica? Oppure cercate <br></br>marketing orientato alle performance? La nostra azienda è qui per assistervi!",
     "submit": "Invia la tua domanda",
     "requestBlockTitle": "Compila il modulo:",
     "requestButtonText": "Ottieni assistenza"
   },
   "RequestPopup": {
-    "requestPopup_title": "Richiesta di servizi di marketing crypto",
+    "requestPopup_title": "Richiesta di servizi di marketing",
     "requestPopup_namePlaceholder": "Il tuo Nome",
     "requestPopup_emailPlaceholder": "La tua Email",
     "requestPopup_phonePlaceholder": "Il tuo Telefono",
@@ -106,7 +106,7 @@
     "requestPopup_acceptTerms": "Accetto i Termini e Condizioni di Vancant Group.",
     "requestPopup_submitButton": "Invia richiesta",
     "requestPopup_successMessage": "Grazie per aver inviato la tua richiesta!",
-    "requestPopup_successDescription": "Il tuo ordine per i servizi di marketing crypto è stato inviato con successo a Vancant Group. <br></br>Il nostro team esaminerà la tua richiesta e ti contatterà a breve.",
+    "requestPopup_successDescription": "È stata inviata con successo a Vancant Group. <br></br>Il nostro team esaminerà la vostra richiesta e vi risponderà a breve.",
     "validation_required": "Questo campo è obbligatorio.",
     "validation_email": "Si prega di fornire un indirizzo email corretto."
   },
@@ -114,11 +114,11 @@
     "title": "FAQ sul marketing crypto",
     "description": "Hai difficoltà a ottenere successo nel marketing crypto? Invia il tuo problema ai nostri esperti e ti forniremo possibili motivi e soluzioni per portare il tuo progetto al successo. Leggi le risposte dei nostri esperti.",
     "requestBlockTitle": "Hai bisogno di assistenza?",
-    "requestBlockSubtitle": "I nostri esperti sono pronti ad analizzare la tua attività crypto e fornire una soluzione su misura. È gratis!",
+    "requestBlockSubtitle": "I nostri esperti sono pronti ad analizzare la vostra attività e fornire una soluzione su misura. È gratuito!",
     "requestBlockButtonText": "Contattaci",
     "faqHeroTitle": "Tu chiedi, noi rispondiamo",
     "faqHeroSubtitle": "Invia il tuo caso e ottieni una soluzione da esperti. È gratis.",
-    "faqHeroQuestion": "Ho una domanda sul marketing crypto",
+    "faqHeroQuestion": "Mi hai fatto una domanda di marketing",
     "contactFormNamePlaceholder": "Il tuo nome",
     "contactFormEmailPlaceholder": "La tua email",
     "contactFormQuestionPlaceholder": "La tua domanda",
@@ -133,7 +133,7 @@
       "subtitle": "Dall'inizio al futuro"
     },
     "second": {
-      "description": "Prima di Vancant Group, ciascuno di noi era un esperto rispettato in cripto e marketing. Spesso collaboravamo su compiti troppo difficili da affrontare da soli. Realizzando la nostra forza collettiva, abbiamo unito le forze per formare il Vancant Group."
+      "description": "Prima di Vancant Group, ciascuno di noi era un esperto rispettato nel campo del marketing. Spesso collaboravamo su compiti troppo impegnativi per affrontarli da soli. Realizzando la nostra forza collettiva, abbiamo unito le forze per formare Vancant Group."
     },
     "third": {
       "title": "Il nostro percorso aziendale",
@@ -141,11 +141,11 @@
     },
     "vision": {
       "title": "La nostra visione",
-      "content": "Rivoluzionare il panorama del marketing cripto sfruttando tecnologie innovative e intuizioni strategiche per guidare una crescita e un successo senza pari per i nostri clienti."
+      "content": "Per rivoluzionare il panorama del marketing sfruttando tecnologie innovative e intuizioni strategiche, per guidare una crescita e un successo senza pari per i nostri clienti."
     },
     "mission": {
       "title": "La nostra missione",
-      "content": "La nostra missione è potenziare i progetti cripto con soluzioni di marketing all'avanguardia che li spingano a raggiungere i loro obiettivi e stabilire una presenza prominente nel mercato."
+      "content": "La nostra missione è quella di potenziare i progetti con soluzioni di marketing all'avanguardia che li spingano a raggiungere i propri obiettivi e a stabilire una presenza prominente sul mercato."
     },
     "goals": {
       "title": "I nostri obiettivi",
@@ -159,7 +159,7 @@
       },
       "marketExpansion": {
         "title": "Espansione del mercato",
-        "text": "Espandere la nostra portata e presenza sul mercato a livello globale, stabilendo Vancant come fornitore leader di soluzioni di marketing cripto."
+        "text": "Espandere la nostra portata di mercato e presenza a livello globale, stabilendo Vancant come un leader nel fornire soluzioni avanzate di marketing."
       },
       "newIndustries": {
         "title": "Nuove industrie da coprire",
@@ -175,18 +175,18 @@
       }
     },
     "requestBlock": {
-      "title": "Pronto a migliorare il tuo progetto cripto?",
+      "title": "Pronto a potenziare il tuo progetto?",
       "buttonText": "Contattaci"
     }
   },
   "PricingPage": {
     "hero": {
-      "title": "Prezzi di marketing cripto",
-      "subtitle": "Soluzioni di prezzo su misura, massimizzando <br></br>il potenziale del tuo progetto cripto"
+      "title": "Tariffe dei servizi di marketing",
+      "subtitle": "Soluzioni di pricing personalizzate per massimizzare il potenziale del tuo progetto"
     },
     "second": {
-      "intro": "Ogni progetto cripto è unico. Lo capiamo. Ecco perché non possiamo offrire prezzi <br></br>fissi. Invece, adattiamo il nostro approccio per soddisfare esattamente le esigenze del tuo progetto.",
-      "title": "Come formiamo i prezzi per il marketing cripto",
+      "intro": "Ogni progetto è unico. Lo comprendiamo bene. Ecco perché non possiamo offrire prezzi fissi. <br></br>Invece, adattiamo il nostro approccio per rispondere precisamente alle esigenze del tuo progetto.",
+      "title": "Come formiamo i prezzi per i servizi di marketing",
       "step1": { 
         "title": "Richiesta", 
         "description": "Una volta ricevuta una richiesta, ci mettiamo subito in contatto per maggiori dettagli." 
@@ -213,7 +213,7 @@
       }
     },
     "requestBlock": {
-      "title": "Hai un progetto cripto?",
+      "title": "Hai un nuovo progetto?",
       "subtitle": "Discutiamo il suo marketing per il successo!",
       "buttonText": "Richiedi soluzione"
     },
@@ -238,7 +238,7 @@
       "acceptTerms": "Devi accettare i termini e le condizioni.",
       "acceptTermsLabel": "Accetto i Termini e Condizioni del Gruppo Vancant.",
       "successTitle": "Grazie per aver inviato la tua richiesta!",
-      "successMessage": "Il tuo ordine per i servizi di marketing cripto è stato inviato con successo al Gruppo Vancant. Il nostro team esaminerà la tua presentazione e ti contatterà a breve."
+      "successMessage": "Il tuo ordine per i servizi di marketing è stato inviato con successo a Vancant Group. Il nostro team esaminerà la tua richiesta e ti risponderà a breve."
     }
   },
   "HowItWorksPage": {
@@ -262,7 +262,7 @@
       },
       "card3": {
         "title": "Soluzione interna per il <br />tracciamento delle prestazioni",
-        "content": "<p>La nostra soluzione proprietaria traccia le prestazioni del tuo marchio cripto in un'interfaccia. Questa panoramica visiva ci consente di monitorare i cambiamenti sottili e apportare tempestive modifiche alle nostre strategie.</p>"
+        "content": "<p>La nostra soluzione proprietaria traccia le performance del tuo marchio in un'interfaccia unica. Questa panoramica visuale ci consente di monitorare cambiamenti sottili e apportare aggiustamenti tempestivi alle nostre strategie.</p>"
       },
       "card4": {
         "title": "Reportistica trasparente",
@@ -298,14 +298,14 @@
       "description": "Immergendo il tuo marchio davanti al tuo pubblico target e sfruttando le intuizioni basate sui dati, <br/>coltiviamo una comunità di utenti entusiasti pronti a partecipare al tuo <br/>progetto, supportarlo, sostenerlo e condividerlo con altri."
     },
     "requestBlock": {
-      "title": "Pronto a sbloccare tutto il potenziale <br/>del tuo progetto cripto?",
+      "title": "Pronto a sbloccare tutto il potenziale del tuo progetto?",
       "subtitle": "",
-      "buttonText": "Richiedi soluzione"
+      "buttonText": "Richiedi una soluzione"
     }
   },
   "ServicesPage": {
-    "heroTitle": "Servizi di marketing cripto",
-    "heroSubtitle": "Esplora i nostri servizi di marketing cripto end-to-end, guidando senza problemi il tuo progetto dall'inizio al successo con precisione strategica.",
+    "heroTitle": "I nostri servizi di marketing",
+    "heroSubtitle": "Scopri i nostri servizi di marketing end-to-end, guidando il tuo progetto in modo fluido dall'inizio al successo con precisione strategica.",
     "percentsTitle": "Metriche di crescita previste",
     "metrics": {
       "organicTraffic": "Traffico <br></br>organico",
@@ -315,14 +315,14 @@
       "clickThroughRate": "Tasso di <br></br>clic"
     },
     "requestBlockTitle": "Hai bisogno di assistenza?",
-    "requestBlockSubtitle": "I nostri esperti sono pronti ad analizzare la tua attività cripto e fornire una soluzione su misura. È gratis!",
+    "requestBlockSubtitle": "I nostri esperti sono pronti ad analizzare la tua attività e fornire una soluzione su misura. È gratuito!",
     "requestBlockButtonText": "Contattaci",
     "result": "Il risultato:",
     "included": "Cosa è incluso?"
   },
   "BlogPage": {
     "metadata": {
-      "title": "Blog sul marketing cripto",
+      "title": "Blog sul marketing ",
       "description": "Ottieni approfondimenti e raccomandazioni dai migliori esperti di marketing cripto. Il team di Vancant Group monitora da vicino le tendenze del marketing e dell'industria cripto per fornirti le soluzioni più efficaci.",
       "openGraph": {
         "title": "Blog sul marketing cripto",
@@ -331,15 +331,15 @@
       }
     },
     "hero": {
-      "title": "Cosa devi sapere sul marketing cripto",
-      "subtitle": "Gli ultimi approfondimenti e raccomandazioni dagli esperti di Vancant Group."
+      "title": "Quello che devi sapere sul marketing",
+      "subtitle": "Le ultime intuizioni e raccomandazioni dagli esperti di Vancant Group."
     },
     "blog": {
-      "mainPostTitle": "Massimizzare il ROI: Strategie efficaci per ottimizzare le campagne PPC nel marketing crypto",
-      "mainPostDescription": "Scopri come potenziare i tuoi sforzi di marketing cripto con suggerimenti e strategie di esperti per guidare traffico mirato, generare lead e massimizzare il ROI delle tue campagne PPC nel dinamico mondo del marketing delle criptovalute.",
-      "secondaryPost1Title": "Affrontare le sfide normative: Consigli per la conformità nella pubblicità crypto",
-      "secondaryPost2Title": "Sfruttare il potere del marketing degli influencer nella promozione delle criptovalute",
-      "secondaryPost3Title": "Content marketing per crypto: Creare contenuti coinvolgenti per il pubblico delle valute digitali",
+      "mainPostTitle": "Massimizzare il ROI: Strategie efficaci per ottimizzare le campagne PPC",
+      "mainPostDescription": "Scopri come potenziare i tuoi sforzi di marketing con consigli e strategie esperti per guidare traffico mirato, generare lead e massimizzare il ROI dalle tue campagne PPC.",
+      "secondaryPost1Title": "Affrontare le sfide normative: Consigli di conformità per la pubblicità",
+      "secondaryPost2Title": "Sfruttare il potere del marketing degli influencer",
+      "secondaryPost3Title": "Marketing dei contenuti: Come creare contenuti davvero coinvolgenti per il tuo pubblico",
       "readButton": "Leggi"
     },
     "more": "Altri articoli"

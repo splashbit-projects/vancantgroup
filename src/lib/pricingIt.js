@@ -1,8 +1,8 @@
 export const pricingIt = [
     {
         id: 1,
-        title: "Nuovo di zecca",
-        content: `Ideale per progetti cripto appena lanciati, il pacchetto Nuovo di zecca fornisce un supporto di marketing completo per le startup. Include tutto il necessario per stabilire una forte presenza online, costruire la consapevolezza del marchio e attirare il pubblico target.`,
+        title: "Nuovo Brand",
+        content: `Ideale per i progetti appena lanciati, il Pacchetto Brand New offre un supporto completo di marketing per le startup. Include tutto il necessario per stabilire una forte presenza online, costruire consapevolezza del marchio e attrarre il pubblico target.`,
         included: `<ul>
         <li>Branding: Progettazione del logo, sviluppo dell'identità del marchio</li>
         <li>Sviluppo del sito web: Progettazione, sviluppo e lancio del sito web personalizzato</li>
@@ -16,7 +16,7 @@ export const pricingIt = [
     {
         id: 2,
         title: "Lanciato",
-        content: `Progettato per progetti cripto con un sito web e un marchio esistenti, il pacchetto Lanciato si concentra sull'aumento della visibilità e del coinvolgimento. È adatto alle aziende cripto che cercano di migliorare la loro presenza online e attirare più clienti.`,
+        content: `Progettato per i progetti con un sito web e un branding esistenti, il Pacchetto Launched si concentra sull'aumento della visibilità e dell'interazione. È adatto alle aziende che desiderano migliorare la propria presenza online e attrarre più clienti.`,
         included: `<ul>
         <li>Ottimizzazione SEO: Ottimizzazione dei contenuti, link building</li>
         <li>Campagne PR: Relazioni con i media, articoli di approfondimento, comunicati stampa</li>
@@ -28,8 +28,8 @@ export const pricingIt = [
     },
     {
         id: 3,
-        title: "Stabilito",
-        content: `Il pacchetto Stabilito è adatto a progetti cripto con un sito web attivo e una presenza nella comunità. Mira a incrementare il traffico e l'autorità ed è ideale per le aziende cripto che cercano di espandere la loro portata e rafforzare la loro posizione nel mercato.`,
+        title: "Consolidato",
+        content: `Il Pacchetto Established è adatto ai progetti con un sito web attivo e una presenza nella comunità. Mirato a incrementare il traffico e l'autorevolezza, è ideale per le aziende che desiderano espandere il loro raggio d'azione e rafforzare la propria posizione sul mercato.`,
         included: `<ul>
         <li>Pubblicità a pagamento: Google Ads, Facebook Ads, pubblicità display</li>
         <li>Content Marketing: Scrittura di post sul blog, whitepaper, case study</li>
@@ -41,8 +41,8 @@ export const pricingIt = [
     },
     {
         id: 4,
-        title: "In competizione",
-        content: `Su misura per progetti cripto pronti a competere con i rivali, il pacchetto In competizione offre soluzioni di marketing avanzate. È progettato per le aziende che cercano di superare i concorrenti e dominare la nicchia.`,
+        title: "Competitivo",
+        content: `Progettato per i progetti pronti a competere con i rivali, il Pacchetto Competing offre soluzioni avanzate di marketing. È pensato per le aziende che desiderano distinguersi dai concorrenti e dominare il loro settore di mercato.`,
         included: `<ul>
         <li>Copertura mediatica aggiuntiva: Menzioni stampa, guest posting, premi del settore</li>
         <li>Analisi della concorrenza: Analisi dettagliata delle strategie e delle prestazioni dei concorrenti</li>
