@@ -10,7 +10,7 @@ export const faqQuestionsDe = [
     {
         id: 2,
         category: 'SEO',
-        question: "Wir haben eine Landing Page entwickelt, um für unser Krypto-Projekt zu werben, aber sie schafft es nicht, bei Google zu ranken. Was sollen wir tun?",
+        question: "Wir haben eine Landingpage entwickelt, um unser Projekt zu bewerben, aber sie wird nicht in Google gerankt. Was sollen wir tun?",
         answer: `Landing Pages haben es oft schwer, in den Suchmaschinen zu ranken, weil es ihnen an hochwertigem Inhalt, relevanten Backlinks und natürlichen Erwähnungen mangelt. Um dieses Problem anzugehen, sollten Sie die folgenden Strategien in Betracht ziehen:
         <br/><br/>
         <strong>Verbessern Sie Ihre Website:</strong> Entwickeln Sie eine umfassende Website mit wertvollen Inhalten, die auf die Absichten und Probleme der Nutzer eingehen.
@@ -25,17 +25,17 @@ export const faqQuestionsDe = [
         id: 3,
         category: 'Community Building',
         question: "Wir haben Konten auf Facebook und Twitter und veröffentlichen regelmäßig Inhalte in verschiedenen Formaten. Wir erleben jedoch ein sehr geringes Engagement und haben Mühe, Nutzer zu gewinnen. Was machen wir falsch?",
-        answer: `Um eine umfassende Antwort zu geben, benötigen wir mehr Daten und Analysen. Möglicherweise ist Ihr derzeitiger Ansatz jedoch zu sehr auf die Erstellung von Inhalten und quantitative Kennzahlen ausgerichtet. In der Kryptoindustrie erfordert effektive Werbung Präzision und Spezifität.
+        answer: `Um eine umfassende Antwort zu geben, benötigen wir mehr Daten und Analysen. Ihre derzeitige Herangehensweise könnte jedoch zu stark auf die Erstellung von Inhalten und quantitativen Metriken ausgerichtet sein. Eine effektive Promotion erfordert Präzision und Spezifität.
         <br/><br/>
-        Ein Aspekt, den Sie berücksichtigen sollten, ist, ob Sie die richtigen Plattformen für Ihr Projekt ausgewählt haben. Facebook und Twitter sind zwar beliebte soziale Netzwerke, aber möglicherweise nicht die effektivsten Kanäle, um Ihr Zielpublikum im Kryptobereich zu erreichen. Stattdessen könnte eine Konzentration auf kryptospezifische Medien und soziale Netzwerke bessere Ergebnisse bringen.
+        Ein Aspekt, den Sie berücksichtigen sollten, ist, ob Sie die richtigen Plattformen für Ihr Projekt ausgewählt haben. Während Facebook und Twitter beliebte soziale Netzwerke sind, sind sie möglicherweise nicht die effektivsten Kanäle, um Ihre Zielgruppe zu erreichen. Stattdessen könnten Sie sich auf branchenspezifische Medien und soziale Netzwerke konzentrieren, um bessere Ergebnisse zu erzielen.
         <br/><br/>
         Diese Plattformen sind auf die Interessen von Krypto-Enthusiasten und -Investoren zugeschnitten und machen es einfacher, Ihre Zielgruppe anzusprechen, ohne dass Sie ein großes Budget benötigen.
         <br/><br/>
-        Außerdem ist eine gründliche Analyse der Zielgruppe unerlässlich. Wenn Sie die Vorlieben und Probleme Ihrer Zielgruppe kennen, können Sie Ihre Inhalte und Targeting-Strategien so anpassen, dass sie besser auf sie abgestimmt sind. Wenn Sie in der Lage sind, mehr Details zu liefern, können wir die Gründe für Ihr geringes Engagement genauer untersuchen und gemeinsam eine Wachstumsstrategie entwickeln.`
+        Zusätzlich ist eine gründliche Zielgruppenanalyse unerlässlich. Indem Sie die Vorlieben und Schmerzpunkte Ihrer Zielgruppe verstehen, können Sie Ihre Inhalte und Targeting-Strategien besser auf sie zuschneiden, um eine stärkere Resonanz zu erzielen. Wenn Sie weitere Details bereitstellen können, können wir die Gründe für Ihre geringe Beteiligung genauer untersuchen und gemeinsam an der Entwicklung einer Wachstumsstrategie arbeiten.`
     },
     {
         id: 4,
-        category: 'Branding',
+        category: 'Marke',
         question: "Unser Projekt bietet den Nutzern mehr Wert und Gewinn, aber wir haben Mühe, mit unseren Konkurrenten zu konkurrieren, insbesondere mit einem begrenzten Budget. Was können wir tun?",
         answer: `Wenn Sie auf dem Markt konkurrieren, ist das Budget nicht immer der entscheidende Faktor. Stattdessen läuft es oft auf Ihr Branding und Ihre Botschaften hinaus. Wenn Ihr Projekt Ihrer Zielgruppe wirklich einen Mehrwert bietet, aber nicht ankommt, kann es daran liegen, dass Sie Vertrauen und Autorität aufbauen müssen.
         <br/><br/>

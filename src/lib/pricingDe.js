@@ -2,7 +2,7 @@ export const pricingDe = [
     {
         id: 1,
         title: "Brand New",
-        content: `Ideal für neu gestartete Krypto-Projekte, das Brand New-Paket bietet umfassende Marketingunterstützung für Startups. Es enthält alles, was Sie brauchen, um eine starke Online-Präsenz zu etablieren, die Markenbekanntheit zu steigern und die Zielgruppe anzusprechen.`,
+        content: `Ideal für neu gestartete Projekte bietet das Brand New Package umfassende Marketingunterstützung für Startups. Es beinhaltet alles, was benötigt wird, um eine starke Online-Präsenz aufzubauen, Markenbekanntheit zu steigern und die Zielgruppe anzusprechen.`,
         included: `<ul>
         <li>Branding: Logo-Design, Entwicklung der Markenidentität</li>
         <li>Website-Entwicklung: Design, Entwicklung und Einführung einer maßgeschneiderten Website</li>
@@ -16,7 +16,7 @@ export const pricingDe = [
     {
         id: 2,
         title: "Gestartet",
-        content: `Das Launched-Paket wurde für Krypto-Projekte mit einer bestehenden Website und Branding entwickelt und konzentriert sich darauf, die Sichtbarkeit und das Engagement zu erhöhen. Es eignet sich für Krypto-Unternehmen, die ihre Online-Präsenz verbessern und mehr Kunden anziehen möchten.`,
+        content: `Das Launched Package, das für Projekte mit einer bestehenden Website und Branding entwickelt wurde, konzentriert sich auf die Steigerung von Sichtbarkeit und Engagement. Es eignet sich für Unternehmen, die ihre Online-Präsenz verbessern und mehr Kunden anziehen möchten.`,
         included: `<ul>
         <li>SEO-Optimierung: Optimierung von Inhalten, Linkaufbau</li>
         <li>PR-Kampagnen: Medienarbeit, Fachartikel, Pressemitteilungen</li>
@@ -29,7 +29,7 @@ export const pricingDe = [
     {
         id: 3,
         title: "Established",
-        content: `Das Established-Paket eignet sich für Krypto-Projekte mit einer aktiven Website und Community-Präsenz. Es zielt darauf ab, den Traffic und die Autorität zu steigern und ist ideal für Kryptounternehmen, die ihre Reichweite erhöhen und ihre Position auf dem Markt stärken wollen.`,
+        content: `Das Established Package eignet sich für Projekte mit einer aktiven Website und einer bestehenden Community-Präsenz. Es zielt darauf ab, den Traffic und die Autorität zu steigern und ist ideal für Unternehmen, die ihre Reichweite erweitern und ihre Position auf dem Markt stärken möchten.`,
         included: `<ul>
         <li>Bezahlte Werbung: Google Ads, Facebook Ads, Display-Werbung</li>
         <li>Inhaltsmarketing: Schreiben von Blogbeiträgen, Whitepapers, Fallstudien</li>
@@ -42,7 +42,7 @@ export const pricingDe = [
     {
         id: 4,
         title: "Competing",
-        content: `Speziell für Krypto-Projekte, die mit der Konkurrenz konkurrieren wollen, bietet das Competing Package fortschrittliche Marketinglösungen. Es wurde für Unternehmen entwickelt, die ihre Konkurrenten ausstechen und die Nische dominieren wollen.`,
+        content: `Das Competing Package, maßgeschneidert für Projekte, die bereit sind, mit Rivalen zu konkurrieren, bietet fortschrittliche Marketinglösungen. Es ist für Unternehmen konzipiert, die ihre Wettbewerber übertreffen und ihre Nische dominieren möchten.`,
         included: `<ul>
         <li>Zusätzliche Medienberichterstattung: Erwähnungen in der Presse, Gastbeiträge, Branchenauszeichnungen</li>
         <li>Analyse der Wettbewerber: Detaillierte Analyse der Strategien und Leistungen der Wettbewerber</li>
