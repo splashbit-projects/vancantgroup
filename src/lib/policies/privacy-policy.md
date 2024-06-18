@@ -123,7 +123,7 @@ Vancant Group Ltd reserves the right to update this Privacy Policy periodically 
 If you have any questions or concerns about this Privacy Policy, you may contact Vancant Group Ltd via the following methods:
 
 - Website: [vancantgroup.com](http://vancantgroup.com)
-- Phone: [+447458149501](tel:+447458149501)
+- Phone: [+48573587430](tel:+48573587430)
 - Email: [info@vancantgroup.com](mailto:info@vancantgroup.com)
 
 We strive to respond to all inquiries promptly and provide assistance as needed.

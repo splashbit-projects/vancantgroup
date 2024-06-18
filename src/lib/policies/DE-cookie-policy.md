@@ -43,7 +43,7 @@ Weitere Informationen über Cookies und wie Sie sie deaktivieren können, finden
 Wenn Sie Fragen zu dieser Cookie-Richtlinie haben, kontaktieren Sie uns bitte:
 
 - Website: [vancantgroup.com](https://vancantgroup.com)
-- Telefon: [+447458149501](tel:+447458149501)
+- Telefon: [+48573587430](tel:+48573587430)
 - E-Mail: [info@vancantgroup.com](mailto:info@vancantgroup.com)
 
 Wir bemühen uns, alle Anfragen umgehend zu beantworten und Ihnen zu helfen.

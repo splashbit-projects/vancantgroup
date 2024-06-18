@@ -43,7 +43,7 @@ For more information about cookies and how to turn them off, visit [http://www.a
 If you have any questions about this Cookie Policy, please contact us:
 
 - Website: [vancantgroup.com](http://vancantgroup.com)
-- Phone: [+447458149501](tel:+447458149501)
+- Phone: [+48573587430](tel:+48573587430)
 - Email: [info@vancantgroup.com](mailto:info@vancantgroup.com)
 
 We strive to respond to all inquiries promptly and provide assistance as needed.

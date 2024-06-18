@@ -119,7 +119,7 @@ Vancant Group Ltd si riserva il diritto di modificare o sostituire questi Termin
 Se avete domande o dubbi su questi Termini e Condizioni, potete contattare Vancant Group Ltd tramite i seguenti metodi:
 
 - Sito web: [vancantgroup.com](http://vancantgroup.com)
-- Telefono: [+447458149501](tel:+447458149501)
+- Telefono: [+48573587430](tel:+48573587430)
 - Email: [info@vancantgroup.com](mailto:info@vancantgroup.com)
 
 Ci impegniamo a rispondere a tutte le richieste prontamente e a fornire assistenza secondo necessità.
