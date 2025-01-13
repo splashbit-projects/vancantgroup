@@ -59,7 +59,7 @@ export const servicesEn = [
         included: `<ul>
         <li>Social media advertising (Facebook ads, Twitter ads)</li>
         <li>Google Ads (search ads, display ads)</li>
-        <li>Crypto-specific advertising platforms (CoinMarketCap, CoinGecko)</li>
+        <li>Top advertising platforms</li>
         <li>Influencer marketing campaigns</li>
         <li>Sponsored content and native advertising opportunities</li>
         </ul>`
