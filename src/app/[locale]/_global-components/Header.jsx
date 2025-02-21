@@ -55,7 +55,7 @@ export default function Header({home, services, howItWorks, pricing, about, blog
                 </Link>
               </div>
               <div className="socials">
-                <Facebook />
+                
                 <Instagram />
                 <Twitter />
               </div>
@@ -87,7 +87,7 @@ export default function Header({home, services, howItWorks, pricing, about, blog
             </div>
           </nav>
           <div className="socials">
-            <Facebook />
+            
             <Instagram />
             <Twitter />
           </div>

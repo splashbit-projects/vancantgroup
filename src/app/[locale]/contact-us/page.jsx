@@ -38,7 +38,7 @@ function ContactUsPage() {
         buttonText={t("requestButtonText")}
       />
       <div className="contact-socials">
-        <Facebook />
+        
         <Instagram />
         <Twitter />
       </div>

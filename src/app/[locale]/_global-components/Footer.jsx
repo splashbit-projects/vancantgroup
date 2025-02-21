@@ -21,7 +21,7 @@ function Footer() {
                 {t("aboutCompany")}
               </p>
               <div className="footer-socials">
-                <Facebook />
+                
                 <Instagram />
                 <Twitter />
               </div>
