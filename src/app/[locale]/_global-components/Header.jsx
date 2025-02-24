@@ -7,20 +7,33 @@ import Facebook from "./LayoutElements/socials/Facebook";
 import Instagram from "./LayoutElements/socials/Instagram";
 import Twitter from "./LayoutElements/socials/Twitter";
 
-export default function Header({home, services, howItWorks, pricing, about, blog, faq, contact}) {
+export default function Header({
+  home,
+  services,
+  howItWorks,
+  pricing,
+  about,
+  blog,
+  faq,
+  contact,
+}) {
   const [opened, setOpened] = useState(false);
   const pathname = usePathname();
   const getLastSegment = (pathname) => {
-    const segments = pathname.split('/');
+    const segments = pathname.split("/");
     const lastSegment = segments.pop();
 
     // If the last segment is empty (which means the URL ends with '/blog'), pop another segment
     if (lastSegment === "" || lastSegment === "it" || lastSegment === "de") {
-      return segments.join('/').replace('/it', '').replace('/de', '') || '/';
+      return segments.join("/").replace("/it", "").replace("/de", "") || "/";
     }
 
     // Join the remaining segments excluding the language segment '/it' or '/de'
-    return segments.join('/').replace('/it', '').replace('/de', '') + '/' + lastSegment;
+    return (
+      segments.join("/").replace("/it", "").replace("/de", "") +
+      "/" +
+      lastSegment
+    );
   };
 
   const lastSegment = getLastSegment(pathname);
@@ -55,7 +68,7 @@ export default function Header({home, services, howItWorks, pricing, about, blog
                 </Link>
               </div>
               <div className="socials">
-                
+                <Facebook />
                 <Instagram />
                 <Twitter />
               </div>
@@ -87,7 +100,7 @@ export default function Header({home, services, howItWorks, pricing, about, blog
             </div>
           </nav>
           <div className="socials">
-            
+            <Facebook />
             <Instagram />
             <Twitter />
           </div>
