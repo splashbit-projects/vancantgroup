@@ -13,17 +13,19 @@ import { usePopup } from "@/src/utils/PopupsContext";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
-const CustomInput = React.forwardRef(({ value, onClick, inputPlaceholder }, ref) => (
-  <span
-    className="custom-input"
-    data-placeholder={inputPlaceholder}
-    onClick={onClick}
-    ref={ref}
-  >
-    <span>{value || inputPlaceholder}</span>
-    <img src="/images/date.svg" />
-  </span>
-));
+const CustomInput = React.forwardRef(
+  ({ value, onClick, inputPlaceholder }, ref) => (
+    <span
+      className="custom-input"
+      data-placeholder={inputPlaceholder}
+      onClick={onClick}
+      ref={ref}
+    >
+      <span>{value || inputPlaceholder}</span>
+      <img src="/images/date.svg" />
+    </span>
+  )
+);
 
 const FormikDatePicker = ({ placeholder, ...props }) => {
   const { setFieldValue } = useFormikContext();
@@ -64,9 +66,7 @@ function RequestPopup({
 
   const validationSchema = Yup.object({
     name: Yup.string().required(validation_required),
-    email: Yup.string()
-      .email(validation_email)
-      .required(validation_required),
+    email: Yup.string().email(validation_email).required(validation_required),
     phone: Yup.string().required(validation_required),
     project: Yup.string().required(validation_required),
     acceptTermsRequest: Yup.boolean().oneOf([true], validation_required),
@@ -92,6 +92,8 @@ function RequestPopup({
     { setSubmitting, resetForm, setStatus }
   ) => {
     try {
+      console.log('Submitting form with values:', values);
+      
       const response = await fetch("/api/request", {
         method: "POST",
         headers: {
@@ -99,21 +101,45 @@ function RequestPopup({
         },
         body: JSON.stringify(values),
       });
-      console.log(JSON.stringify(values));
-      if (response.ok) {
+      
+      console.log('Response status:', response.status);
+      console.log('Response headers:', Object.fromEntries(response.headers.entries()));
+      
+      let data;
+      const contentType = response.headers.get("content-type");
+      console.log('Content-Type:', contentType);
+      
+      if (!contentType || !contentType.includes("application/json")) {
+        const text = await response.text();
+        console.error('Received non-JSON response:', text);
+        throw new Error('Server returned non-JSON response');
+      }
+
+      data = await response.json();
+      console.log('Response data:', data);
+
+      if (response.ok && data.success) {
+        console.log('Form submission successful, resetting form...');
         resetForm();
         setStatus({ success: true });
         setSubmitting(false);
         setResetFormFunction(() => resetForm);
       } else {
-        setStatus({ success: false });
+        console.log('Form submission failed:', data);
+        setStatus({ 
+          success: false, 
+          error: data.message || 'Failed to send message' 
+        });
       }
     } catch (error) {
-      console.error(error);
+      console.error('Form submission error:', error);
+      setStatus({
+        success: false,
+        error: "An error occurred while sending the message",
+      });
+    } finally {
+      setSubmitting(false);
     }
-    setTimeout(() => {
-      setResetFormFunction(() => resetForm);
-    }, 400);
   };
 
   return (

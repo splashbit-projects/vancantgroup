@@ -5,7 +5,8 @@ export async function POST(request) {
   try {
     const requestBody = await request.text();
     const bodyJSON = JSON.parse(requestBody);
-    const { name, email, phone, project, description, date } = bodyJSON;
+    const { name, email, phone, project, description, date, service } =
+      bodyJSON;
 
     // Initialize SendGrid with API key
     sgMail.setApiKey(process.env.SENDGRID_API_KEY);
@@ -14,16 +15,16 @@ export async function POST(request) {
     const msg = {
       to: "noreply@vancantgroup.com",
       from: "noreply@vancantgroup.com",
-      subject: "Crypto marketing assistance request",
-      text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nProject name: ${project}\nPreferred start date: ${date}\nProject description: ${description}\n`,
+      subject: `${service} order`,
+      text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nService name: ${service}\nProject name: ${project}\nPreferred start date: ${date}\nProject description: ${description}\n`,
     };
 
     // Send email
     await sgMail.send(msg);
 
-    return NextResponse.json({ message: "Success: email was sent" });
+    return NextResponse.json({ success: true, message: "Success: email was sent" });
   } catch (error) {
     console.error(error);
-    return NextResponse.status(500).json({ message: "COULD NOT SEND MESSAGE" });
+    return NextResponse.json({ success: false, message: "COULD NOT SEND MESSAGE" }, { status: 500 });
   }
 }
