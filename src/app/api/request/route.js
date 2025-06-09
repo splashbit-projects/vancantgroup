@@ -1,41 +1,25 @@
 import { NextResponse, NextRequest } from "next/server";
-const nodemailer = require("nodemailer");
+const sgMail = require("@sendgrid/mail");
 
 export async function POST(request) {
   try {
     const requestBody = await request.text();
     const bodyJSON = JSON.parse(requestBody);
-    const {
-      name,
-      email,
-      phone,
-      project,
-      description,
-      date,
-    } = bodyJSON;
+    const { name, email, phone, project, description, date } = bodyJSON;
 
-    // Configure nodemailer with Gmail SMTP
-    const transporter = nodemailer.createTransport({
-      service: "gmail",
-      auth: {
-        user: "noreply@vancantgroup.com", // Your Gmail email
-        pass: "&N4AV<KZmMHP3hC<hjj", // Your Gmail password or app password
-      },
-      tls: {
-        rejectUnauthorized: false // This bypasses the certificate validation
-      }
-    });
+    // Initialize SendGrid with API key
+    sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
     // Set up email data
-    const mailOptions = {
-      from: '"Vancant Group" <noreply@vancantgroup.com>', // Sender address
-      to: "noreply@vancantgroup.com", // Change to your recipient's email
+    const msg = {
+      to: "noreply@vancantgroup.com",
+      from: "noreply@vancantgroup.com",
       subject: "Crypto marketing assistance request",
       text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nProject name: ${project}\nPreferred start date: ${date}\nProject description: ${description}\n`,
     };
 
     // Send email
-    await transporter.sendMail(mailOptions);
+    await sgMail.send(msg);
 
     return NextResponse.json({ message: "Success: email was sent" });
   } catch (error) {
