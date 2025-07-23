@@ -7,6 +7,7 @@ import Facebook from "@/src/app/[locale]/_global-components/LayoutElements/socia
 import Instagram from "@/src/app/[locale]/_global-components/LayoutElements/socials/Instagram";
 import Twitter from "@/src/app/[locale]/_global-components/LayoutElements/socials/Twitter";
 import { useTranslations } from "next-intl";
+import Linkedin from "../_global-components/LayoutElements/socials/Linkedin";
 
 export const metadata = {
   title: "Contact Us",
@@ -41,6 +42,7 @@ function ContactUsPage() {
         <Facebook />
         <Instagram />
         <Twitter />
+        <Linkedin />
       </div>
     </>
   );

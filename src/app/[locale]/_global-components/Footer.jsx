@@ -4,6 +4,7 @@ import Facebook from "@/src/app/[locale]/_global-components/LayoutElements/socia
 import Instagram from "@/src/app/[locale]/_global-components/LayoutElements/socials/Instagram";
 import Twitter from "@/src/app/[locale]/_global-components/LayoutElements/socials/Twitter";
 import { useTranslations } from "next-intl";
+import Linkedin from "./LayoutElements/socials/Linkedin";
 
 function Footer() {
   const t = useTranslations("Footer");
@@ -24,6 +25,7 @@ function Footer() {
                 <Facebook />
                 <Instagram />
                 <Twitter />
+                <Linkedin />
               </div>
             </div>
             <div className="navigation">
