@@ -343,5 +343,12 @@
       "readButton": "Read"
     },
     "more": "More articles"
+  },
+  "CookiePopup": {
+    "title": "Cookie settings",
+    "text": "Cookies help us improve our website. By clicking 'Accept,' you agree to our use of cookies for functionality, analytics, and personalized content. Learn more in our",
+    "link": "Cookie Policy",
+    "decline": "Decline",
+    "accept": "Accept"
   }
 }
