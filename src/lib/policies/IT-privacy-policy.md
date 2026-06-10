@@ -123,7 +123,6 @@ Vancant Group Ltd si riserva il diritto di aggiornare periodicamente questa Info
 Se hai domande o preoccupazioni riguardo a questa Informativa sulla Privacy, puoi contattare Vancant Group Ltd tramite i seguenti metodi:
 
 - Sito web: [vancantgroup.com](http://vancantgroup.com)
-- Telefono: [+48573587430](tel:+48573587430)
 - Email: [info@vancantgroup.com](mailto:info@vancantgroup.com)
 
 Ci impegniamo a rispondere tempestivamente a tutte le richieste e fornire assistenza come necessario.

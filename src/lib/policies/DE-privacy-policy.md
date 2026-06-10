@@ -123,7 +123,6 @@ Vancant Group Ltd behält sich das Recht vor, diese Datenschutzerklärung regelm
 Wenn Sie Fragen oder Bedenken zu dieser Datenschutzrichtlinie haben, können Sie sich über die folgenden Methoden an Vancant Group Ltd wenden:
 
 - Website: [vancantgroup.com](https://vancantgroup.com)
-- Telefon: [+48573587430](tel:+48573587430)
 - E-Mail: [info@vancantgroup.com](mailto:info@vancantgroup.com)
 
 Wir bemühen uns, alle Anfragen umgehend zu beantworten und Ihnen bei Bedarf zu helfen.

@@ -43,7 +43,6 @@ Per ulteriori informazioni sui cookie e su come disattivarli, visita [http://www
 Se hai domande su questa Informativa sui Cookie, ti preghiamo di contattarci:
 
 - Sito web: [vancantgroup.com](http://vancantgroup.com)
-- Telefono: [+48573587430](tel:+48573587430)
 - Email: [info@vancantgroup.com](mailto:info@vancantgroup.com)
 
 Ci impegniamo a rispondere tempestivamente a tutte le richieste e a fornire assistenza come necessario.

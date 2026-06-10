@@ -34,12 +34,12 @@ function ContactUsHero({title, subtitle, text, submit}) {
                 info@vancantgroup.com
               </Link>
             </RevealWrapper>
-            <RevealWrapper origin="bottom">
+            {/**<RevealWrapper origin="bottom">
               <Link href="tel:+48573587430">
                 <img src="/images/contacts/phone.svg" />
                 +48573587430
               </Link>
-            </RevealWrapper>
+            </RevealWrapper> */}
           </div>
         </div>
       </div>
