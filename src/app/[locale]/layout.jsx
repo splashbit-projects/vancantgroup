@@ -8,6 +8,7 @@ import RequestPopup from "@/src/app/[locale]/_global-components/LayoutElements/R
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import { GoogleAnalytics } from '@next/third-parties/google';
 import { useTranslations } from "next-intl";
+import { CookiePopup } from "./_global-components/CookiePopup";
 
 const dm_sans = DM_Sans({ subsets: ["latin"] });
 
@@ -38,6 +39,7 @@ export default function RootLayout({ children, params: { locale } }) {
       <body className={dm_sans.className}>
         <GoogleAnalytics gaId="G-RRDWRRC3K0" />
         <NextIntlClientProvider
+          messages={messages}
         >
           <PopupsProvider>
             <Preloader />
@@ -53,6 +55,7 @@ export default function RootLayout({ children, params: { locale } }) {
             />
             <main>{children}</main>
             <Footer />
+            <CookiePopup />
             <RequestPopup 
               requestPopup_title={tR('requestPopup_title')}
               requestPopup_namePlaceholder={tR('requestPopup_namePlaceholder')}
